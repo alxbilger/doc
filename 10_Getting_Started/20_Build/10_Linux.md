@@ -89,40 +89,46 @@ sudo apt install ccache
 
 SOFA requires some libraries:
 
+-  **tinyXML2**
+    ```
+    sudo apt install libtinyxml2-dev
+    ```
+   
 -   **Qt** (>= 5.12.0) with **Charts** and **WebEngine**  
     We recommend to install Qt **in your user directory** with [the unified installer](http://download.qt.io/official_releases/online_installers).  
     Make sure to enable **Charts** and **WebEngine** components.  
     ![](https://www.sofa-framework.org/wp-content/uploads/2020/04/install_qt_linux.png)
 
 -   **OpenGL**
-    ```bash
+    ```
     sudo apt install libopengl0
     ```
 
 -   **Boost** (>= 1.65.1)  
-    ```bash
+    ```
     sudo apt install libboost-all-dev
     ```
     
--   **Python 3.8** + pip + numpy + scipy
-    ```bash
-    sudo apt install python3.8-dev
+-   **Python 3.10** + pip + numpy + scipy
     ```
-    ```bash
-    sudo apt-get install python3-distutils \
+    sudo apt install python3.10-dev pybind11-dev
+    ```
+    
+    ```
+    sudo apt-get install python3.10-distutils \
     && curl -L https://bootstrap.pypa.io/pip/get-pip.py --output /tmp/get-pip3.py \
-    && python3.8 /tmp/get-pip3.py \
-    && python3.8 -m pip install --upgrade pip \
-    && python3.8 -m pip install numpy scipy
+    && python3.10 /tmp/get-pip3.py \
+    && python3.10 -m pip install --upgrade pip \
+    && python3.10 -m pip install numpy scipy pybind11==2.9.1
     ```
 
 -   **Additional libraries**: libPNG, libJPEG, libTIFF, Glew, Zlib   
-    ```bash
+    ```
     sudo apt install libpng-dev libjpeg-dev libtiff-dev libglew-dev zlib1g-dev
     ```
 
 -   SOFA v20.06 and newer also need **Eigen** (>= 3.2.10)  
-    ```bash
+    ```
     sudo apt install libeigen3-dev
     ```
 
@@ -146,6 +152,7 @@ This list does not cover all available SOFA plugins, only the ones that are buil
    sudo apt install libassimp-dev
    ```
 -  SofaCUDA  
+   The currently supported cuda version is 12.2
    ``` {.bash .optional}
    sudo apt install nvidia-cuda-toolkit
    ```
@@ -171,7 +178,7 @@ as follows:
 sofa/
 ├── build/
 │   ├── master/
-│   └── v23.06/
+│   └── v23.12/
 └── src/
     └── < SOFA sources here >
 ```
@@ -180,7 +187,7 @@ sofa/
 
 Get the current **stable** version on the v23.06 branch:
 ``` {.bash .stable}
-git clone -b v23.06 https://github.com/sofa-framework/sofa.git sofa/src
+git clone -b v23.12 https://github.com/sofa-framework/sofa.git sofa/src
 ```
 
 **OR** get the development **unstable** version on the master branch:
@@ -197,8 +204,8 @@ git clone -b master https://github.com/sofa-framework/sofa.git sofa/src
 
 2. Run **Configure**. A popup will ask you to specify the generator for the project.
 
-   - If you installed [Ninja](#optional-ninja-build-system), select "CodeBlocks - Ninja".
-   - Otherwise, select "CodeBlocks - Unix Makefile".
+   - If you installed [Ninja](#optional-ninja-build-system), select "Ninja".
+   - Otherwise, select "Unix Makefile".
 
 3. Choose "Specify native compilers" and press "Next"
 
@@ -223,7 +230,9 @@ git clone -b master https://github.com/sofa-framework/sofa.git sofa/src
 
 ## Compile
 
-To compile, open a terminal in your build directory and run `make` or `ninja` depending on the generator you chose during CMake configuration.  
+To compile, open a terminal in your build directory and run `make` or `ninja` depending on the generator you chose during CMake configuration.
+If you chose "Unix Makefile" as generator, you can enable parallel compilation by specifying the number of parallel build you want by adding the `-j n` option with `n` being the number of desired parallel jobs. 
+This is set automatically to the highest possible by `ninja`, but this can be modified in the same way as for `make`. 
 
 Time for a coffee!
 
