@@ -365,3 +365,169 @@ Links:
 |mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+=== "XML"
+
+    ```xml
+    <Node name="root" dt="0.01">
+        <RequiredPlugin name="Sofa.Component.Collision.Detection.Algorithm"/> <!-- Needed to use components [BVHNarrowPhase BruteForceBroadPhase CollisionPipeline] -->
+        <RequiredPlugin name="Sofa.Component.Collision.Detection.Intersection"/> <!-- Needed to use components [MinProximityIntersection] -->
+        <RequiredPlugin name="Sofa.Component.Collision.Geometry"/> <!-- Needed to use components [LineCollisionModel PointCollisionModel TriangleCollisionModel] -->
+        <RequiredPlugin name="Sofa.Component.Collision.Response.Contact"/> <!-- Needed to use components [CollisionResponse] -->
+        <RequiredPlugin name="Sofa.Component.Constraint.Projective"/> <!-- Needed to use components [FixedProjectiveConstraint] -->
+        <RequiredPlugin name="Sofa.Component.Engine.Select"/> <!-- Needed to use components [BoxROI] -->
+        <RequiredPlugin name="Sofa.Component.IO.Mesh"/> <!-- Needed to use components [MeshOBJLoader] -->
+        <RequiredPlugin name="Sofa.Component.LinearSolver.Iterative"/> <!-- Needed to use components [CGLinearSolver] -->
+        <RequiredPlugin name="Sofa.Component.Mapping.Linear"/> <!-- Needed to use components [BarycentricMapping] -->
+        <RequiredPlugin name="Sofa.Component.Mass"/> <!-- Needed to use components [UniformMass] -->
+        <RequiredPlugin name="Sofa.Component.MechanicalLoad"/> <!-- Needed to use components [SurfacePressureForceField] -->
+        <RequiredPlugin name="Sofa.Component.ODESolver.Backward"/> <!-- Needed to use components [EulerImplicitSolver] -->
+        <RequiredPlugin name="Sofa.Component.SolidMechanics.Spring"/> <!-- Needed to use components [MeshSpringForceField] -->
+        <RequiredPlugin name="Sofa.Component.StateContainer"/> <!-- Needed to use components [MechanicalObject] -->
+        <RequiredPlugin name="Sofa.Component.Topology.Container.Constant"/> <!-- Needed to use components [MeshTopology] -->
+        <RequiredPlugin name="Sofa.Component.Topology.Container.Grid"/> <!-- Needed to use components [SparseGridTopology] -->
+        <RequiredPlugin name="Sofa.GL.Component.Rendering3D"/> <!-- Needed to use components [OglModel] -->
+        
+        <DefaultAnimationLoop/>
+        <CollisionPipeline depth="6" verbose="0" draw="0" />
+        <BruteForceBroadPhase/>
+        <BVHNarrowPhase/>
+        <MinProximityIntersection name="Proximity" usePointPoint="1" alarmDistance="3.5" contactDistance="1.5" />
+        <CollisionResponse name="Response" response="PenalityContactForceField" />
+        <Node name="Frog">
+            <EulerImplicitSolver  rayleighStiffness="0.1" rayleighMass="0.1" />
+            <CGLinearSolver iterations="30" tolerance="1e-5" threshold="1e-5"/>
+            <SparseGridTopology n="10 5 10" fileTopology="mesh/frog.obj" />
+            <MechanicalObject dx="-10.0" />
+            <UniformMass vertexMass="1.0" />
+            <BoxConstraint box="-18.0 2.0 -5.0 -2.0 3.0 5.0" />
+            <MeshSpringForceField name="Springs" stiffness="50000" damping="4" />
+            <Node name="Visu">
+                <MeshOBJLoader name="meshLoader_0" filename="mesh/frog.obj" handleSeams="1" />
+                <OglModel name="Visual" src="@meshLoader_0" color="0.5 1.0 0.5 1.0" />
+                <BarycentricMapping input="@.." output="@Visual" />
+            </Node>
+            <Node name="TriangleSurf">
+                <MeshOBJLoader name="loader" filename="mesh/frog.obj" />
+                <MeshTopology src="@loader" />
+                <MechanicalObject src="@loader" />
+                <TriangleCollisionModel group="1" />
+                <LineCollisionModel group="1" />
+                <PointCollisionModel group="1" />
+                <SurfacePressureForceField pressure="50000.0" pulseMode="true" pressureSpeed="20000.0" />
+                <BarycentricMapping input="@.." output="@." />
+            </Node>
+        </Node>
+        <Node name="Frog2">
+            <EulerImplicitSolver />
+            <CGLinearSolver iterations="30" tolerance="1e-5" threshold="1e-5"/>
+            <SparseGridTopology n="10 5 10" fileTopology="mesh/frog_quads.obj" />
+            <MechanicalObject dx="10.0" />
+            <UniformMass vertexMass="1.0" />
+            <BoxConstraint box="2.0 2.0 -5.0 18.0 3.0 5.0" />
+            <MeshSpringForceField name="Springs" stiffness="50000" damping="4" />
+            <Node name="Visu">
+                <MeshOBJLoader name="meshLoader_1" filename="mesh/frog_quads.obj" handleSeams="1" />
+                <OglModel name="Visual" src="@meshLoader_1" color="1.0 0.5 0.5 1.0" />
+                <BarycentricMapping input="@.." output="@Visual" />
+            </Node>
+            <Node name="QuadSurf">
+                <MeshOBJLoader name="loader" filename="mesh/frog_quads.obj" />
+                <MeshTopology src="@loader" />
+                <MechanicalObject src="@loader" />
+                <TriangleCollisionModel group="1" />
+                <LineCollisionModel group="1" />
+                <PointCollisionModel group="1" />
+                <SurfacePressureForceField pressure="50000.0" pulseMode="true" pressureSpeed="20000.0" />
+                <BarycentricMapping input="@.." output="@." />
+            </Node>
+        </Node>
+    </Node>
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('root', dt="0.01")
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.Collision.Detection.Algorithm")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Collision.Detection.Intersection")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Collision.Geometry")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Collision.Response.Contact")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Constraint.Projective")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Engine.Select")
+       root.addObject('RequiredPlugin', name="Sofa.Component.IO.Mesh")
+       root.addObject('RequiredPlugin', name="Sofa.Component.LinearSolver.Iterative")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Mapping.Linear")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Mass")
+       root.addObject('RequiredPlugin', name="Sofa.Component.MechanicalLoad")
+       root.addObject('RequiredPlugin', name="Sofa.Component.ODESolver.Backward")
+       root.addObject('RequiredPlugin', name="Sofa.Component.SolidMechanics.Spring")
+       root.addObject('RequiredPlugin', name="Sofa.Component.StateContainer")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Topology.Container.Constant")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Topology.Container.Grid")
+       root.addObject('RequiredPlugin', name="Sofa.GL.Component.Rendering3D")
+       root.addObject('DefaultAnimationLoop', )
+       root.addObject('CollisionPipeline', depth="6", verbose="0", draw="0")
+       root.addObject('BruteForceBroadPhase', )
+       root.addObject('BVHNarrowPhase', )
+       root.addObject('MinProximityIntersection', name="Proximity", usePointPoint="1", alarmDistance="3.5", contactDistance="1.5")
+       root.addObject('CollisionResponse', name="Response", response="PenalityContactForceField")
+
+       frog = root.addChild('Frog')
+
+       frog.addObject('EulerImplicitSolver', rayleighStiffness="0.1", rayleighMass="0.1")
+       frog.addObject('CGLinearSolver', iterations="30", tolerance="1e-5", threshold="1e-5")
+       frog.addObject('SparseGridTopology', n="10 5 10", fileTopology="mesh/frog.obj")
+       frog.addObject('MechanicalObject', dx="-10.0")
+       frog.addObject('UniformMass', vertexMass="1.0")
+       frog.addObject('BoxConstraint', box="-18.0 2.0 -5.0 -2.0 3.0 5.0")
+       frog.addObject('MeshSpringForceField', name="Springs", stiffness="50000", damping="4")
+
+       visu = Frog.addChild('Visu')
+
+       visu.addObject('MeshOBJLoader', name="meshLoader_0", filename="mesh/frog.obj", handleSeams="1")
+       visu.addObject('OglModel', name="Visual", src="@meshLoader_0", color="0.5 1.0 0.5 1.0")
+       visu.addObject('BarycentricMapping', input="@..", output="@Visual")
+
+       triangle_surf = Frog.addChild('TriangleSurf')
+
+       triangle_surf.addObject('MeshOBJLoader', name="loader", filename="mesh/frog.obj")
+       triangle_surf.addObject('MeshTopology', src="@loader")
+       triangle_surf.addObject('MechanicalObject', src="@loader")
+       triangle_surf.addObject('TriangleCollisionModel', group="1")
+       triangle_surf.addObject('LineCollisionModel', group="1")
+       triangle_surf.addObject('PointCollisionModel', group="1")
+       triangle_surf.addObject('SurfacePressureForceField', pressure="50000.0", pulseMode="true", pressureSpeed="20000.0")
+       triangle_surf.addObject('BarycentricMapping', input="@..", output="@.")
+
+       frog2 = root.addChild('Frog2')
+
+       frog2.addObject('EulerImplicitSolver', )
+       frog2.addObject('CGLinearSolver', iterations="30", tolerance="1e-5", threshold="1e-5")
+       frog2.addObject('SparseGridTopology', n="10 5 10", fileTopology="mesh/frog_quads.obj")
+       frog2.addObject('MechanicalObject', dx="10.0")
+       frog2.addObject('UniformMass', vertexMass="1.0")
+       frog2.addObject('BoxConstraint', box="2.0 2.0 -5.0 18.0 3.0 5.0")
+       frog2.addObject('MeshSpringForceField', name="Springs", stiffness="50000", damping="4")
+
+       visu = Frog2.addChild('Visu')
+
+       visu.addObject('MeshOBJLoader', name="meshLoader_1", filename="mesh/frog_quads.obj", handleSeams="1")
+       visu.addObject('OglModel', name="Visual", src="@meshLoader_1", color="1.0 0.5 0.5 1.0")
+       visu.addObject('BarycentricMapping', input="@..", output="@Visual")
+
+       quad_surf = Frog2.addChild('QuadSurf')
+
+       quad_surf.addObject('MeshOBJLoader', name="loader", filename="mesh/frog_quads.obj")
+       quad_surf.addObject('MeshTopology', src="@loader")
+       quad_surf.addObject('MechanicalObject', src="@loader")
+       quad_surf.addObject('TriangleCollisionModel', group="1")
+       quad_surf.addObject('LineCollisionModel', group="1")
+       quad_surf.addObject('PointCollisionModel', group="1")
+       quad_surf.addObject('SurfacePressureForceField', pressure="50000.0", pulseMode="true", pressureSpeed="20000.0")
+       quad_surf.addObject('BarycentricMapping', input="@..", output="@.")
+    ```
+

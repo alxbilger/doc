@@ -279,13 +279,6 @@ Enable smooth point rendering
 		<td>0</td>
 	</tr>
 	<tr>
-		<td>isEnabled</td>
-		<td>
-Activate/deactive the component.
-		</td>
-		<td>1</td>
-	</tr>
-	<tr>
 		<td>primitiveType</td>
 		<td>
 Select types of primitives to send (necessary for some shader types such as geometry or tesselation)

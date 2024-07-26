@@ -488,3 +488,81 @@ Links:
 |input|Input object to map|State<Vec3d>|
 |output|Output object to map|State<Vec1d>|
 
+=== "XML"
+
+    ```xml
+    <?xml version="1.0"?>
+    <Node name="root" gravity="0 -9.81 0" dt="0.01">
+        <RequiredPlugin name="Sofa.Component.IO.Mesh"/> <!-- Needed to use components [StringMeshCreator] -->
+        <RequiredPlugin name="Sofa.Component.LinearSolver.Direct"/> <!-- Needed to use components [EigenSimplicialLLT] -->
+        <RequiredPlugin name="Sofa.Component.Mapping.NonLinear"/> <!-- Needed to use components [DistanceFromTargetMapping DistanceMapping] -->
+        <RequiredPlugin name="Sofa.Component.Mass"/> <!-- Needed to use components [DiagonalMass] -->
+        <RequiredPlugin name="Sofa.Component.ODESolver.Backward"/> <!-- Needed to use components [EulerImplicitSolver] -->
+        <RequiredPlugin name="Sofa.Component.SolidMechanics.Spring"/> <!-- Needed to use components [RestShapeSpringsForceField] -->
+        <RequiredPlugin name="Sofa.Component.StateContainer"/> <!-- Needed to use components [MechanicalObject] -->
+        <RequiredPlugin name="Sofa.Component.Topology.Container.Dynamic"/> <!-- Needed to use components [EdgeSetGeometryAlgorithms EdgeSetTopologyContainer] -->
+    
+        <DefaultAnimationLoop/>
+        <DefaultVisualManagerLoop/>
+    
+        <StringMeshCreator name="loader" resolution="20" scale3d="1 1 1" />
+    
+        <EulerImplicitSolver />
+        <EigenSimplicialLLT />
+    
+        <EdgeSetTopologyContainer name="topology" position="@loader.position" edges="@loader.edges"/>
+        <MechanicalObject name="dofs" template="Vec3" />
+        <EdgeSetGeometryAlgorithms drawEdges="true" />
+        <DiagonalMass name="mass" totalMass="1e-3"/>
+        <Node name="attach">
+            <MechanicalObject template="Vec1"/>
+            <DistanceFromTargetMapping indices="0" targetPositions="0 0 0"/>
+            <RestShapeSpringsForceField/>
+        </Node>
+        <Node name="extensionsNode" >
+            <MechanicalObject template="Vec1"  name="extensionsDOF" />
+            <DistanceMapping  name="distanceMapping" topology="@../topology"/>
+            <RestShapeSpringsForceField/>
+        </Node>
+    </Node>
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('root', gravity="0 -9.81 0", dt="0.01")
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.IO.Mesh")
+       root.addObject('RequiredPlugin', name="Sofa.Component.LinearSolver.Direct")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Mapping.NonLinear")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Mass")
+       root.addObject('RequiredPlugin', name="Sofa.Component.ODESolver.Backward")
+       root.addObject('RequiredPlugin', name="Sofa.Component.SolidMechanics.Spring")
+       root.addObject('RequiredPlugin', name="Sofa.Component.StateContainer")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Topology.Container.Dynamic")
+       root.addObject('DefaultAnimationLoop', )
+       root.addObject('DefaultVisualManagerLoop', )
+       root.addObject('StringMeshCreator', name="loader", resolution="20", scale3d="1 1 1")
+       root.addObject('EulerImplicitSolver', )
+       root.addObject('EigenSimplicialLLT', )
+       root.addObject('EdgeSetTopologyContainer', name="topology", position="@loader.position", edges="@loader.edges")
+       root.addObject('MechanicalObject', name="dofs", template="Vec3")
+       root.addObject('EdgeSetGeometryAlgorithms', drawEdges="true")
+       root.addObject('DiagonalMass', name="mass", totalMass="1e-3")
+
+       attach = root.addChild('attach')
+
+       attach.addObject('MechanicalObject', template="Vec1")
+       attach.addObject('DistanceFromTargetMapping', indices="0", targetPositions="0 0 0")
+       attach.addObject('RestShapeSpringsForceField', )
+
+       extensions_node = root.addChild('extensionsNode')
+
+       extensions_node.addObject('MechanicalObject', template="Vec1", name="extensionsDOF")
+       extensions_node.addObject('DistanceMapping', name="distanceMapping", topology="@../topology")
+       extensions_node.addObject('RestShapeSpringsForceField', )
+    ```
+

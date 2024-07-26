@@ -314,3 +314,69 @@ Links:
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 
+=== "XML"
+
+    ```xml
+    <!-- For more details see: https://wiki.sofa-framework.org/tdev/wiki/Notes/NewLoaderArchitecture -->
+    <Node name="Root" gravity="0 0 -9810" dt="0.02">
+        <RequiredPlugin name="Sofa.Component.Constraint.Projective"/> <!-- Needed to use components [FixedProjectiveConstraint] -->
+        <RequiredPlugin name="Sofa.Component.Engine.Select"/> <!-- Needed to use components [BoxROI] -->
+        <RequiredPlugin name="Sofa.Component.IO.Mesh"/> <!-- Needed to use components [GIDMeshLoader] -->
+        <RequiredPlugin name="Sofa.Component.LinearSolver.Direct"/> <!-- Needed to use components [SparseLDLSolver] -->
+        <RequiredPlugin name="Sofa.Component.Mass"/> <!-- Needed to use components [UniformMass] -->
+        <RequiredPlugin name="Sofa.Component.ODESolver.Backward"/> <!-- Needed to use components [EulerImplicitSolver] -->
+        <RequiredPlugin name="Sofa.Component.SolidMechanics.FEM.Elastic"/> <!-- Needed to use components [TetrahedronFEMForceField] -->
+        <RequiredPlugin name="Sofa.Component.StateContainer"/> <!-- Needed to use components [MechanicalObject] -->
+        <RequiredPlugin name="Sofa.Component.Topology.Container.Constant"/> <!-- Needed to use components [MeshTopology] -->
+        <RequiredPlugin name="Sofa.Component.Visual"/> <!-- Needed to use components [VisualStyle] -->
+        
+        <VisualStyle displayFlags="showBehavior" />
+        <DefaultAnimationLoop/>
+        <Node name="Tripod">
+            <EulerImplicitSolver/>
+            <SparseLDLSolver/>
+            <GIDMeshLoader name="loader" filename="mesh/tripod.gidmsh" />
+            <MeshTopology src="@loader"/>
+            <MechanicalObject/>
+            <UniformMass totalMass="0.035"/>
+            <BoxROI name="roi" box="-10 -10 -10 10 10 10" drawBoxes="1"/>
+            <FixedProjectiveConstraint indices="@roi.indices"/>
+            <TetrahedronFEMForceField youngModulus="100" poissonRatio="0.45"/>
+        </Node>
+    </Node>
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('Root', gravity="0 0 -9810", dt="0.02")
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.Constraint.Projective")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Engine.Select")
+       root.addObject('RequiredPlugin', name="Sofa.Component.IO.Mesh")
+       root.addObject('RequiredPlugin', name="Sofa.Component.LinearSolver.Direct")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Mass")
+       root.addObject('RequiredPlugin', name="Sofa.Component.ODESolver.Backward")
+       root.addObject('RequiredPlugin', name="Sofa.Component.SolidMechanics.FEM.Elastic")
+       root.addObject('RequiredPlugin', name="Sofa.Component.StateContainer")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Topology.Container.Constant")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Visual")
+       root.addObject('VisualStyle', displayFlags="showBehavior")
+       root.addObject('DefaultAnimationLoop', )
+
+       tripod = Root.addChild('Tripod')
+
+       tripod.addObject('EulerImplicitSolver', )
+       tripod.addObject('SparseLDLSolver', )
+       tripod.addObject('GIDMeshLoader', name="loader", filename="mesh/tripod.gidmsh")
+       tripod.addObject('MeshTopology', src="@loader")
+       tripod.addObject('MechanicalObject', )
+       tripod.addObject('UniformMass', totalMass="0.035")
+       tripod.addObject('BoxROI', name="roi", box="-10 -10 -10 10 10 10", drawBoxes="1")
+       tripod.addObject('FixedProjectiveConstraint', indices="@roi.indices")
+       tripod.addObject('TetrahedronFEMForceField', youngModulus="100", poissonRatio="0.45")
+    ```
+

@@ -279,13 +279,6 @@ Enable smooth point rendering
 		<td>0</td>
 	</tr>
 	<tr>
-		<td>isEnabled</td>
-		<td>
-Activate/deactive the component.
-		</td>
-		<td>1</td>
-	</tr>
-	<tr>
 		<td>primitiveType</td>
 		<td>
 Select types of primitives to send (necessary for some shader types such as geometry or tesselation)
@@ -431,4 +424,47 @@ Links:
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |topology|link to the topology container|BaseMeshTopology|
 |input1|input visual model(1)|VisualModelImpl<Vec3d>|
+
+=== "XML"
+
+    ```xml
+    <?xml version="1.0"?>
+    <Node name="root" dt="0.01">
+        <RequiredPlugin name="Sofa.Component.IO.Mesh"/> <!-- Needed to use components [MeshOBJLoader] -->
+        <RequiredPlugin name="Sofa.Component.Topology.Container.Constant"/> <!-- Needed to use components [MeshTopology] -->
+        <RequiredPlugin name="Sofa.GL.Component.Rendering3D"/> <!-- Needed to use components [MergeVisualModels OglModel] -->
+        <DefaultAnimationLoop/>
+    
+        <MeshOBJLoader name="meshLoader" filename="mesh/snake_body.obj" handleSeams="1"/>
+        <MeshTopology src="@meshLoader"/>
+    
+        <OglModel name="visualModel1" src="@meshLoader" useNormals="0" translation="0 0 0" />
+        <OglModel name="visualModel2" src="@meshLoader" useNormals="0" translation="10 0 0"/>
+        <OglModel name="visualModel3" src="@meshLoader" useNormals="0" translation="20 0 0"/>
+        
+    
+        <MergeVisualModels name="merged" nb="2" input1="@visualModel1"  input2="@visualModel3"   texturename="textures/snakeColorMap.png" color="red"  />
+        
+    </Node>
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('root', dt="0.01")
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.IO.Mesh")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Topology.Container.Constant")
+       root.addObject('RequiredPlugin', name="Sofa.GL.Component.Rendering3D")
+       root.addObject('DefaultAnimationLoop', )
+       root.addObject('MeshOBJLoader', name="meshLoader", filename="mesh/snake_body.obj", handleSeams="1")
+       root.addObject('MeshTopology', src="@meshLoader")
+       root.addObject('OglModel', name="visualModel1", src="@meshLoader", useNormals="0", translation="0 0 0")
+       root.addObject('OglModel', name="visualModel2", src="@meshLoader", useNormals="0", translation="10 0 0")
+       root.addObject('OglModel', name="visualModel3", src="@meshLoader", useNormals="0", translation="20 0 0")
+       root.addObject('MergeVisualModels', name="merged", nb="2", input1="@visualModel1", input2="@visualModel3", texturename="textures/snakeColorMap.png", color="red")
+    ```
 

@@ -133,3 +133,55 @@ Links:
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |topology|link to the topology container|BaseMeshTopology|
 
+=== "XML"
+
+    ```xml
+    <?xml version="1.0"?>
+    <Node name="root" >
+        <RequiredPlugin name="Sofa.Component.Engine.Transform"/> <!-- Needed to use components [SmoothMeshEngine] -->
+        <RequiredPlugin name="Sofa.Component.IO.Mesh"/> <!-- Needed to use components [MeshOBJLoader] -->
+        <RequiredPlugin name="Sofa.Component.Topology.Container.Constant"/> <!-- Needed to use components [MeshTopology] -->
+        <RequiredPlugin name="Sofa.Component.Visual"/> <!-- Needed to use components [VisualStyle] -->
+        <RequiredPlugin name="Sofa.GL.Component.Rendering3D"/> <!-- Needed to use components [OglModel] -->
+    
+        <DefaultAnimationLoop/>
+        <Node name="origin" >
+            <VisualStyle displayFlags="showWireframe" />
+            <MeshOBJLoader name="loader" filename="mesh/dragon.obj" />
+            <OglModel name="visual" src="@loader" color="yellow" />
+        </Node>
+        <Node name="smoothed" >
+            <VisualStyle displayFlags="hideWireframe" />
+            <MeshTopology name="topology" src="@/origin/loader"/>
+            <SmoothMeshEngine template="Vec3" name="smoother" input_position="@/origin/loader.position" nb_iterations="1" showOutput="true"/>
+        </Node>
+    </Node>
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('root')
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.Engine.Transform")
+       root.addObject('RequiredPlugin', name="Sofa.Component.IO.Mesh")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Topology.Container.Constant")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Visual")
+       root.addObject('RequiredPlugin', name="Sofa.GL.Component.Rendering3D")
+       root.addObject('DefaultAnimationLoop', )
+
+       origin = root.addChild('origin')
+
+       origin.addObject('VisualStyle', displayFlags="showWireframe")
+       origin.addObject('MeshOBJLoader', name="loader", filename="mesh/dragon.obj")
+       origin.addObject('OglModel', name="visual", src="@loader", color="yellow")
+
+       smoothed = root.addChild('smoothed')
+
+       smoothed.addObject('VisualStyle', displayFlags="hideWireframe")
+       smoothed.addObject('MeshTopology', name="topology", src="@/origin/loader")
+       smoothed.addObject('SmoothMeshEngine', template="Vec3", name="smoother", input_position="@/origin/loader.position", nb_iterations="1", showOutput="true")
+    ```
+

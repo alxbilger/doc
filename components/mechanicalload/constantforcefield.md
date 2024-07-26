@@ -848,5 +848,110 @@ Links:
 |mstate|MechanicalState used by this component|MechanicalState<Vec6d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+=== "XML"
+
+    ```xml
+    <Node name="root" dt="0.05" gravity="0 0 0">
+        <RequiredPlugin name="Sofa.Component.IO.Mesh"/> <!-- Needed to use components [MeshOBJLoader] -->
+        <RequiredPlugin name="Sofa.Component.LinearSolver.Iterative"/> <!-- Needed to use components [CGLinearSolver] -->
+        <RequiredPlugin name="Sofa.Component.Mapping.Linear"/> <!-- Needed to use components [IdentityMapping] -->
+        <RequiredPlugin name="Sofa.Component.Mapping.NonLinear"/> <!-- Needed to use components [RigidMapping] -->
+        <RequiredPlugin name="Sofa.Component.Mass"/> <!-- Needed to use components [UniformMass] -->
+        <RequiredPlugin name="Sofa.Component.MechanicalLoad"/> <!-- Needed to use components [ConstantForceField] -->
+        <RequiredPlugin name="Sofa.Component.ODESolver.Backward"/> <!-- Needed to use components [EulerImplicitSolver] -->
+        <RequiredPlugin name="Sofa.Component.SolidMechanics.FEM.Elastic"/> <!-- Needed to use components [TriangleFEMForceField] -->
+        <RequiredPlugin name="Sofa.Component.StateContainer"/> <!-- Needed to use components [MechanicalObject] -->
+        <RequiredPlugin name="Sofa.Component.Topology.Container.Constant"/> <!-- Needed to use components [MeshTopology] -->
+        <RequiredPlugin name="Sofa.Component.Visual"/> <!-- Needed to use components [InteractiveCamera VisualStyle] -->
+        <RequiredPlugin name="Sofa.GL.Component.Rendering3D"/> <!-- Needed to use components [OglModel] -->
+        <!-- Constant force for a deformable -->
+        <VisualStyle displayFlags="showBehaviorModels showForceFields" />
+        <DefaultAnimationLoop computeBoundingBox="false"/>
+        <InteractiveCamera position="1.27 0.48 4.5" orientation="0 0 0 1"  distance="3.86" fieldOfView="45"/>
+        
+        <Node name="BasicDeformableObject" >
+            <EulerImplicitSolver name="cg_odesolver" printLog="false"  rayleighMass="0.1" />
+            <CGLinearSolver iterations="25" name="linear solver" tolerance="1.0e-9" threshold="1.0e-9" />
+            <MechanicalObject position="0 0 0  1 0 0  1 1 0  0 1 0" velocity="0 0 0  0 0 0  0 0 0  0 0 0" />
+            <UniformMass vertexMass="0.1" />
+            <MeshTopology triangles="0 1 2  0 2 3" />
+            <!--		<FixedProjectiveConstraint indices="2 3"/>-->
+            <TriangleFEMForceField name="FEM0" youngModulus="100" poissonRatio="0.3" method="large" />
+            <ConstantForceField indices="0 1 2 3" forces="-1 -1 0  1 -1 0  1 1 0  -1 1 0" showArrowSize="0.5" printLog="1"/>
+            <Node name="Visu">
+                <OglModel name="Visual" color="red" />
+                <IdentityMapping input="@.." output="@Visual" />
+            </Node>
+        </Node>
+        <Node name="TorusRigid">
+            <EulerImplicitSolver rayleighStiffness="0.01" />
+            <CGLinearSolver iterations="25" threshold="0.00000001" tolerance="1e-5"/>
+            <MechanicalObject template="Rigid3" dx="2" dy="0" dz="0" rx="0" ry="0" rz="0" scale="1.0" />
+            <UniformMass />
+            <!-- forces for a rigid is composed of two parts translation of the rigid dof [x y z] and a quaternion for the rotation [x y z w] -->
+            <ConstantForceField indices="0" forces="0 0.10 0     0 1 0" />
+            <Node name="Visu">
+                <MeshOBJLoader name="meshLoader_0" filename="mesh/torus.obj" scale="0.3" handleSeams="1" />
+                <OglModel name="Visual" src="@meshLoader_0" color="gray" />
+                <RigidMapping input="@.." output="@Visual" />
+            </Node>
+        </Node>
+    </Node>
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('root', dt="0.05", gravity="0 0 0")
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.IO.Mesh")
+       root.addObject('RequiredPlugin', name="Sofa.Component.LinearSolver.Iterative")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Mapping.Linear")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Mapping.NonLinear")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Mass")
+       root.addObject('RequiredPlugin', name="Sofa.Component.MechanicalLoad")
+       root.addObject('RequiredPlugin', name="Sofa.Component.ODESolver.Backward")
+       root.addObject('RequiredPlugin', name="Sofa.Component.SolidMechanics.FEM.Elastic")
+       root.addObject('RequiredPlugin', name="Sofa.Component.StateContainer")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Topology.Container.Constant")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Visual")
+       root.addObject('RequiredPlugin', name="Sofa.GL.Component.Rendering3D")
+       root.addObject('VisualStyle', displayFlags="showBehaviorModels showForceFields")
+       root.addObject('DefaultAnimationLoop', computeBoundingBox="false")
+       root.addObject('InteractiveCamera', position="1.27 0.48 4.5", orientation="0 0 0 1", distance="3.86", fieldOfView="45")
+
+       basic_deformable_object = root.addChild('BasicDeformableObject')
+
+       basic_deformable_object.addObject('EulerImplicitSolver', name="cg_odesolver", printLog="false", rayleighMass="0.1")
+       basic_deformable_object.addObject('CGLinearSolver', iterations="25", name="linear solver", tolerance="1.0e-9", threshold="1.0e-9")
+       basic_deformable_object.addObject('MechanicalObject', position="0 0 0  1 0 0  1 1 0  0 1 0", velocity="0 0 0  0 0 0  0 0 0  0 0 0")
+       basic_deformable_object.addObject('UniformMass', vertexMass="0.1")
+       basic_deformable_object.addObject('MeshTopology', triangles="0 1 2  0 2 3")
+       basic_deformable_object.addObject('TriangleFEMForceField', name="FEM0", youngModulus="100", poissonRatio="0.3", method="large")
+       basic_deformable_object.addObject('ConstantForceField', indices="0 1 2 3", forces="-1 -1 0  1 -1 0  1 1 0  -1 1 0", showArrowSize="0.5", printLog="1")
+
+       visu = BasicDeformableObject.addChild('Visu')
+
+       visu.addObject('OglModel', name="Visual", color="red")
+       visu.addObject('IdentityMapping', input="@..", output="@Visual")
+
+       torus_rigid = root.addChild('TorusRigid')
+
+       torus_rigid.addObject('EulerImplicitSolver', rayleighStiffness="0.01")
+       torus_rigid.addObject('CGLinearSolver', iterations="25", threshold="0.00000001", tolerance="1e-5")
+       torus_rigid.addObject('MechanicalObject', template="Rigid3", dx="2", dy="0", dz="0", rx="0", ry="0", rz="0", scale="1.0")
+       torus_rigid.addObject('UniformMass', )
+       torus_rigid.addObject('ConstantForceField', indices="0", forces="0 0.10 0     0 1 0")
+
+       visu = TorusRigid.addChild('Visu')
+
+       visu.addObject('MeshOBJLoader', name="meshLoader_0", filename="mesh/torus.obj", scale="0.3", handleSeams="1")
+       visu.addObject('OglModel', name="Visual", src="@meshLoader_0", color="gray")
+       visu.addObject('RigidMapping', input="@..", output="@Visual")
+    ```
+
 
 <!-- automatically generated doc END -->

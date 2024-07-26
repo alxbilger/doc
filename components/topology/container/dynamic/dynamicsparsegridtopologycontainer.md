@@ -128,13 +128,6 @@ List of hexahedron indices
 		<td></td>
 	</tr>
 	<tr>
-		<td>valuesIndexedInTopology</td>
-		<td>
-values indexed in the topology
-		</td>
-		<td></td>
-	</tr>
-	<tr>
 		<td>resolution</td>
 		<td>
 voxel grid resolution

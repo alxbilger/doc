@@ -351,3 +351,102 @@ Links:
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 
+=== "XML"
+
+    ```xml
+    <Node name="root" gravity="0 -9 1" dt="0.05">
+        <RequiredPlugin name="Sofa.Component.Collision.Detection.Algorithm"/> <!-- Needed to use components [BVHNarrowPhase BruteForceBroadPhase CollisionPipeline] -->
+        <RequiredPlugin name="Sofa.Component.Collision.Detection.Intersection"/> <!-- Needed to use components [MinProximityIntersection] -->
+        <RequiredPlugin name="Sofa.Component.Collision.Response.Contact"/> <!-- Needed to use components [CollisionResponse] -->
+        <RequiredPlugin name="Sofa.Component.Engine.Select"/> <!-- Needed to use components [MeshROI] -->
+        <RequiredPlugin name="Sofa.Component.IO.Mesh"/> <!-- Needed to use components [MeshOBJLoader MeshVTKLoader] -->
+        <RequiredPlugin name="Sofa.Component.LinearSolver.Iterative"/> <!-- Needed to use components [CGLinearSolver] -->
+        <RequiredPlugin name="Sofa.Component.Mass"/> <!-- Needed to use components [DiagonalMass] -->
+        <RequiredPlugin name="Sofa.Component.ODESolver.Backward"/> <!-- Needed to use components [EulerImplicitSolver] -->
+        <RequiredPlugin name="Sofa.Component.SolidMechanics.FEM.Elastic"/> <!-- Needed to use components [TetrahedralCorotationalFEMForceField] -->
+        <RequiredPlugin name="Sofa.Component.StateContainer"/> <!-- Needed to use components [MechanicalObject] -->
+        <RequiredPlugin name="Sofa.Component.Topology.Container.Dynamic"/> <!-- Needed to use components [TetrahedronSetGeometryAlgorithms TetrahedronSetTopologyContainer TetrahedronSetTopologyModifier TriangleSetTopologyModifier] -->
+        <RequiredPlugin name="Sofa.Component.Visual"/> <!-- Needed to use components [VisualStyle] -->
+        <RequiredPlugin name="Sofa.GL.Component.Rendering3D"/> <!-- Needed to use components [OglModel] -->
+    
+        <DefaultAnimationLoop/>
+        <VisualStyle displayFlags="showBehaviorModels showWireframe" />
+        <CollisionPipeline />
+        <BruteForceBroadPhase/>
+        <BVHNarrowPhase/>
+        <CollisionResponse response="PenalityContactForceField" />
+        <MinProximityIntersection  alarmDistance="0.8" contactDistance="0.5" />
+        <Node >
+            <EulerImplicitSolver   rayleighStiffness="0.1" rayleighMass="0.1" />
+            <CGLinearSolver iterations="25" tolerance="1e-05" threshold="1e-05" />
+            <MeshVTKLoader name="loader" filename="mesh/Ossicles.vtu" />
+            <MechanicalObject src="@loader"  name="mecaObj" scale3d="1 1 1" restScale="1" />
+    
+    
+            <TetrahedronSetTopologyContainer name="Container"  src="@loader"/>
+            <TriangleSetTopologyModifier name="ModifierTri" />
+            <TetrahedronSetTopologyModifier name="ModifierTetra"/>
+            <TetrahedronSetGeometryAlgorithms  name="GeomAlgo"/>
+            <DiagonalMass  massDensity="0.15" />
+        
+            <TetrahedralCorotationalFEMForceField name="FEM" youngModulus="1e10" poissonRatio="0.3" method="large" />
+    
+            <Node name="MeshROI"  >
+                <MeshOBJLoader name="ROIloader" filename="mesh/malleus.obj" scale3d="1 1 1" translation="0 0 0" rotation="0 0 0"/>
+                <OglModel />
+                <MeshROI name="ROIm"  drawMesh="0" drawBox="0" drawEdges="0" drawTriangles="1" drawTetrahedra="1" drawOut="0" computeMeshROI="1"  doUpdate="0"
+                   position="@../mecaObj.position" tetrahedra="@../loader.tetrahedra" ROIposition="@ROIloader.position" ROItriangles="@ROIloader.triangles" />
+            </Node>
+        </Node>
+    </Node>
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('root', gravity="0 -9 1", dt="0.05")
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.Collision.Detection.Algorithm")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Collision.Detection.Intersection")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Collision.Response.Contact")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Engine.Select")
+       root.addObject('RequiredPlugin', name="Sofa.Component.IO.Mesh")
+       root.addObject('RequiredPlugin', name="Sofa.Component.LinearSolver.Iterative")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Mass")
+       root.addObject('RequiredPlugin', name="Sofa.Component.ODESolver.Backward")
+       root.addObject('RequiredPlugin', name="Sofa.Component.SolidMechanics.FEM.Elastic")
+       root.addObject('RequiredPlugin', name="Sofa.Component.StateContainer")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Topology.Container.Dynamic")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Visual")
+       root.addObject('RequiredPlugin', name="Sofa.GL.Component.Rendering3D")
+       root.addObject('DefaultAnimationLoop', )
+       root.addObject('VisualStyle', displayFlags="showBehaviorModels showWireframe")
+       root.addObject('CollisionPipeline', )
+       root.addObject('BruteForceBroadPhase', )
+       root.addObject('BVHNarrowPhase', )
+       root.addObject('CollisionResponse', response="PenalityContactForceField")
+       root.addObject('MinProximityIntersection', alarmDistance="0.8", contactDistance="0.5")
+
+       node = root.addChild('node')
+
+       node.addObject('EulerImplicitSolver', rayleighStiffness="0.1", rayleighMass="0.1")
+       node.addObject('CGLinearSolver', iterations="25", tolerance="1e-05", threshold="1e-05")
+       node.addObject('MeshVTKLoader', name="loader", filename="mesh/Ossicles.vtu")
+       node.addObject('MechanicalObject', src="@loader", name="mecaObj", scale3d="1 1 1", restScale="1")
+       node.addObject('TetrahedronSetTopologyContainer', name="Container", src="@loader")
+       node.addObject('TriangleSetTopologyModifier', name="ModifierTri")
+       node.addObject('TetrahedronSetTopologyModifier', name="ModifierTetra")
+       node.addObject('TetrahedronSetGeometryAlgorithms', name="GeomAlgo")
+       node.addObject('DiagonalMass', massDensity="0.15")
+       node.addObject('TetrahedralCorotationalFEMForceField', name="FEM", youngModulus="1e10", poissonRatio="0.3", method="large")
+
+       mesh_roi = node.addChild('MeshROI')
+
+       mesh_roi.addObject('MeshOBJLoader', name="ROIloader", filename="mesh/malleus.obj", scale3d="1 1 1", translation="0 0 0", rotation="0 0 0")
+       mesh_roi.addObject('OglModel', )
+       mesh_roi.addObject('MeshROI', name="ROIm", drawMesh="0", drawBox="0", drawEdges="0", drawTriangles="1", drawTetrahedra="1", drawOut="0", computeMeshROI="1", doUpdate="0", position="@../mecaObj.position", tetrahedra="@../loader.tetrahedra", ROIposition="@ROIloader.position", ROItriangles="@ROIloader.triangles")
+    ```
+

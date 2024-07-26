@@ -129,3 +129,70 @@ Links:
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 
+=== "XML"
+
+    ```xml
+    <?xml version="1.0"?>
+    <Node 	name="root" gravity="0 -1 0" dt="0.05"  >
+        <RequiredPlugin name="Sofa.Component.Engine.Select"/> <!-- Needed to use components [MeshSampler] -->
+        <RequiredPlugin name="Sofa.Component.IO.Mesh"/> <!-- Needed to use components [MeshOBJLoader] -->
+        <RequiredPlugin name="Sofa.Component.StateContainer"/> <!-- Needed to use components [MechanicalObject] -->
+        <RequiredPlugin name="Sofa.Component.Topology.Container.Constant"/> <!-- Needed to use components [MeshTopology] -->
+        <RequiredPlugin name="Sofa.Component.Visual"/> <!-- Needed to use components [VisualStyle] -->
+        <RequiredPlugin name="Sofa.GL.Component.Rendering3D"/> <!-- Needed to use components [OglModel] -->
+        <VisualStyle displayFlags="showWireframe" />
+        <DefaultAnimationLoop/>
+    
+        <Node name="using Geodesic Distances (red)" >
+            <MeshOBJLoader name="meshLoader_1" filename="mesh/dragon.obj" handleSeams="1" />
+            <OglModel name="Visual" src="@meshLoader_1" color="red" dz="0" />
+            <MeshTopology name="topo" src="@Visual" />
+            <MeshSampler name="sampler1" position="@topo.position" edges="@topo.edges"  number="10" maxIter="100" printLog="1"/>
+            <MechanicalObject template="Vec3" position="@sampler1.outputPosition" showObject="1" showObjectScale="10" />
+        </Node>
+    
+        <Node name="using Euclidean Distances (blue)" >
+            <MeshOBJLoader name="meshLoader_0" filename="mesh/dragon.obj" handleSeams="1" />
+            <OglModel name="Visual" src="@meshLoader_0" color="blue" dy="20" />
+    
+            <MeshSampler name="sampler2" position="@Visual.position"  number="10" maxIter="100" printLog="1"/>
+            <MechanicalObject template="Vec3" position="@sampler2.outputPosition" showObject="1" showObjectScale="10" />
+        </Node>
+    
+    </Node>
+    
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('root', gravity="0 -1 0", dt="0.05")
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.Engine.Select")
+       root.addObject('RequiredPlugin', name="Sofa.Component.IO.Mesh")
+       root.addObject('RequiredPlugin', name="Sofa.Component.StateContainer")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Topology.Container.Constant")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Visual")
+       root.addObject('RequiredPlugin', name="Sofa.GL.Component.Rendering3D")
+       root.addObject('VisualStyle', displayFlags="showWireframe")
+       root.addObject('DefaultAnimationLoop', )
+
+       using__geodesic__distances_(red) = root.addChild('using Geodesic Distances (red)')
+
+       using__geodesic__distances_(red).addObject('MeshOBJLoader', name="meshLoader_1", filename="mesh/dragon.obj", handleSeams="1")
+       using__geodesic__distances_(red).addObject('OglModel', name="Visual", src="@meshLoader_1", color="red", dz="0")
+       using__geodesic__distances_(red).addObject('MeshTopology', name="topo", src="@Visual")
+       using__geodesic__distances_(red).addObject('MeshSampler', name="sampler1", position="@topo.position", edges="@topo.edges", number="10", maxIter="100", printLog="1")
+       using__geodesic__distances_(red).addObject('MechanicalObject', template="Vec3", position="@sampler1.outputPosition", showObject="1", showObjectScale="10")
+
+       using__euclidean__distances_(blue) = root.addChild('using Euclidean Distances (blue)')
+
+       using__euclidean__distances_(blue).addObject('MeshOBJLoader', name="meshLoader_0", filename="mesh/dragon.obj", handleSeams="1")
+       using__euclidean__distances_(blue).addObject('OglModel', name="Visual", src="@meshLoader_0", color="blue", dy="20")
+       using__euclidean__distances_(blue).addObject('MeshSampler', name="sampler2", position="@Visual.position", number="10", maxIter="100", printLog="1")
+       using__euclidean__distances_(blue).addObject('MechanicalObject', template="Vec3", position="@sampler2.outputPosition", showObject="1", showObjectScale="10")
+    ```
+

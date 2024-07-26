@@ -319,3 +319,115 @@ Links:
 |mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+=== "XML"
+
+    ```xml
+    <Node name="root" gravity="0 -9.81 0" dt="0.01" time="0" animate="0" bbox="-1 -1 -1 1 1 1">
+        <RequiredPlugin name="Sofa.Component.Constraint.Projective"/> <!-- Needed to use components [HermiteSplineProjectiveConstraint] -->
+        <RequiredPlugin name="Sofa.Component.LinearSolver.Iterative"/> <!-- Needed to use components [CGLinearSolver] -->
+        <RequiredPlugin name="Sofa.Component.Mass"/> <!-- Needed to use components [UniformMass] -->
+        <RequiredPlugin name="Sofa.Component.ODESolver.Backward"/> <!-- Needed to use components [EulerImplicitSolver] -->
+        <RequiredPlugin name="Sofa.Component.StateContainer"/> <!-- Needed to use components [MechanicalObject] -->
+        <RequiredPlugin name="Sofa.Component.Visual"/> <!-- Needed to use components [VisualStyle] -->
+        <VisualStyle displayFlags="showVisual showBehaviorModels showForceFields" />
+        <DefaultAnimationLoop/>
+        <EulerImplicitSolver name="cg_odesolver" printLog="false"  rayleighStiffness="0" rayleighMass="0" />
+        <CGLinearSolver iterations="25" name="linear solver" tolerance="1.0e-9" threshold="1.0e-9" />
+        <MechanicalObject template="Vec3" showObject="1" drawMode="1">
+            <Attribute type="name">
+                <Data value="particleDOF" />
+            </Attribute>
+            <Attribute type="position">
+                <Data value="0 0 0" />
+            </Attribute>
+            <Attribute type="velocity">
+                <Data value="0 10 0" />
+            </Attribute>
+            <Attribute type="derivX">
+                <Data value="0 0 0" />
+            </Attribute>
+            <Attribute type="free_position">
+                <Data value="0 0 0" />
+            </Attribute>
+            <Attribute type="free_velocity">
+                <Data value="0 0 0" />
+            </Attribute>
+            <Attribute type="rest_position">
+                <Data value="0 0 0" />
+            </Attribute>
+            <Attribute type="translation">
+                <Data value="0 0 0" />
+            </Attribute>
+            <Attribute type="rotation">
+                <Data value="0 0 0" />
+            </Attribute>
+            <Attribute type="scale">
+                <Data value="1" />
+            </Attribute>
+        </MechanicalObject>
+        <HermiteSplineProjectiveConstraint template="Vec3">
+            <Attribute type="name">
+                <Data value="thierry" />
+            </Attribute>
+            <Attribute type="indices">
+                <Data value="0" />
+            </Attribute>
+            <Attribute type="BeginTime">
+                <Data value="0" />
+            </Attribute>
+            <Attribute type="EndTime">
+                <Data value="5" />
+            </Attribute>
+            <Attribute type="X0">
+                <Data value="0 0 0" />
+            </Attribute>
+            <Attribute type="dX0">
+                <Data value="0 10 0" />
+            </Attribute>
+            <Attribute type="X1">
+                <Data value="5 0 0" />
+            </Attribute>
+            <Attribute type="dX1">
+                <Data value="0 5 0" />
+            </Attribute>
+            <Attribute type="SX0">
+                <Data value="1 0" />
+            </Attribute>
+            <Attribute type="SX1">
+                <Data value="0 2" />
+            </Attribute>
+        </HermiteSplineProjectiveConstraint>
+        <UniformMass >
+            <Attribute type="name">
+                <Data value="particleMass" />
+            </Attribute>
+            <Attribute type="totalMass">
+                <Data value="1" />
+            </Attribute>
+        </UniformMass>
+    </Node>
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('root', gravity="0 -9.81 0", dt="0.01", time="0", animate="0", bbox="-1 -1 -1 1 1 1")
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.Constraint.Projective")
+       root.addObject('RequiredPlugin', name="Sofa.Component.LinearSolver.Iterative")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Mass")
+       root.addObject('RequiredPlugin', name="Sofa.Component.ODESolver.Backward")
+       root.addObject('RequiredPlugin', name="Sofa.Component.StateContainer")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Visual")
+       root.addObject('VisualStyle', displayFlags="showVisual showBehaviorModels showForceFields")
+       root.addObject('DefaultAnimationLoop', )
+       root.addObject('EulerImplicitSolver', name="cg_odesolver", printLog="false", rayleighStiffness="0", rayleighMass="0")
+       root.addObject('CGLinearSolver', iterations="25", name="linear solver", tolerance="1.0e-9", threshold="1.0e-9")
+       root.addObject('MechanicalObject', template="Vec3", showObject="1", drawMode="1")
+       root.addObject('HermiteSplineProjectiveConstraint', template="Vec3")
+       root.addObject('UniformMass', )
+    ```
+

@@ -343,5 +343,145 @@ Links:
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 
+=== "XML"
+
+    ```xml
+    <?xml version="1.0" ?>
+    <!-- For more details see: https://wiki.sofa-framework.org/tdev/wiki/Notes/NewLoaderArchitecture -->
+    <Node name="Root" gravity="0 -9.81 0" dt="0.05">
+        <RequiredPlugin name="Sofa.Component.Collision.Detection.Algorithm"/> <!-- Needed to use components [BVHNarrowPhase BruteForceBroadPhase CollisionPipeline] -->
+        <RequiredPlugin name="Sofa.Component.Collision.Detection.Intersection"/> <!-- Needed to use components [MinProximityIntersection] -->
+        <RequiredPlugin name="Sofa.Component.Collision.Geometry"/> <!-- Needed to use components [TriangleCollisionModel] -->
+        <RequiredPlugin name="Sofa.Component.Collision.Response.Contact"/> <!-- Needed to use components [CollisionResponse] -->
+        <RequiredPlugin name="Sofa.Component.Constraint.Projective"/> <!-- Needed to use components [FixedProjectiveConstraint] -->
+        <RequiredPlugin name="Sofa.Component.IO.Mesh"/> <!-- Needed to use components [MeshGmshLoader] -->
+        <RequiredPlugin name="Sofa.Component.LinearSolver.Iterative"/> <!-- Needed to use components [CGLinearSolver] -->
+        <RequiredPlugin name="Sofa.Component.Mapping.Linear"/> <!-- Needed to use components [IdentityMapping] -->
+        <RequiredPlugin name="Sofa.Component.Mass"/> <!-- Needed to use components [DiagonalMass] -->
+        <RequiredPlugin name="Sofa.Component.ODESolver.Backward"/> <!-- Needed to use components [EulerImplicitSolver] -->
+        <RequiredPlugin name="Sofa.Component.SolidMechanics.FEM.Elastic"/> <!-- Needed to use components [TetrahedronFEMForceField TriangularFEMForceField] -->
+        <RequiredPlugin name="Sofa.Component.SolidMechanics.Spring"/> <!-- Needed to use components [TriangularBendingSprings] -->
+        <RequiredPlugin name="Sofa.Component.StateContainer"/> <!-- Needed to use components [MechanicalObject] -->
+        <RequiredPlugin name="Sofa.Component.Topology.Container.Dynamic"/> <!-- Needed to use components [TetrahedronSetGeometryAlgorithms TetrahedronSetTopologyContainer TetrahedronSetTopologyModifier TriangleSetGeometryAlgorithms TriangleSetTopologyContainer TriangleSetTopologyModifier] -->
+        <RequiredPlugin name="Sofa.Component.Visual"/> <!-- Needed to use components [VisualStyle] -->
+        <RequiredPlugin name="Sofa.GL.Component.Rendering3D"/> <!-- Needed to use components [OglModel] -->
+    
+        <DefaultAnimationLoop/>
+        <VisualStyle displayFlags="showVisual showBehaviorModels showForceFields showCollision showMapping" />
+        <CollisionPipeline name="DefaultCollisionPipeline" verbose="0" draw="0" depth="6" />
+        <BruteForceBroadPhase/>
+        <BVHNarrowPhase/>
+        <MinProximityIntersection name="Proximity" alarmDistance="0.3" contactDistance="0.2" />
+        <CollisionResponse name="Response" response="PenalityContactForceField" />
+        <Node name="gmsh file">
+            <EulerImplicitSolver name="cg_odesolver" printLog="false"  rayleighStiffness="0.1" rayleighMass="0.1" />
+            <CGLinearSolver iterations="25" name="linear solver" tolerance="1.0e-9" threshold="1.0e-9" />
+            <MeshGmshLoader name="GmshLoader" filename="mesh/square3.msh" createSubelements="true" flipNormals="0" />
+            <MechanicalObject name="dofs" scale="10" src="@GmshLoader" />
+            <TriangleSetTopologyContainer name="topo" src="@GmshLoader" />
+            <TriangleSetTopologyModifier name="modif" />
+            <TriangleSetGeometryAlgorithms name="triGeo" drawEdges="1" />
+            <DiagonalMass massDensity="0.15" />
+            <FixedProjectiveConstraint indices="0 1" />
+            <TriangularFEMForceField name="FEM" youngModulus="100" poissonRatio="0.3" method="large" />
+            <TriangularBendingSprings name="FEM-Bend" stiffness="300" damping="1.0" />
+            <TriangleCollisionModel />
+            <Node>
+                <OglModel src="@../GmshLoader" name="VisualModel" color="blue" />
+                <IdentityMapping name="mapping" input="@.." output="@VisualModel" />
+            </Node>
+        </Node>
+        <Node name="gmsh file v4">
+            <EulerImplicitSolver name="cg_odesolver" printLog="false"  rayleighStiffness="0.1" rayleighMass="0.1" />
+            <CGLinearSolver iterations="25" name="linear solver" tolerance="1.0e-9" threshold="1.0e-9" />
+            <MeshGmshLoader name="GmshLoaderv4" filename="mesh/msh4_cube.msh" createSubelements="true" flipNormals="0" />
+            <MechanicalObject name="dofs" scale="10" src="@GmshLoaderv4" />
+            <TetrahedronSetTopologyContainer name="topo" src="@GmshLoaderv4" />
+            <TetrahedronSetTopologyModifier name="modif" />
+            <TetrahedronSetGeometryAlgorithms template="Vec3" name="tetraGeo" />
+            <DiagonalMass massDensity="0.2" />
+            <FixedProjectiveConstraint indices="0 1" />
+            <TetrahedronFEMForceField name="FEM" youngModulus="1000" poissonRatio="0.3" method="large" />
+            <TriangleCollisionModel />
+            <Node>
+                <OglModel src="@../GmshLoaderv4" name="VisualModel" color="blue" />
+                <IdentityMapping name="mapping" input="@.." output="@VisualModel" />
+            </Node>
+        </Node>
+    </Node>
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('Root', gravity="0 -9.81 0", dt="0.05")
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.Collision.Detection.Algorithm")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Collision.Detection.Intersection")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Collision.Geometry")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Collision.Response.Contact")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Constraint.Projective")
+       root.addObject('RequiredPlugin', name="Sofa.Component.IO.Mesh")
+       root.addObject('RequiredPlugin', name="Sofa.Component.LinearSolver.Iterative")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Mapping.Linear")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Mass")
+       root.addObject('RequiredPlugin', name="Sofa.Component.ODESolver.Backward")
+       root.addObject('RequiredPlugin', name="Sofa.Component.SolidMechanics.FEM.Elastic")
+       root.addObject('RequiredPlugin', name="Sofa.Component.SolidMechanics.Spring")
+       root.addObject('RequiredPlugin', name="Sofa.Component.StateContainer")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Topology.Container.Dynamic")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Visual")
+       root.addObject('RequiredPlugin', name="Sofa.GL.Component.Rendering3D")
+       root.addObject('DefaultAnimationLoop', )
+       root.addObject('VisualStyle', displayFlags="showVisual showBehaviorModels showForceFields showCollision showMapping")
+       root.addObject('CollisionPipeline', name="DefaultCollisionPipeline", verbose="0", draw="0", depth="6")
+       root.addObject('BruteForceBroadPhase', )
+       root.addObject('BVHNarrowPhase', )
+       root.addObject('MinProximityIntersection', name="Proximity", alarmDistance="0.3", contactDistance="0.2")
+       root.addObject('CollisionResponse', name="Response", response="PenalityContactForceField")
+
+       gmsh_file = Root.addChild('gmsh file')
+
+       gmsh_file.addObject('EulerImplicitSolver', name="cg_odesolver", printLog="false", rayleighStiffness="0.1", rayleighMass="0.1")
+       gmsh_file.addObject('CGLinearSolver', iterations="25", name="linear solver", tolerance="1.0e-9", threshold="1.0e-9")
+       gmsh_file.addObject('MeshGmshLoader', name="GmshLoader", filename="mesh/square3.msh", createSubelements="true", flipNormals="0")
+       gmsh_file.addObject('MechanicalObject', name="dofs", scale="10", src="@GmshLoader")
+       gmsh_file.addObject('TriangleSetTopologyContainer', name="topo", src="@GmshLoader")
+       gmsh_file.addObject('TriangleSetTopologyModifier', name="modif")
+       gmsh_file.addObject('TriangleSetGeometryAlgorithms', name="triGeo", drawEdges="1")
+       gmsh_file.addObject('DiagonalMass', massDensity="0.15")
+       gmsh_file.addObject('FixedProjectiveConstraint', indices="0 1")
+       gmsh_file.addObject('TriangularFEMForceField', name="FEM", youngModulus="100", poissonRatio="0.3", method="large")
+       gmsh_file.addObject('TriangularBendingSprings', name="FEM-Bend", stiffness="300", damping="1.0")
+       gmsh_file.addObject('TriangleCollisionModel', )
+
+       node = gmsh file.addChild('node')
+
+       node.addObject('OglModel', src="@../GmshLoader", name="VisualModel", color="blue")
+       node.addObject('IdentityMapping', name="mapping", input="@..", output="@VisualModel")
+
+       gmsh_file_v4 = Root.addChild('gmsh file v4')
+
+       gmsh_file_v4.addObject('EulerImplicitSolver', name="cg_odesolver", printLog="false", rayleighStiffness="0.1", rayleighMass="0.1")
+       gmsh_file_v4.addObject('CGLinearSolver', iterations="25", name="linear solver", tolerance="1.0e-9", threshold="1.0e-9")
+       gmsh_file_v4.addObject('MeshGmshLoader', name="GmshLoaderv4", filename="mesh/msh4_cube.msh", createSubelements="true", flipNormals="0")
+       gmsh_file_v4.addObject('MechanicalObject', name="dofs", scale="10", src="@GmshLoaderv4")
+       gmsh_file_v4.addObject('TetrahedronSetTopologyContainer', name="topo", src="@GmshLoaderv4")
+       gmsh_file_v4.addObject('TetrahedronSetTopologyModifier', name="modif")
+       gmsh_file_v4.addObject('TetrahedronSetGeometryAlgorithms', template="Vec3", name="tetraGeo")
+       gmsh_file_v4.addObject('DiagonalMass', massDensity="0.2")
+       gmsh_file_v4.addObject('FixedProjectiveConstraint', indices="0 1")
+       gmsh_file_v4.addObject('TetrahedronFEMForceField', name="FEM", youngModulus="1000", poissonRatio="0.3", method="large")
+       gmsh_file_v4.addObject('TriangleCollisionModel', )
+
+       node = gmsh file v4.addChild('node')
+
+       node.addObject('OglModel', src="@../GmshLoaderv4", name="VisualModel", color="blue")
+       node.addObject('IdentityMapping', name="mapping", input="@..", output="@VisualModel")
+    ```
+
 
 <!-- automatically generated doc END -->

@@ -150,3 +150,53 @@ Links:
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 
+=== "XML"
+
+    ```xml
+    <?xml version="1.0"?>
+    <Node 	name="root" gravity="0 -1 0" dt="0.05"  >
+        <RequiredPlugin name="Sofa.Component.Engine.Select"/> <!-- Needed to use components [BoxROI MeshSubsetEngine] -->
+        <RequiredPlugin name="Sofa.Component.IO.Mesh"/> <!-- Needed to use components [MeshOBJLoader] -->
+        <RequiredPlugin name="Sofa.Component.Setting"/> <!-- Needed to use components [BackgroundSetting] -->
+        <RequiredPlugin name="Sofa.Component.Visual"/> <!-- Needed to use components [VisualStyle] -->
+        <RequiredPlugin name="Sofa.GL.Component.Rendering3D"/> <!-- Needed to use components [OglModel] -->
+        
+        <VisualStyle displayFlags="showBehaviorModels showForceFields" />
+        <BackgroundSetting color="1 1 1"/>
+        <DefaultAnimationLoop/>
+        
+        <MeshOBJLoader name="loader" filename="mesh/dragon.obj" />
+        <BoxROI name="boxroi" template="Vec3" position="@loader.position" box="-15 0 -5 0 10 5" drawBoxes="1"/>
+        <MeshSubsetEngine name="engine" inputPosition="@loader.position" inputTriangles="@loader.triangles" inputQuads="@loader.quads" indices="@boxroi.indices"/>
+    
+        <MeshOBJLoader name="meshLoader_0" filename="mesh/dragon.obj" handleSeams="1" />
+        <OglModel name="Original Mesh (red)" src="@meshLoader_0" color="1 0 0 0.4" dz="0" />
+        <OglModel name="Subset Mesh (blue)" position="@engine.position" triangles="@engine.triangles" quads="@engine.quads" color="0 0.4 1 1"  />
+    
+    </Node>
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('root', gravity="0 -1 0", dt="0.05")
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.Engine.Select")
+       root.addObject('RequiredPlugin', name="Sofa.Component.IO.Mesh")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Setting")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Visual")
+       root.addObject('RequiredPlugin', name="Sofa.GL.Component.Rendering3D")
+       root.addObject('VisualStyle', displayFlags="showBehaviorModels showForceFields")
+       root.addObject('BackgroundSetting', color="1 1 1")
+       root.addObject('DefaultAnimationLoop', )
+       root.addObject('MeshOBJLoader', name="loader", filename="mesh/dragon.obj")
+       root.addObject('BoxROI', name="boxroi", template="Vec3", position="@loader.position", box="-15 0 -5 0 10 5", drawBoxes="1")
+       root.addObject('MeshSubsetEngine', name="engine", inputPosition="@loader.position", inputTriangles="@loader.triangles", inputQuads="@loader.quads", indices="@boxroi.indices")
+       root.addObject('MeshOBJLoader', name="meshLoader_0", filename="mesh/dragon.obj", handleSeams="1")
+       root.addObject('OglModel', name="Original Mesh (red)", src="@meshLoader_0", color="1 0 0 0.4", dz="0")
+       root.addObject('OglModel', name="Subset Mesh (blue)", position="@engine.position", triangles="@engine.triangles", quads="@engine.quads", color="0 0.4 1 1")
+    ```
+

@@ -255,3 +255,196 @@ Links:
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 
+=== "XML"
+
+    ```xml
+    <?xml version="1.0"?>
+    <!-- SparseGrid examples -->
+    <Node name="root" dt="0.02" gravity="0 -9 0">
+        <RequiredPlugin name="Sofa.Component.Collision.Detection.Algorithm"/> <!-- Needed to use components [BVHNarrowPhase BruteForceBroadPhase CollisionPipeline] -->
+        <RequiredPlugin name="Sofa.Component.Collision.Detection.Intersection"/> <!-- Needed to use components [DiscreteIntersection] -->
+        <RequiredPlugin name="Sofa.Component.Collision.Geometry"/> <!-- Needed to use components [SphereCollisionModel] -->
+        <RequiredPlugin name="Sofa.Component.Collision.Response.Contact"/> <!-- Needed to use components [CollisionResponse] -->
+        <RequiredPlugin name="Sofa.Component.Constraint.Projective"/> <!-- Needed to use components [FixedProjectiveConstraint] -->
+        <RequiredPlugin name="Sofa.Component.Engine.Select"/> <!-- Needed to use components [BoxROI] -->
+        <RequiredPlugin name="Sofa.Component.IO.Mesh"/> <!-- Needed to use components [MeshOBJLoader SphereLoader] -->
+        <RequiredPlugin name="Sofa.Component.LinearSolver.Iterative"/> <!-- Needed to use components [CGLinearSolver] -->
+        <RequiredPlugin name="Sofa.Component.Mapping.Linear"/> <!-- Needed to use components [BarycentricMapping] -->
+        <RequiredPlugin name="Sofa.Component.Mass"/> <!-- Needed to use components [UniformMass] -->
+        <RequiredPlugin name="Sofa.Component.ODESolver.Backward"/> <!-- Needed to use components [EulerImplicitSolver] -->
+        <RequiredPlugin name="Sofa.Component.SolidMechanics.Spring"/> <!-- Needed to use components [MeshSpringForceField] -->
+        <RequiredPlugin name="Sofa.Component.StateContainer"/> <!-- Needed to use components [MechanicalObject] -->
+        <RequiredPlugin name="Sofa.Component.Topology.Container.Grid"/> <!-- Needed to use components [SparseGridTopology] -->
+        <RequiredPlugin name="Sofa.Component.Visual"/> <!-- Needed to use components [VisualStyle] -->
+        <RequiredPlugin name="Sofa.GL.Component.Rendering3D"/> <!-- Needed to use components [OglModel] -->
+    
+        <VisualStyle displayFlags="showBehaviorModels showForceFields showVisual" />
+        <DefaultAnimationLoop/>
+        <CollisionPipeline verbose="0" />
+        <BruteForceBroadPhase/>
+        <BVHNarrowPhase/>
+        <CollisionResponse name="Response"/>
+        <DiscreteIntersection/>
+        
+        <MeshOBJLoader name="loader" filename="mesh/dragon.obj" />
+        
+        <Node name="DragonCoarse">
+            <SparseGridTopology n="6 5 4" fileTopology="mesh/dragon.obj" />
+            <EulerImplicitSolver rayleighStiffness="0.1" rayleighMass="0.1"/>
+            <CGLinearSolver iterations="100" tolerance="1e-5" threshold="1e-5"/>
+            <MechanicalObject />
+            <UniformMass vertexMass="0.5" />
+            <MeshSpringForceField name="Springs" stiffness="500" damping="10" />
+            <BoxConstraint box="10 -10 -6 12 10 6" />
+            <Node name="Visu">
+                <OglModel name="Visual" src="@../../loader" color="blue" />
+                <BarycentricMapping input="@.." output="@Visual" />
+            </Node>
+            <Node name="Surf">
+    	    <SphereLoader filename="mesh/dragon.sph" />
+                <MechanicalObject position="@[-1].position" />
+                <SphereCollisionModel listRadius="@[-2].listRadius" />
+                <BarycentricMapping />
+            </Node>
+        </Node>
+        <Node name="DragonMiddle">
+            <SparseGridTopology n="12 9 6" fileTopology="mesh/dragon.obj" />
+            <EulerImplicitSolver rayleighStiffness="0.1" rayleighMass="0.1"/>
+            <CGLinearSolver iterations="100" tolerance="1e-5" threshold="1e-5"/>
+            <MechanicalObject dz="15" />
+            <UniformMass vertexMass="0.5" />
+            <MeshSpringForceField name="Springs" stiffness="500" damping="10" />
+            <BoxConstraint box="10 -10 10 12 10 22" />
+            <Node name="Visu">
+                <OglModel name="Visual" src="@../../loader" color="white" />
+                <BarycentricMapping input="@.." output="@Visual" />
+            </Node>
+            <Node name="Surf">
+    	    <SphereLoader filename="mesh/dragon.sph" />
+                <MechanicalObject position="@[-1].position" />
+                <SphereCollisionModel listRadius="@[-2].listRadius" />
+                <BarycentricMapping />
+            </Node>
+        </Node>
+        <Node name="DragonFine">
+            <SparseGridTopology n="25 20 9" fileTopology="mesh/dragon.obj" />
+            <EulerImplicitSolver rayleighStiffness="0.1" rayleighMass="0.1"/>
+            <CGLinearSolver iterations="100" tolerance="1e-5" threshold="1e-5"/>
+            <MechanicalObject dz="30" />
+            <UniformMass vertexMass="0.5" />
+            <MeshSpringForceField name="Springs" stiffness="500" damping="10" />
+            <BoxConstraint box="10 -10 26 12 10 38" />
+            <Node name="Visu">
+                <OglModel name="Visual" src="@../../loader" color="red" />
+                <BarycentricMapping input="@.." output="@Visual" />
+            </Node>
+            <Node name="Surf">
+    	    <SphereLoader filename="mesh/dragon.sph" />
+                <MechanicalObject position="@[-1].position" />
+                <SphereCollisionModel listRadius="@[-2].listRadius" />
+                <BarycentricMapping />
+            </Node>
+        </Node>
+    </Node>
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('root', dt="0.02", gravity="0 -9 0")
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.Collision.Detection.Algorithm")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Collision.Detection.Intersection")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Collision.Geometry")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Collision.Response.Contact")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Constraint.Projective")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Engine.Select")
+       root.addObject('RequiredPlugin', name="Sofa.Component.IO.Mesh")
+       root.addObject('RequiredPlugin', name="Sofa.Component.LinearSolver.Iterative")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Mapping.Linear")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Mass")
+       root.addObject('RequiredPlugin', name="Sofa.Component.ODESolver.Backward")
+       root.addObject('RequiredPlugin', name="Sofa.Component.SolidMechanics.Spring")
+       root.addObject('RequiredPlugin', name="Sofa.Component.StateContainer")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Topology.Container.Grid")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Visual")
+       root.addObject('RequiredPlugin', name="Sofa.GL.Component.Rendering3D")
+       root.addObject('VisualStyle', displayFlags="showBehaviorModels showForceFields showVisual")
+       root.addObject('DefaultAnimationLoop', )
+       root.addObject('CollisionPipeline', verbose="0")
+       root.addObject('BruteForceBroadPhase', )
+       root.addObject('BVHNarrowPhase', )
+       root.addObject('CollisionResponse', name="Response")
+       root.addObject('DiscreteIntersection', )
+       root.addObject('MeshOBJLoader', name="loader", filename="mesh/dragon.obj")
+
+       dragon_coarse = root.addChild('DragonCoarse')
+
+       dragon_coarse.addObject('SparseGridTopology', n="6 5 4", fileTopology="mesh/dragon.obj")
+       dragon_coarse.addObject('EulerImplicitSolver', rayleighStiffness="0.1", rayleighMass="0.1")
+       dragon_coarse.addObject('CGLinearSolver', iterations="100", tolerance="1e-5", threshold="1e-5")
+       dragon_coarse.addObject('MechanicalObject', )
+       dragon_coarse.addObject('UniformMass', vertexMass="0.5")
+       dragon_coarse.addObject('MeshSpringForceField', name="Springs", stiffness="500", damping="10")
+       dragon_coarse.addObject('BoxConstraint', box="10 -10 -6 12 10 6")
+
+       visu = DragonCoarse.addChild('Visu')
+
+       visu.addObject('OglModel', name="Visual", src="@../../loader", color="blue")
+       visu.addObject('BarycentricMapping', input="@..", output="@Visual")
+
+       surf = DragonCoarse.addChild('Surf')
+
+       surf.addObject('SphereLoader', filename="mesh/dragon.sph")
+       surf.addObject('MechanicalObject', position="@[-1].position")
+       surf.addObject('SphereCollisionModel', listRadius="@[-2].listRadius")
+       surf.addObject('BarycentricMapping', )
+
+       dragon_middle = root.addChild('DragonMiddle')
+
+       dragon_middle.addObject('SparseGridTopology', n="12 9 6", fileTopology="mesh/dragon.obj")
+       dragon_middle.addObject('EulerImplicitSolver', rayleighStiffness="0.1", rayleighMass="0.1")
+       dragon_middle.addObject('CGLinearSolver', iterations="100", tolerance="1e-5", threshold="1e-5")
+       dragon_middle.addObject('MechanicalObject', dz="15")
+       dragon_middle.addObject('UniformMass', vertexMass="0.5")
+       dragon_middle.addObject('MeshSpringForceField', name="Springs", stiffness="500", damping="10")
+       dragon_middle.addObject('BoxConstraint', box="10 -10 10 12 10 22")
+
+       visu = DragonMiddle.addChild('Visu')
+
+       visu.addObject('OglModel', name="Visual", src="@../../loader", color="white")
+       visu.addObject('BarycentricMapping', input="@..", output="@Visual")
+
+       surf = DragonMiddle.addChild('Surf')
+
+       surf.addObject('SphereLoader', filename="mesh/dragon.sph")
+       surf.addObject('MechanicalObject', position="@[-1].position")
+       surf.addObject('SphereCollisionModel', listRadius="@[-2].listRadius")
+       surf.addObject('BarycentricMapping', )
+
+       dragon_fine = root.addChild('DragonFine')
+
+       dragon_fine.addObject('SparseGridTopology', n="25 20 9", fileTopology="mesh/dragon.obj")
+       dragon_fine.addObject('EulerImplicitSolver', rayleighStiffness="0.1", rayleighMass="0.1")
+       dragon_fine.addObject('CGLinearSolver', iterations="100", tolerance="1e-5", threshold="1e-5")
+       dragon_fine.addObject('MechanicalObject', dz="30")
+       dragon_fine.addObject('UniformMass', vertexMass="0.5")
+       dragon_fine.addObject('MeshSpringForceField', name="Springs", stiffness="500", damping="10")
+       dragon_fine.addObject('BoxConstraint', box="10 -10 26 12 10 38")
+
+       visu = DragonFine.addChild('Visu')
+
+       visu.addObject('OglModel', name="Visual", src="@../../loader", color="red")
+       visu.addObject('BarycentricMapping', input="@..", output="@Visual")
+
+       surf = DragonFine.addChild('Surf')
+
+       surf.addObject('SphereLoader', filename="mesh/dragon.sph")
+       surf.addObject('MechanicalObject', position="@[-1].position")
+       surf.addObject('SphereCollisionModel', listRadius="@[-2].listRadius")
+       surf.addObject('BarycentricMapping', )
+    ```
+

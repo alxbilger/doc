@@ -130,3 +130,31 @@ Links:
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 
+=== "XML"
+
+    ```xml
+    <?xml version="1.0"?>
+    <Node name="root" dt="0.02">
+        <RequiredPlugin name="Sofa.Component.Visual"/> <!-- Needed to use components [VisualStyle] -->
+        <RequiredPlugin name="Sofa.GL.Component.Rendering3D"/> <!-- Needed to use components [OglCylinderModel] -->
+        <DefaultAnimationLoop/>
+        <VisualStyle displayFlags="showVisual" />
+        <OglCylinderModel  position="0 0 0   10 0 0 "  edges="0 1" />
+        
+    </Node>
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('root', dt="0.02")
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.Visual")
+       root.addObject('RequiredPlugin', name="Sofa.GL.Component.Rendering3D")
+       root.addObject('DefaultAnimationLoop', )
+       root.addObject('VisualStyle', displayFlags="showVisual")
+       root.addObject('OglCylinderModel', position="0 0 0   10 0 0 ", edges="0 1")
+    ```
+

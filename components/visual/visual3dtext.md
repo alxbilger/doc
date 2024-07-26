@@ -119,3 +119,39 @@ Links:
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 
+=== "XML"
+
+    ```xml
+    <?xml version="1.0" ?>
+    <Node name="root" >
+        <RequiredPlugin name="Sofa.Component.IO.Mesh"/> <!-- Needed to use components [MeshOBJLoader] -->
+        <RequiredPlugin name="Sofa.Component.Visual"/> <!-- Needed to use components [Visual3DText VisualStyle] -->
+        <RequiredPlugin name="Sofa.GL.Component.Rendering3D"/> <!-- Needed to use components [OglModel] -->
+        <DefaultAnimationLoop/>
+        
+    	<VisualStyle displayFlags="showVisualModels"/>
+            <Visual3DText text="hello world!" position="1 1 1" color="red" scale="2" depthTest="false"/>
+            
+            <MeshOBJLoader name="meshLoader_0" filename="mesh/dragon.obj" handleSeams="1" />
+            <OglModel src="@meshLoader_0"/>
+    </Node>
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('root')
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.IO.Mesh")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Visual")
+       root.addObject('RequiredPlugin', name="Sofa.GL.Component.Rendering3D")
+       root.addObject('DefaultAnimationLoop', )
+       root.addObject('VisualStyle', displayFlags="showVisualModels")
+       root.addObject('Visual3DText', text="hello world!", position="1 1 1", color="red", scale="2", depthTest="false")
+       root.addObject('MeshOBJLoader', name="meshLoader_0", filename="mesh/dragon.obj", handleSeams="1")
+       root.addObject('OglModel', src="@meshLoader_0")
+    ```
+

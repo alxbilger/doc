@@ -178,3 +178,119 @@ Links:
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 
+=== "XML"
+
+    ```xml
+    <Node name="root" dt="0.02">
+        <RequiredPlugin name="Sofa.Component.Collision.Detection.Algorithm"/> <!-- Needed to use components [BVHNarrowPhase BruteForceBroadPhase CollisionPipeline] -->
+        <RequiredPlugin name="Sofa.Component.Collision.Detection.Intersection"/> <!-- Needed to use components [DiscreteIntersection] -->
+        <RequiredPlugin name="Sofa.Component.Collision.Geometry"/> <!-- Needed to use components [SphereCollisionModel] -->
+        <RequiredPlugin name="Sofa.Component.Collision.Response.Contact"/> <!-- Needed to use components [CollisionResponse] -->
+        <RequiredPlugin name="Sofa.Component.Constraint.Projective"/> <!-- Needed to use components [FixedProjectiveConstraint] -->
+        <RequiredPlugin name="Sofa.Component.IO.Mesh"/> <!-- Needed to use components [MeshGmshLoader MeshOBJLoader SphereLoader] -->
+        <RequiredPlugin name="Sofa.Component.LinearSolver.Iterative"/> <!-- Needed to use components [CGLinearSolver] -->
+        <RequiredPlugin name="Sofa.Component.Mapping.Linear"/> <!-- Needed to use components [BarycentricMapping] -->
+        <RequiredPlugin name="Sofa.Component.Mass"/> <!-- Needed to use components [DiagonalMass] -->
+        <RequiredPlugin name="Sofa.Component.ODESolver.Backward"/> <!-- Needed to use components [EulerImplicitSolver] -->
+        <RequiredPlugin name="Sofa.Component.SolidMechanics.FEM.Elastic"/> <!-- Needed to use components [TetrahedralCorotationalFEMForceField] -->
+        <RequiredPlugin name="Sofa.Component.StateContainer"/> <!-- Needed to use components [MechanicalObject] -->
+        <RequiredPlugin name="Sofa.Component.Topology.Container.Dynamic"/> <!-- Needed to use components [TetrahedronSetGeometryAlgorithms TetrahedronSetTopologyContainer] -->
+        <RequiredPlugin name="Sofa.GL.Component.Rendering2D"/> <!-- Needed to use components [OglViewport] -->
+        <RequiredPlugin name="Sofa.GL.Component.Rendering3D"/> <!-- Needed to use components [OglModel] -->
+    
+        <DefaultAnimationLoop/>
+        <CollisionPipeline verbose="0" name="CollisionPipeline" />
+        <BruteForceBroadPhase/>
+        <BVHNarrowPhase/>
+        <CollisionResponse response="PenalityContactForceField" name="collision response" />
+        <DiscreteIntersection />
+        <Node name="Liver" depend="topo dofs">
+            <!--<CGImplicit iterations="25"/>-->
+            <EulerImplicitSolver name="cg_odesolver" printLog="false"  rayleighStiffness="0.1" rayleighMass="0.1" />
+            <CGLinearSolver iterations="25" name="linear solver" tolerance="1.0e-9" threshold="1.0e-9" />
+            <MeshGmshLoader name="loader" filename="mesh/liver.msh" />
+            <!-- Container for the tetrahedra-->
+            <TetrahedronSetTopologyContainer src="@loader" name="topo" />
+            <MechanicalObject src="@loader" name="dofs" />
+            <!-- Algorithms: used in DiagonalMass to compute the mass -->
+            <TetrahedronSetGeometryAlgorithms name="GeomAlgo" />
+            <DiagonalMass massDensity="1" name="computed using mass density" />
+            <TetrahedralCorotationalFEMForceField name="FEM" youngModulus="3000" poissonRatio="0.3" computeGlobalMatrix="false" method="large" />
+            <FixedProjectiveConstraint name="FixedProjectiveConstraint" indices="3 39 64" />
+            <Node name="Visu" tags="Visual">
+                <!-- Using material contained in liver-smooth.obj -->
+                <MeshOBJLoader name="meshLoader_0" filename="mesh/liver-smooth.obj" handleSeams="1" />
+                <OglModel name="VisualModel" src="@meshLoader_0" />
+                <BarycentricMapping input="@.." output="@VisualModel" name="visual mapping" />
+            </Node>
+            <Node name="Surf">
+    	    <SphereLoader filename="mesh/liver.sph" />
+                <MechanicalObject position="@[-1].position" />
+                <SphereCollisionModel name="CollisionModel" listRadius="@[-2].listRadius" />
+                <BarycentricMapping name="sphere mapping" />
+            </Node>
+        </Node>
+        <OglViewport screenPosition="0 0" screenSize="250 250" cameraPosition="-1 2.7 5" cameraOrientation="-0 -0 -0 1" />
+        <OglViewport screenPosition="300 0" screenSize="400 400" cameraRigid="-1 2.7 13 -0 -0 -0 1" />
+    </Node>
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('root', dt="0.02")
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.Collision.Detection.Algorithm")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Collision.Detection.Intersection")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Collision.Geometry")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Collision.Response.Contact")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Constraint.Projective")
+       root.addObject('RequiredPlugin', name="Sofa.Component.IO.Mesh")
+       root.addObject('RequiredPlugin', name="Sofa.Component.LinearSolver.Iterative")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Mapping.Linear")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Mass")
+       root.addObject('RequiredPlugin', name="Sofa.Component.ODESolver.Backward")
+       root.addObject('RequiredPlugin', name="Sofa.Component.SolidMechanics.FEM.Elastic")
+       root.addObject('RequiredPlugin', name="Sofa.Component.StateContainer")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Topology.Container.Dynamic")
+       root.addObject('RequiredPlugin', name="Sofa.GL.Component.Rendering2D")
+       root.addObject('RequiredPlugin', name="Sofa.GL.Component.Rendering3D")
+       root.addObject('DefaultAnimationLoop', )
+       root.addObject('CollisionPipeline', verbose="0", name="CollisionPipeline")
+       root.addObject('BruteForceBroadPhase', )
+       root.addObject('BVHNarrowPhase', )
+       root.addObject('CollisionResponse', response="PenalityContactForceField", name="collision response")
+       root.addObject('DiscreteIntersection', )
+
+       liver = root.addChild('Liver', depend="topo dofs")
+
+       liver.addObject('EulerImplicitSolver', name="cg_odesolver", printLog="false", rayleighStiffness="0.1", rayleighMass="0.1")
+       liver.addObject('CGLinearSolver', iterations="25", name="linear solver", tolerance="1.0e-9", threshold="1.0e-9")
+       liver.addObject('MeshGmshLoader', name="loader", filename="mesh/liver.msh")
+       liver.addObject('TetrahedronSetTopologyContainer', src="@loader", name="topo")
+       liver.addObject('MechanicalObject', src="@loader", name="dofs")
+       liver.addObject('TetrahedronSetGeometryAlgorithms', name="GeomAlgo")
+       liver.addObject('DiagonalMass', massDensity="1", name="computed using mass density")
+       liver.addObject('TetrahedralCorotationalFEMForceField', name="FEM", youngModulus="3000", poissonRatio="0.3", computeGlobalMatrix="false", method="large")
+       liver.addObject('FixedProjectiveConstraint', name="FixedProjectiveConstraint", indices="3 39 64")
+
+       visu = Liver.addChild('Visu', tags="Visual")
+
+       visu.addObject('MeshOBJLoader', name="meshLoader_0", filename="mesh/liver-smooth.obj", handleSeams="1")
+       visu.addObject('OglModel', name="VisualModel", src="@meshLoader_0")
+       visu.addObject('BarycentricMapping', input="@..", output="@VisualModel", name="visual mapping")
+
+       surf = Liver.addChild('Surf')
+
+       surf.addObject('SphereLoader', filename="mesh/liver.sph")
+       surf.addObject('MechanicalObject', position="@[-1].position")
+       surf.addObject('SphereCollisionModel', name="CollisionModel", listRadius="@[-2].listRadius")
+       surf.addObject('BarycentricMapping', name="sphere mapping")
+
+       root.addObject('OglViewport', screenPosition="0 0", screenSize="250 250", cameraPosition="-1 2.7 5", cameraOrientation="-0 -0 -0 1")
+       root.addObject('OglViewport', screenPosition="300 0", screenSize="400 400", cameraRigid="-1 2.7 13 -0 -0 -0 1")
+    ```
+

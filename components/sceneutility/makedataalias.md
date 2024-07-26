@@ -98,3 +98,32 @@ Links:
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 
+=== "XML"
+
+    ```xml
+    <?xml version='1.0'?>                                               
+    <Node 	name='Root' gravity='0 0 0' time='0' animate='0' bbox="-1 -1 -1 1 1 1"  >   
+           <RequiredPlugin name="Sofa.Component.SceneUtility"/> <!-- Needed to use components [MakeDataAlias] -->
+           <RequiredPlugin name="Sofa.Component.StateContainer"/> <!-- Needed to use components [MechanicalObject] -->
+           <DefaultAnimationLoop/>      
+           <MakeDataAlias componentname='MechanicalObject' dataname='position' alias='myrest_position'/> 
+           <MechanicalObject name="position should be 1 2 3 " myrest_position='1 2 3'/>                                                 
+    </Node>                                                             
+    
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('Root', gravity="0 0 0", time="0", animate="0", bbox="-1 -1 -1 1 1 1")
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.SceneUtility")
+       root.addObject('RequiredPlugin', name="Sofa.Component.StateContainer")
+       root.addObject('DefaultAnimationLoop', )
+       root.addObject('MakeDataAlias', componentname="MechanicalObject", dataname="position", alias="myrest_position")
+       root.addObject('MechanicalObject', name="position should be 1 2 3 ", myrest_position="1 2 3")
+    ```
+

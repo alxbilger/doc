@@ -279,13 +279,6 @@ Enable smooth point rendering
 		<td>0</td>
 	</tr>
 	<tr>
-		<td>isEnabled</td>
-		<td>
-Activate/deactive the component.
-		</td>
-		<td>1</td>
-	</tr>
-	<tr>
 		<td>primitiveType</td>
 		<td>
 Select types of primitives to send (necessary for some shader types such as geometry or tesselation)
@@ -423,4 +416,39 @@ Links:
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |topology|link to the topology container|BaseMeshTopology|
+
+=== "XML"
+
+    ```xml
+    <?xml version="1.0"?>
+    <Node name="root" dt="0.01">
+        <RequiredPlugin name="Sofa.Component.IO.Mesh"/> <!-- Needed to use components [MeshOBJLoader] -->
+        <RequiredPlugin name="Sofa.GL.Component.Rendering3D"/> <!-- Needed to use components [OglModel] -->
+        <DefaultAnimationLoop/>
+    
+        <MeshOBJLoader name="meshLoader_0" filename="mesh/snake_body.obj" translation="30 0 0" handleSeams="1" />
+        <OglModel name="VisualModel" src="@meshLoader_0" useNormals="0"/>
+        
+        <MeshOBJLoader name="loader" filename="mesh/snake_body.obj" translation="0 0 0"/>    
+        <OglModel name="VisualModel2"  src="@loader" color="red"/>
+    
+    </Node>
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('root', dt="0.01")
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.IO.Mesh")
+       root.addObject('RequiredPlugin', name="Sofa.GL.Component.Rendering3D")
+       root.addObject('DefaultAnimationLoop', )
+       root.addObject('MeshOBJLoader', name="meshLoader_0", filename="mesh/snake_body.obj", translation="30 0 0", handleSeams="1")
+       root.addObject('OglModel', name="VisualModel", src="@meshLoader_0", useNormals="0")
+       root.addObject('MeshOBJLoader', name="loader", filename="mesh/snake_body.obj", translation="0 0 0")
+       root.addObject('OglModel', name="VisualModel2", src="@loader", color="red")
+    ```
 

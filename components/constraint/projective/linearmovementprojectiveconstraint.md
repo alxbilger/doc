@@ -665,3 +665,171 @@ Links:
 |mstate|MechanicalState used by this component|MechanicalState<Vec6d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+=== "XML"
+
+    ```xml
+    <?xml version="1.0"?>
+    <Node name="Root"  dt="0.1" >
+        <RequiredPlugin name="Sofa.Component.Collision.Geometry"/> <!-- Needed to use components [TriangleCollisionModel] -->
+        <RequiredPlugin name="Sofa.Component.Constraint.Projective"/> <!-- Needed to use components [LinearMovementProjectiveConstraint] -->
+        <RequiredPlugin name="Sofa.Component.IO.Mesh"/> <!-- Needed to use components [MeshOBJLoader] -->
+        <RequiredPlugin name="Sofa.Component.LinearSolver.Iterative"/> <!-- Needed to use components [CGLinearSolver] -->
+        <RequiredPlugin name="Sofa.Component.Mapping.NonLinear"/> <!-- Needed to use components [RigidMapping] -->
+        <RequiredPlugin name="Sofa.Component.ODESolver.Backward"/> <!-- Needed to use components [EulerImplicitSolver] -->
+        <RequiredPlugin name="Sofa.Component.StateContainer"/> <!-- Needed to use components [MechanicalObject] -->
+        <RequiredPlugin name="Sofa.Component.Topology.Container.Constant"/> <!-- Needed to use components [MeshTopology] -->
+        <RequiredPlugin name="Sofa.GL.Component.Rendering3D"/> <!-- Needed to use components [OglModel] -->
+        <DefaultAnimationLoop/>
+    
+        <Node name="Spoon1">
+            <EulerImplicitSolver name="cg_odesolver" printLog="false"  rayleighStiffness="0.1" rayleighMass="0.1" />
+            <CGLinearSolver iterations="25" name="linear solver" tolerance="1.0e-9" threshold="1.0e-9" />
+            <MechanicalObject template="Rigid3" dx="0" dy="0" dz="0" name="default118" position="0 1.41421 0 0 0 0.382683 0.92388" rest_position="0 1.41421 0 0 0 0.382683 0.92388" />
+            <LinearMovementProjectiveConstraint template="Rigid3" keyTimes="0 2 10 40 50" movements="0 0 0   0 0 0
+    										      0 0 0   0 0 0
+    										      0 0 -1  0 0 0
+    										      0 0 -1  0 0 6.3
+    										      0 0 -1   0 0 6.3" />
+            <Node name="coli">
+                <MeshOBJLoader name="loader" filename="mesh/liver.obj" />
+                <MeshTopology src="@loader" />
+                <MechanicalObject src="@loader" template="Vec3" name="dofs" />
+                <TriangleCollisionModel moving="1" simulated="1" contactStiffness="100000000"/>
+                <RigidMapping template="Rigid3,Vec3" />
+            </Node>
+            <Node name="Visu">
+                <MeshOBJLoader name="meshLoader_1" filename="mesh/liver.obj" handleSeams="1" />
+                <OglModel name="Visual" src="@meshLoader_1" color="red" />
+                <RigidMapping template="Rigid3,Vec3" name="default161" input="@.." output="@Visual" />
+            </Node>
+        </Node>
+        <Node name="Spoon2">
+            <EulerImplicitSolver name="cg_odesolver" printLog="false" />
+            <CGLinearSolver iterations="25" name="linear solver" tolerance="1.0e-9" threshold="1.0e-9" />
+            <MechanicalObject template="Rigid3" dx="10" dy="0" dz="0" name="default118" position="0 1.41421 0 0 0 0.382683 0.92388" rest_position="0 1.41421 0 0 0 0.382683 0.92388"/>
+            <LinearMovementProjectiveConstraint template="Rigid3" keyTimes="0 2 10 40 50" movements="0 0 0   0 0 0
+    										      0 0 0   0 0 0
+    										      0 0 -1  0 0 0
+    										      0 0 -1  0 0 6.3
+    										      0 0 0   0 0 6.3" />
+            <Node name="coli">
+                <MeshOBJLoader name="loader" filename="mesh/liver.obj" />
+                <MeshTopology src="@loader" />
+                <MechanicalObject src="@loader" template="Vec3" name="dofs" />
+                <TriangleCollisionModel moving="1" simulated="1" contactStiffness="100000000" />
+                <RigidMapping template="Rigid3,Vec3" />
+            </Node>
+            <Node name="Visu">
+                <MeshOBJLoader name="meshLoader_0" filename="mesh/liver.obj" handleSeams="1" />
+                <OglModel name="Visual" src="@meshLoader_0" color="green" />
+                <RigidMapping template="Rigid3,Vec3" name="default161" input="@.." output="@Visual"/>
+            </Node>
+        </Node>
+        <Node name="Spoon3">
+            <EulerImplicitSolver name="cg_odesolver" printLog="false" />
+            <CGLinearSolver iterations="25" name="linear solver" tolerance="1.0e-9" threshold="1.0e-9" />
+            <MechanicalObject template="Rigid3" dx="20" dy="0" dz="0" name="default118" position="0 1.41421 0 0 0 0.382683 0.92388" rest_position="0 1.41421 0 0 0 0.382683 0.92388" />
+            <LinearMovementProjectiveConstraint template="Rigid3" keyTimes="0 2 10 40 50" movements="0 0 0   0 0 0
+    										      0 0 0   0 0 0
+    										      0 0 -1  0 0 0
+    										      0 0 -1  0 0 6.3
+    										      0 0 -1   0 0 0" />
+            <Node name="coli">
+                <MeshOBJLoader name="loader" filename="mesh/liver.obj" />
+                <MeshTopology src="@loader" />
+                <MechanicalObject src="@loader" template="Vec3" name="dofs" />
+                <TriangleCollisionModel moving="1" simulated="1" contactStiffness="100000000" />
+                <RigidMapping template="Rigid3,Vec3" />
+            </Node>
+            <Node name="Visu">
+                <MeshOBJLoader name="meshLoader_2" filename="mesh/liver.obj" handleSeams="1" />
+                <OglModel name="Visual" src="@meshLoader_2" color="blue" />
+                <RigidMapping template="Rigid3,Vec3" name="default161" input="@.." output="@Visual" />
+            </Node>
+        </Node>
+    </Node>
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('Root', dt="0.1")
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.Collision.Geometry")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Constraint.Projective")
+       root.addObject('RequiredPlugin', name="Sofa.Component.IO.Mesh")
+       root.addObject('RequiredPlugin', name="Sofa.Component.LinearSolver.Iterative")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Mapping.NonLinear")
+       root.addObject('RequiredPlugin', name="Sofa.Component.ODESolver.Backward")
+       root.addObject('RequiredPlugin', name="Sofa.Component.StateContainer")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Topology.Container.Constant")
+       root.addObject('RequiredPlugin', name="Sofa.GL.Component.Rendering3D")
+       root.addObject('DefaultAnimationLoop', )
+
+       spoon1 = Root.addChild('Spoon1')
+
+       spoon1.addObject('EulerImplicitSolver', name="cg_odesolver", printLog="false", rayleighStiffness="0.1", rayleighMass="0.1")
+       spoon1.addObject('CGLinearSolver', iterations="25", name="linear solver", tolerance="1.0e-9", threshold="1.0e-9")
+       spoon1.addObject('MechanicalObject', template="Rigid3", dx="0", dy="0", dz="0", name="default118", position="0 1.41421 0 0 0 0.382683 0.92388", rest_position="0 1.41421 0 0 0 0.382683 0.92388")
+       spoon1.addObject('LinearMovementProjectiveConstraint', template="Rigid3", keyTimes="0 2 10 40 50", movements="0 0 0   0 0 0                 0 0 0   0 0 0                 0 0 -1  0 0 0                 0 0 -1  0 0 6.3                 0 0 -1   0 0 6.3")
+
+       coli = Spoon1.addChild('coli')
+
+       coli.addObject('MeshOBJLoader', name="loader", filename="mesh/liver.obj")
+       coli.addObject('MeshTopology', src="@loader")
+       coli.addObject('MechanicalObject', src="@loader", template="Vec3", name="dofs")
+       coli.addObject('TriangleCollisionModel', moving="1", simulated="1", contactStiffness="100000000")
+       coli.addObject('RigidMapping', template="Rigid3,Vec3")
+
+       visu = Spoon1.addChild('Visu')
+
+       visu.addObject('MeshOBJLoader', name="meshLoader_1", filename="mesh/liver.obj", handleSeams="1")
+       visu.addObject('OglModel', name="Visual", src="@meshLoader_1", color="red")
+       visu.addObject('RigidMapping', template="Rigid3,Vec3", name="default161", input="@..", output="@Visual")
+
+       spoon2 = Root.addChild('Spoon2')
+
+       spoon2.addObject('EulerImplicitSolver', name="cg_odesolver", printLog="false")
+       spoon2.addObject('CGLinearSolver', iterations="25", name="linear solver", tolerance="1.0e-9", threshold="1.0e-9")
+       spoon2.addObject('MechanicalObject', template="Rigid3", dx="10", dy="0", dz="0", name="default118", position="0 1.41421 0 0 0 0.382683 0.92388", rest_position="0 1.41421 0 0 0 0.382683 0.92388")
+       spoon2.addObject('LinearMovementProjectiveConstraint', template="Rigid3", keyTimes="0 2 10 40 50", movements="0 0 0   0 0 0                 0 0 0   0 0 0                 0 0 -1  0 0 0                 0 0 -1  0 0 6.3                 0 0 0   0 0 6.3")
+
+       coli = Spoon2.addChild('coli')
+
+       coli.addObject('MeshOBJLoader', name="loader", filename="mesh/liver.obj")
+       coli.addObject('MeshTopology', src="@loader")
+       coli.addObject('MechanicalObject', src="@loader", template="Vec3", name="dofs")
+       coli.addObject('TriangleCollisionModel', moving="1", simulated="1", contactStiffness="100000000")
+       coli.addObject('RigidMapping', template="Rigid3,Vec3")
+
+       visu = Spoon2.addChild('Visu')
+
+       visu.addObject('MeshOBJLoader', name="meshLoader_0", filename="mesh/liver.obj", handleSeams="1")
+       visu.addObject('OglModel', name="Visual", src="@meshLoader_0", color="green")
+       visu.addObject('RigidMapping', template="Rigid3,Vec3", name="default161", input="@..", output="@Visual")
+
+       spoon3 = Root.addChild('Spoon3')
+
+       spoon3.addObject('EulerImplicitSolver', name="cg_odesolver", printLog="false")
+       spoon3.addObject('CGLinearSolver', iterations="25", name="linear solver", tolerance="1.0e-9", threshold="1.0e-9")
+       spoon3.addObject('MechanicalObject', template="Rigid3", dx="20", dy="0", dz="0", name="default118", position="0 1.41421 0 0 0 0.382683 0.92388", rest_position="0 1.41421 0 0 0 0.382683 0.92388")
+       spoon3.addObject('LinearMovementProjectiveConstraint', template="Rigid3", keyTimes="0 2 10 40 50", movements="0 0 0   0 0 0                 0 0 0   0 0 0                 0 0 -1  0 0 0                 0 0 -1  0 0 6.3                 0 0 -1   0 0 0")
+
+       coli = Spoon3.addChild('coli')
+
+       coli.addObject('MeshOBJLoader', name="loader", filename="mesh/liver.obj")
+       coli.addObject('MeshTopology', src="@loader")
+       coli.addObject('MechanicalObject', src="@loader", template="Vec3", name="dofs")
+       coli.addObject('TriangleCollisionModel', moving="1", simulated="1", contactStiffness="100000000")
+       coli.addObject('RigidMapping', template="Rigid3,Vec3")
+
+       visu = Spoon3.addChild('Visu')
+
+       visu.addObject('MeshOBJLoader', name="meshLoader_2", filename="mesh/liver.obj", handleSeams="1")
+       visu.addObject('OglModel', name="Visual", src="@meshLoader_2", color="blue")
+       visu.addObject('RigidMapping', template="Rigid3,Vec3", name="default161", input="@..", output="@Visual")
+    ```
+

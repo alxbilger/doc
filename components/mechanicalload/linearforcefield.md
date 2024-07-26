@@ -610,3 +610,97 @@ Links:
 |mstate|MechanicalState used by this component|MechanicalState<Vec6d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+=== "XML"
+
+    ```xml
+    <Node name="root" dt="0.005" gravity="0 0 0">
+        <RequiredPlugin name="Sofa.Component.IO.Mesh"/> <!-- Needed to use components [MeshOBJLoader] -->
+        <RequiredPlugin name="Sofa.Component.LinearSolver.Iterative"/> <!-- Needed to use components [CGLinearSolver] -->
+        <RequiredPlugin name="Sofa.Component.Mapping.NonLinear"/> <!-- Needed to use components [RigidMapping] -->
+        <RequiredPlugin name="Sofa.Component.Mass"/> <!-- Needed to use components [UniformMass] -->
+        <RequiredPlugin name="Sofa.Component.MechanicalLoad"/> <!-- Needed to use components [LinearForceField] -->
+        <RequiredPlugin name="Sofa.Component.ODESolver.Forward"/> <!-- Needed to use components [EulerExplicitSolver] -->
+        <RequiredPlugin name="Sofa.Component.StateContainer"/> <!-- Needed to use components [MechanicalObject] -->
+        <RequiredPlugin name="Sofa.Component.Visual"/> <!-- Needed to use components [VisualStyle] -->
+        <RequiredPlugin name="Sofa.GL.Component.Rendering3D"/> <!-- Needed to use components [OglModel] -->
+        <VisualStyle displayFlags="showBehaviorModels showForceFields" />
+        <DefaultAnimationLoop/>
+        
+        <Node name="TorusRigidX">
+            <EulerExplicitSolver />
+            <CGLinearSolver iterations="25" threshold="0.00000001" tolerance="1e-5"/>
+            <MechanicalObject template="Rigid3" dx="2" dy="0" dz="0" rx="0" ry="0" rz="0" scale="1.0" />
+            <UniformMass />
+            <!-- forces for a rigid is composed of two parts translation of the rigid dof [x y z] and a quaternion for the rotation [x y z w] -->
+            <LinearForceField points="0" forces="0 0 0 0 0 0  1 0 0 0 0 0  -1 0 0 0 0 0  -1 0 0 0 0 0  0 0 0 0 0 0" force="2.0" times="0 4 8 10 12" />
+            <Node name="Visu">
+                <MeshOBJLoader name="meshLoader_0" filename="mesh/torus.obj" scale="0.3" handleSeams="1" />
+                <OglModel name="Visual" src="@meshLoader_0" color="gray" />
+                <RigidMapping input="@.." output="@Visual" />
+            </Node>
+        </Node>
+        <Node name="TorusRigidY">
+            <EulerExplicitSolver />
+            <CGLinearSolver iterations="25" threshold="0.00000001" tolerance="1e-5"/>
+            <MechanicalObject template="Rigid3" dx="2" dy="2" dz="0" rx="0" ry="0" rz="0" scale="1.0" />
+            <UniformMass />
+            <!-- forces for a rigid is composed of two parts translation of the rigid dof [x y z] and a quaternion for the rotation [x y z w] -->
+            <LinearForceField points="0" forces="0 0 0 0 0 0  0 1 0 0 0 0  0 -1 0 0 0 0  0 -1 0 0 0 0  0 0 0 0 0 0" force="2.0" times="0 4 8 10 12" />
+            <Node name="Visu">
+                <MeshOBJLoader name="meshLoader_1" filename="mesh/torus.obj" scale="0.3" handleSeams="1" />
+                <OglModel name="Visual" src="@meshLoader_1" color="gray" />
+                <RigidMapping input="@.." output="@Visual" />
+            </Node>
+        </Node>
+    </Node>
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('root', dt="0.005", gravity="0 0 0")
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.IO.Mesh")
+       root.addObject('RequiredPlugin', name="Sofa.Component.LinearSolver.Iterative")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Mapping.NonLinear")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Mass")
+       root.addObject('RequiredPlugin', name="Sofa.Component.MechanicalLoad")
+       root.addObject('RequiredPlugin', name="Sofa.Component.ODESolver.Forward")
+       root.addObject('RequiredPlugin', name="Sofa.Component.StateContainer")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Visual")
+       root.addObject('RequiredPlugin', name="Sofa.GL.Component.Rendering3D")
+       root.addObject('VisualStyle', displayFlags="showBehaviorModels showForceFields")
+       root.addObject('DefaultAnimationLoop', )
+
+       torus_rigid_x = root.addChild('TorusRigidX')
+
+       torus_rigid_x.addObject('EulerExplicitSolver', )
+       torus_rigid_x.addObject('CGLinearSolver', iterations="25", threshold="0.00000001", tolerance="1e-5")
+       torus_rigid_x.addObject('MechanicalObject', template="Rigid3", dx="2", dy="0", dz="0", rx="0", ry="0", rz="0", scale="1.0")
+       torus_rigid_x.addObject('UniformMass', )
+       torus_rigid_x.addObject('LinearForceField', points="0", forces="0 0 0 0 0 0  1 0 0 0 0 0  -1 0 0 0 0 0  -1 0 0 0 0 0  0 0 0 0 0 0", force="2.0", times="0 4 8 10 12")
+
+       visu = TorusRigidX.addChild('Visu')
+
+       visu.addObject('MeshOBJLoader', name="meshLoader_0", filename="mesh/torus.obj", scale="0.3", handleSeams="1")
+       visu.addObject('OglModel', name="Visual", src="@meshLoader_0", color="gray")
+       visu.addObject('RigidMapping', input="@..", output="@Visual")
+
+       torus_rigid_y = root.addChild('TorusRigidY')
+
+       torus_rigid_y.addObject('EulerExplicitSolver', )
+       torus_rigid_y.addObject('CGLinearSolver', iterations="25", threshold="0.00000001", tolerance="1e-5")
+       torus_rigid_y.addObject('MechanicalObject', template="Rigid3", dx="2", dy="2", dz="0", rx="0", ry="0", rz="0", scale="1.0")
+       torus_rigid_y.addObject('UniformMass', )
+       torus_rigid_y.addObject('LinearForceField', points="0", forces="0 0 0 0 0 0  0 1 0 0 0 0  0 -1 0 0 0 0  0 -1 0 0 0 0  0 0 0 0 0 0", force="2.0", times="0 4 8 10 12")
+
+       visu = TorusRigidY.addChild('Visu')
+
+       visu.addObject('MeshOBJLoader', name="meshLoader_1", filename="mesh/torus.obj", scale="0.3", handleSeams="1")
+       visu.addObject('OglModel', name="Visual", src="@meshLoader_1", color="gray")
+       visu.addObject('RigidMapping', input="@..", output="@Visual")
+    ```
+

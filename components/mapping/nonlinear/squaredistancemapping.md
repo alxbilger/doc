@@ -287,3 +287,85 @@ Links:
 |output|Output object to map|State<Vec1d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+=== "XML"
+
+    ```xml
+    <?xml version="1.0"?>
+    <Node name="Root" gravity="0 -10 0" time="0" animate="0"  dt="0.01">
+    
+        <Node name="plugins">
+            <RequiredPlugin name="Sofa.Component.Constraint.Projective"/> <!-- Needed to use components [FixedProjectiveConstraint] -->
+            <RequiredPlugin name="Sofa.Component.IO.Mesh"/> <!-- Needed to use components [StringMeshCreator] -->
+            <RequiredPlugin name="Sofa.Component.LinearSolver.Iterative"/> <!-- Needed to use components [CGLinearSolver] -->
+            <RequiredPlugin name="Sofa.Component.Mapping.NonLinear"/> <!-- Needed to use components [SquareDistanceMapping] -->
+            <RequiredPlugin name="Sofa.Component.Mass"/> <!-- Needed to use components [DiagonalMass] -->
+            <RequiredPlugin name="Sofa.Component.ODESolver.Backward"/> <!-- Needed to use components [EulerImplicitSolver] -->
+            <RequiredPlugin name="Sofa.Component.SolidMechanics.Spring"/> <!-- Needed to use components [RestShapeSpringsForceField] -->
+            <RequiredPlugin name="Sofa.Component.StateContainer"/> <!-- Needed to use components [MechanicalObject] -->
+            <RequiredPlugin name="Sofa.Component.Topology.Container.Dynamic"/> <!-- Needed to use components [EdgeSetGeometryAlgorithms EdgeSetTopologyContainer] -->
+            <RequiredPlugin name="Sofa.Component.Visual"/> <!-- Needed to use components [VisualStyle] -->
+        </Node>
+    
+        <DefaultVisualManagerLoop/>
+        <VisualStyle displayFlags="showVisualModels showBehaviorModels showMappings showForceFields showMechanicalMappings" />
+    
+        <DefaultAnimationLoop/>
+        <StringMeshCreator name="loader" resolution="20" />
+    
+        <EulerImplicitSolver rayleighStiffness="0.1" rayleighMass="0.1"/>
+        <CGLinearSolver iterations="2500" name="linear solver" tolerance="1.0e-9" threshold="1.0e-9" />
+    
+        <EdgeSetTopologyContainer name="topology" position="@loader.position" edges="@loader.edges" />
+        <MechanicalObject name="defoDOF" template="Vec3" />
+        <EdgeSetGeometryAlgorithms drawEdges="true" />
+        <FixedProjectiveConstraint indices="0" />
+        <DiagonalMass  name="mass" totalMass="1e-2"/>
+        <Node name="extensionsNode" >
+            <MechanicalObject template="Vec1" name="extensionsDOF" />
+            <SquareDistanceMapping name="distanceMapping" topology="@../topology" input="@../defoDOF" output="@extensionsDOF" geometricStiffness="1" applyRestPosition="true"/>
+            <RestShapeSpringsForceField template="Vec1" stiffness="10000"/>
+        </Node>
+    
+    </Node>
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('Root', gravity="0 -10 0", time="0", animate="0", dt="0.01")
+
+       plugins = Root.addChild('plugins')
+
+       plugins.addObject('RequiredPlugin', name="Sofa.Component.Constraint.Projective")
+       plugins.addObject('RequiredPlugin', name="Sofa.Component.IO.Mesh")
+       plugins.addObject('RequiredPlugin', name="Sofa.Component.LinearSolver.Iterative")
+       plugins.addObject('RequiredPlugin', name="Sofa.Component.Mapping.NonLinear")
+       plugins.addObject('RequiredPlugin', name="Sofa.Component.Mass")
+       plugins.addObject('RequiredPlugin', name="Sofa.Component.ODESolver.Backward")
+       plugins.addObject('RequiredPlugin', name="Sofa.Component.SolidMechanics.Spring")
+       plugins.addObject('RequiredPlugin', name="Sofa.Component.StateContainer")
+       plugins.addObject('RequiredPlugin', name="Sofa.Component.Topology.Container.Dynamic")
+       plugins.addObject('RequiredPlugin', name="Sofa.Component.Visual")
+
+       root.addObject('DefaultVisualManagerLoop', )
+       root.addObject('VisualStyle', displayFlags="showVisualModels showBehaviorModels showMappings showForceFields showMechanicalMappings")
+       root.addObject('DefaultAnimationLoop', )
+       root.addObject('StringMeshCreator', name="loader", resolution="20")
+       root.addObject('EulerImplicitSolver', rayleighStiffness="0.1", rayleighMass="0.1")
+       root.addObject('CGLinearSolver', iterations="2500", name="linear solver", tolerance="1.0e-9", threshold="1.0e-9")
+       root.addObject('EdgeSetTopologyContainer', name="topology", position="@loader.position", edges="@loader.edges")
+       root.addObject('MechanicalObject', name="defoDOF", template="Vec3")
+       root.addObject('EdgeSetGeometryAlgorithms', drawEdges="true")
+       root.addObject('FixedProjectiveConstraint', indices="0")
+       root.addObject('DiagonalMass', name="mass", totalMass="1e-2")
+
+       extensions_node = Root.addChild('extensionsNode')
+
+       extensions_node.addObject('MechanicalObject', template="Vec1", name="extensionsDOF")
+       extensions_node.addObject('SquareDistanceMapping', name="distanceMapping", topology="@../topology", input="@../defoDOF", output="@extensionsDOF", geometricStiffness="1", applyRestPosition="true")
+       extensions_node.addObject('RestShapeSpringsForceField', template="Vec1", stiffness="10000")
+    ```
+

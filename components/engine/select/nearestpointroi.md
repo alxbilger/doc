@@ -881,3 +881,255 @@ Links:
 |object1|First object associated to this component|MechanicalState<Vec6d>|
 |object2|Second object associated to this component|MechanicalState<Vec6d>|
 
+=== "XML"
+
+    ```xml
+    <Node name="root" dt="0.02">
+        <Node name="requiredPlugins">
+            <RequiredPlugin name="Sofa.Component.AnimationLoop"/> <!-- Needed to use components [FreeMotionAnimationLoop] -->
+            <RequiredPlugin name="Sofa.Component.Constraint.Lagrangian.Correction"/> <!-- Needed to use components [UncoupledConstraintCorrection] -->
+            <RequiredPlugin name="Sofa.Component.Constraint.Lagrangian.Model"/> <!-- Needed to use components [BilateralLagrangianConstraint] -->
+            <RequiredPlugin name="Sofa.Component.Constraint.Lagrangian.Solver"/> <!-- Needed to use components [GenericConstraintSolver] -->
+            <RequiredPlugin name="Sofa.Component.Constraint.Projective"/> <!-- Needed to use components [FixedProjectiveConstraint] -->
+            <RequiredPlugin name="Sofa.Component.Engine.Select"/> <!-- Needed to use components [BoxROI NearestPointROI] -->
+            <RequiredPlugin name="Sofa.Component.LinearSolver.Iterative"/> <!-- Needed to use components [CGLinearSolver] -->
+            <RequiredPlugin name="Sofa.Component.Mapping.Linear"/> <!-- Needed to use components [SubsetMultiMapping] -->
+            <RequiredPlugin name="Sofa.Component.Mass"/> <!-- Needed to use components [UniformMass] -->
+            <RequiredPlugin name="Sofa.Component.ODESolver.Backward"/> <!-- Needed to use components [EulerImplicitSolver] -->
+            <RequiredPlugin name="Sofa.Component.SolidMechanics.FEM.Elastic"/> <!-- Needed to use components [TetrahedronFEMForceField] -->
+            <RequiredPlugin name="Sofa.Component.SolidMechanics.Spring"/> <!-- Needed to use components [MeshSpringForceField] -->
+            <RequiredPlugin name="Sofa.Component.StateContainer"/> <!-- Needed to use components [MechanicalObject] -->
+            <RequiredPlugin name="Sofa.Component.Topology.Container.Dynamic"/> <!-- Needed to use components [EdgeSetTopologyContainer] -->
+            <RequiredPlugin name="Sofa.Component.Topology.Container.Grid"/> <!-- Needed to use components [RegularGridTopology] -->
+            <RequiredPlugin name="Sofa.Component.Visual"/> <!-- Needed to use components [VisualStyle] -->
+        </Node>
+    
+        <VisualStyle displayFlags="showBehaviorModels showForceFields showInteractionForceFields" />
+    
+        <FreeMotionAnimationLoop parallelODESolving="true"/>
+        <GenericConstraintSolver tolerance="0.001" maxIterations="1000" resolutionMethod="UnbuildGaussSeidel" multithreading="true"/>
+    
+        <!--
+            This Node shows how NearestPointROI is used to create constraints to link close vertices
+        -->
+        <Node name="ObjectsAttachedWithConstraints">
+            <EulerImplicitSolver name="cg_odesolver" rayleighStiffness="0.1" rayleighMass="0.1"/>
+            <CGLinearSolver iterations="25" name="linear solver" tolerance="1.0e-9" threshold="1.0e-9" />
+            <Node name="M1">
+                <MechanicalObject name="mo"/>
+                <UniformMass totalMass="160" />
+                <RegularGridTopology nx="4" ny="4" nz="10" xmin="0" xmax="3" ymin="0" ymax="3" zmin="0" zmax="9" />
+                <BoxROI box="-0.1 -0.1 -0.1 3.1 3.1 0.1" name="box"/>
+                <FixedProjectiveConstraint indices="@box.indices"/>
+                <TetrahedronFEMForceField name="FEM" youngModulus="4000" poissonRatio="0.3" computeVonMisesStress="1" showVonMisesStressPerElement="true"/>
+                <UncoupledConstraintCorrection useOdeSolverIntegrationFactors="0"/>
+            </Node>
+            <Node name="M2">
+                <MechanicalObject name="mo"/>
+                <UniformMass totalMass="160" />
+                <RegularGridTopology nx="4" ny="4" nz="10" xmin="0" xmax="3" ymin="0" ymax="3" zmin="9" zmax="18" />
+                <TetrahedronFEMForceField name="FEM" youngModulus="20000" poissonRatio="0.3" computeVonMisesStress="1" showVonMisesStressPerElement="true"/>
+                <UncoupledConstraintCorrection useOdeSolverIntegrationFactors="0"/>
+            </Node>
+            <Node name="M3">
+                <MechanicalObject name="mo"/>
+                <UniformMass totalMass="160" />
+                <RegularGridTopology nx="4" ny="4" nz="10" xmin="0" xmax="3" ymin="0" ymax="3" zmin="18" zmax="27" />
+                <BoxROI box="-0.1 -0.1 26.99 3.1 3.1 27.1" name="box"/>
+                <FixedProjectiveConstraint indices="@box.indices"/>
+                <TetrahedronFEMForceField name="FEM" youngModulus="4000" poissonRatio="0.3" computeVonMisesStress="1" showVonMisesStressPerElement="true"/>
+                <UncoupledConstraintCorrection useOdeSolverIntegrationFactors="0"/>
+            </Node>
+    
+            <NearestPointROI template="Vec3" name="np1" object1="@./M1/mo" object2="@./M2/mo" radius="0.1"/>
+            <NearestPointROI template="Vec3" name="np2" object1="@./M2/mo" object2="@./M3/mo" radius="0.1"/>
+    
+            <BilateralLagrangianConstraint template="Vec3" object1="@M1" object2="@M2" first_point="@np1.indices1" second_point="@np1.indices2" />
+            <BilateralLagrangianConstraint template="Vec3" object1="@M2" object2="@M3" first_point="@np2.indices1" second_point="@np2.indices2" />
+        </Node>
+    
+        <!--
+            This Node shows how NearestPointROI is used to create SubsetMultiMapping and EdgeSetTopologyContainer.
+        -->
+        <Node name="Springs">
+            <EulerImplicitSolver name="cg_odesolver" rayleighStiffness="0.1" rayleighMass="0.1"/>
+            <CGLinearSolver iterations="25" name="linear solver" tolerance="1.0e-9" threshold="1.0e-9" />
+            <Node name="M1">
+                <MechanicalObject name="mo"/>
+                <UniformMass totalMass="160" />
+                <RegularGridTopology nx="4" ny="4" nz="10" xmin="4" xmax="7" ymin="0" ymax="3" zmin="0" zmax="9" />
+                <BoxROI box="3.9 -0.1 -0.1 7.1 3.1 0.1" name="box"/>
+                <FixedProjectiveConstraint indices="@box.indices"/>
+                <TetrahedronFEMForceField name="FEM" youngModulus="4000" poissonRatio="0.3" computeVonMisesStress="1" showVonMisesStressPerElement="true"/>
+                <UncoupledConstraintCorrection useOdeSolverIntegrationFactors="0"/>
+            </Node>
+            <Node name="M2"> <!-- This object has a higher resolution than the others -->
+                <MechanicalObject name="mo"/>
+                <UniformMass totalMass="160" />
+                <RegularGridTopology nx="8" ny="8" nz="20" xmin="4" xmax="7" ymin="0" ymax="3" zmin="9" zmax="18" />
+                <TetrahedronFEMForceField name="FEM" youngModulus="20000" poissonRatio="0.3" computeVonMisesStress="1" showVonMisesStressPerElement="true"/>
+                <UncoupledConstraintCorrection useOdeSolverIntegrationFactors="0"/>
+            </Node>
+            <Node name="M3">
+                <MechanicalObject name="mo"/>
+                <UniformMass totalMass="160" />
+                <RegularGridTopology nx="4" ny="4" nz="10" xmin="4" xmax="7" ymin="0" ymax="3" zmin="18" zmax="27" />
+                <BoxROI box="3.9 -0.1 26.99 7.1 3.1 27.1" name="box"/>
+                <FixedProjectiveConstraint indices="@box.indices"/>
+                <TetrahedronFEMForceField name="FEM" youngModulus="4000" poissonRatio="0.3" computeVonMisesStress="1" showVonMisesStressPerElement="true"/>
+                <UncoupledConstraintCorrection useOdeSolverIntegrationFactors="0"/>
+            </Node>
+    
+            <!--
+                In the following Nodes, dofs from 2 mechanical objects are fused into a new mechanical object, based on the
+                minimal distance between points.
+                A mapping links the three objects. An edge topology is created.
+                Springs are created based on the topology.
+            -->
+            <Node name="merge1">
+                <BoxROI name="box1" position="@../M1/mo.position" box="3.9 -0.1 8.9 7.1 3.1 9.1"/>
+                <BoxROI name="box2" position="@../M2/mo.position" box="3.9 -0.1 8.9 7.1 3.1 9.1"/>
+                <NearestPointROI template="Vec3" name="np" object1="@../M1/mo" object2="@../M2/mo" radius="1e5" inputIndices1="@box1.indices" inputIndices2="@box2.indices"/>
+                <MechanicalObject name="dofs"/>
+                <SubsetMultiMapping input="@../M1/mo @../M2/mo" output="@dofs" indexPairs="@np.indexPairs"/>
+                <EdgeSetTopologyContainer edges="@np.edges"/>
+                <MeshSpringForceField stiffness="10000" damping="1" linesStiffness="10000" linesDamping="1" drawMode="1" drawSpringSize="1"/>
+            </Node>
+    
+            <Node name="merge2">
+                <BoxROI name="box1" position="@../M2/mo.position" box="3.9 -0.1 17.9 7.1 3.1 18.1"/>
+                <BoxROI name="box2" position="@../M3/mo.position" box="3.9 -0.1 17.9 7.1 3.1 18.1"/>
+                <NearestPointROI template="Vec3" name="np" object1="@../M2/mo" object2="@../M3/mo" radius="1e5" inputIndices1="@box1.indices" inputIndices2="@box2.indices"/>
+                <MechanicalObject name="dofs"/>
+                <SubsetMultiMapping input="@../M2/mo @../M3/mo" output="@dofs" indexPairs="@np.indexPairs"/>
+                <EdgeSetTopologyContainer edges="@np.edges"/>
+                <MeshSpringForceField stiffness="10000" damping="1" linesStiffness="10000" linesDamping="1" drawMode="1" drawSpringSize="1"/>
+            </Node>
+    
+        </Node>
+    </Node>
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('root', dt="0.02")
+
+       required_plugins = root.addChild('requiredPlugins')
+
+       required_plugins.addObject('RequiredPlugin', name="Sofa.Component.AnimationLoop")
+       required_plugins.addObject('RequiredPlugin', name="Sofa.Component.Constraint.Lagrangian.Correction")
+       required_plugins.addObject('RequiredPlugin', name="Sofa.Component.Constraint.Lagrangian.Model")
+       required_plugins.addObject('RequiredPlugin', name="Sofa.Component.Constraint.Lagrangian.Solver")
+       required_plugins.addObject('RequiredPlugin', name="Sofa.Component.Constraint.Projective")
+       required_plugins.addObject('RequiredPlugin', name="Sofa.Component.Engine.Select")
+       required_plugins.addObject('RequiredPlugin', name="Sofa.Component.LinearSolver.Iterative")
+       required_plugins.addObject('RequiredPlugin', name="Sofa.Component.Mapping.Linear")
+       required_plugins.addObject('RequiredPlugin', name="Sofa.Component.Mass")
+       required_plugins.addObject('RequiredPlugin', name="Sofa.Component.ODESolver.Backward")
+       required_plugins.addObject('RequiredPlugin', name="Sofa.Component.SolidMechanics.FEM.Elastic")
+       required_plugins.addObject('RequiredPlugin', name="Sofa.Component.SolidMechanics.Spring")
+       required_plugins.addObject('RequiredPlugin', name="Sofa.Component.StateContainer")
+       required_plugins.addObject('RequiredPlugin', name="Sofa.Component.Topology.Container.Dynamic")
+       required_plugins.addObject('RequiredPlugin', name="Sofa.Component.Topology.Container.Grid")
+       required_plugins.addObject('RequiredPlugin', name="Sofa.Component.Visual")
+
+       root.addObject('VisualStyle', displayFlags="showBehaviorModels showForceFields showInteractionForceFields")
+       root.addObject('FreeMotionAnimationLoop', parallelODESolving="true")
+       root.addObject('GenericConstraintSolver', tolerance="0.001", maxIterations="1000", resolutionMethod="UnbuildGaussSeidel", multithreading="true")
+
+       objects_attached_with_constraints = root.addChild('ObjectsAttachedWithConstraints')
+
+       objects_attached_with_constraints.addObject('EulerImplicitSolver', name="cg_odesolver", rayleighStiffness="0.1", rayleighMass="0.1")
+       objects_attached_with_constraints.addObject('CGLinearSolver', iterations="25", name="linear solver", tolerance="1.0e-9", threshold="1.0e-9")
+
+       m1 = ObjectsAttachedWithConstraints.addChild('M1')
+
+       m1.addObject('MechanicalObject', name="mo")
+       m1.addObject('UniformMass', totalMass="160")
+       m1.addObject('RegularGridTopology', nx="4", ny="4", nz="10", xmin="0", xmax="3", ymin="0", ymax="3", zmin="0", zmax="9")
+       m1.addObject('BoxROI', box="-0.1 -0.1 -0.1 3.1 3.1 0.1", name="box")
+       m1.addObject('FixedProjectiveConstraint', indices="@box.indices")
+       m1.addObject('TetrahedronFEMForceField', name="FEM", youngModulus="4000", poissonRatio="0.3", computeVonMisesStress="1", showVonMisesStressPerElement="true")
+       m1.addObject('UncoupledConstraintCorrection', useOdeSolverIntegrationFactors="0")
+
+       m2 = ObjectsAttachedWithConstraints.addChild('M2')
+
+       m2.addObject('MechanicalObject', name="mo")
+       m2.addObject('UniformMass', totalMass="160")
+       m2.addObject('RegularGridTopology', nx="4", ny="4", nz="10", xmin="0", xmax="3", ymin="0", ymax="3", zmin="9", zmax="18")
+       m2.addObject('TetrahedronFEMForceField', name="FEM", youngModulus="20000", poissonRatio="0.3", computeVonMisesStress="1", showVonMisesStressPerElement="true")
+       m2.addObject('UncoupledConstraintCorrection', useOdeSolverIntegrationFactors="0")
+
+       m3 = ObjectsAttachedWithConstraints.addChild('M3')
+
+       m3.addObject('MechanicalObject', name="mo")
+       m3.addObject('UniformMass', totalMass="160")
+       m3.addObject('RegularGridTopology', nx="4", ny="4", nz="10", xmin="0", xmax="3", ymin="0", ymax="3", zmin="18", zmax="27")
+       m3.addObject('BoxROI', box="-0.1 -0.1 26.99 3.1 3.1 27.1", name="box")
+       m3.addObject('FixedProjectiveConstraint', indices="@box.indices")
+       m3.addObject('TetrahedronFEMForceField', name="FEM", youngModulus="4000", poissonRatio="0.3", computeVonMisesStress="1", showVonMisesStressPerElement="true")
+       m3.addObject('UncoupledConstraintCorrection', useOdeSolverIntegrationFactors="0")
+
+       objects_attached_with_constraints.addObject('NearestPointROI', template="Vec3", name="np1", object1="@./M1/mo", object2="@./M2/mo", radius="0.1")
+       objects_attached_with_constraints.addObject('NearestPointROI', template="Vec3", name="np2", object1="@./M2/mo", object2="@./M3/mo", radius="0.1")
+       objects_attached_with_constraints.addObject('BilateralLagrangianConstraint', template="Vec3", object1="@M1", object2="@M2", first_point="@np1.indices1", second_point="@np1.indices2")
+       objects_attached_with_constraints.addObject('BilateralLagrangianConstraint', template="Vec3", object1="@M2", object2="@M3", first_point="@np2.indices1", second_point="@np2.indices2")
+
+       springs = root.addChild('Springs')
+
+       springs.addObject('EulerImplicitSolver', name="cg_odesolver", rayleighStiffness="0.1", rayleighMass="0.1")
+       springs.addObject('CGLinearSolver', iterations="25", name="linear solver", tolerance="1.0e-9", threshold="1.0e-9")
+
+       m1 = Springs.addChild('M1')
+
+       m1.addObject('MechanicalObject', name="mo")
+       m1.addObject('UniformMass', totalMass="160")
+       m1.addObject('RegularGridTopology', nx="4", ny="4", nz="10", xmin="4", xmax="7", ymin="0", ymax="3", zmin="0", zmax="9")
+       m1.addObject('BoxROI', box="3.9 -0.1 -0.1 7.1 3.1 0.1", name="box")
+       m1.addObject('FixedProjectiveConstraint', indices="@box.indices")
+       m1.addObject('TetrahedronFEMForceField', name="FEM", youngModulus="4000", poissonRatio="0.3", computeVonMisesStress="1", showVonMisesStressPerElement="true")
+       m1.addObject('UncoupledConstraintCorrection', useOdeSolverIntegrationFactors="0")
+
+       m2 = Springs.addChild('M2')
+
+       m2.addObject('MechanicalObject', name="mo")
+       m2.addObject('UniformMass', totalMass="160")
+       m2.addObject('RegularGridTopology', nx="8", ny="8", nz="20", xmin="4", xmax="7", ymin="0", ymax="3", zmin="9", zmax="18")
+       m2.addObject('TetrahedronFEMForceField', name="FEM", youngModulus="20000", poissonRatio="0.3", computeVonMisesStress="1", showVonMisesStressPerElement="true")
+       m2.addObject('UncoupledConstraintCorrection', useOdeSolverIntegrationFactors="0")
+
+       m3 = Springs.addChild('M3')
+
+       m3.addObject('MechanicalObject', name="mo")
+       m3.addObject('UniformMass', totalMass="160")
+       m3.addObject('RegularGridTopology', nx="4", ny="4", nz="10", xmin="4", xmax="7", ymin="0", ymax="3", zmin="18", zmax="27")
+       m3.addObject('BoxROI', box="3.9 -0.1 26.99 7.1 3.1 27.1", name="box")
+       m3.addObject('FixedProjectiveConstraint', indices="@box.indices")
+       m3.addObject('TetrahedronFEMForceField', name="FEM", youngModulus="4000", poissonRatio="0.3", computeVonMisesStress="1", showVonMisesStressPerElement="true")
+       m3.addObject('UncoupledConstraintCorrection', useOdeSolverIntegrationFactors="0")
+
+       merge1 = Springs.addChild('merge1')
+
+       merge1.addObject('BoxROI', name="box1", position="@../M1/mo.position", box="3.9 -0.1 8.9 7.1 3.1 9.1")
+       merge1.addObject('BoxROI', name="box2", position="@../M2/mo.position", box="3.9 -0.1 8.9 7.1 3.1 9.1")
+       merge1.addObject('NearestPointROI', template="Vec3", name="np", object1="@../M1/mo", object2="@../M2/mo", radius="1e5", inputIndices1="@box1.indices", inputIndices2="@box2.indices")
+       merge1.addObject('MechanicalObject', name="dofs")
+       merge1.addObject('SubsetMultiMapping', input="@../M1/mo @../M2/mo", output="@dofs", indexPairs="@np.indexPairs")
+       merge1.addObject('EdgeSetTopologyContainer', edges="@np.edges")
+       merge1.addObject('MeshSpringForceField', stiffness="10000", damping="1", linesStiffness="10000", linesDamping="1", drawMode="1", drawSpringSize="1")
+
+       merge2 = Springs.addChild('merge2')
+
+       merge2.addObject('BoxROI', name="box1", position="@../M2/mo.position", box="3.9 -0.1 17.9 7.1 3.1 18.1")
+       merge2.addObject('BoxROI', name="box2", position="@../M3/mo.position", box="3.9 -0.1 17.9 7.1 3.1 18.1")
+       merge2.addObject('NearestPointROI', template="Vec3", name="np", object1="@../M2/mo", object2="@../M3/mo", radius="1e5", inputIndices1="@box1.indices", inputIndices2="@box2.indices")
+       merge2.addObject('MechanicalObject', name="dofs")
+       merge2.addObject('SubsetMultiMapping', input="@../M2/mo @../M3/mo", output="@dofs", indexPairs="@np.indexPairs")
+       merge2.addObject('EdgeSetTopologyContainer', edges="@np.edges")
+       merge2.addObject('MeshSpringForceField', stiffness="10000", damping="1", linesStiffness="10000", linesDamping="1", drawMode="1", drawSpringSize="1")
+    ```
+

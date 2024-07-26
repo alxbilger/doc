@@ -150,3 +150,66 @@ Links:
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 
+=== "XML"
+
+    ```xml
+    <?xml version="1.0"?>
+    <Node name="root" gravity="0 0 0" dt="1"  >
+        <RequiredPlugin name="Sofa.Component.Engine.Generate"/> <!-- Needed to use components [MeshClosingEngine] -->
+        <RequiredPlugin name="Sofa.Component.IO.Mesh"/> <!-- Needed to use components [MeshOBJLoader] -->
+        <RequiredPlugin name="Sofa.Component.Setting"/> <!-- Needed to use components [BackgroundSetting] -->
+        <RequiredPlugin name="Sofa.Component.Visual"/> <!-- Needed to use components [VisualStyle] -->
+        <RequiredPlugin name="Sofa.GL.Component.Rendering3D"/> <!-- Needed to use components [OglModel] -->
+    
+        <DefaultAnimationLoop/>
+        <BackgroundSetting color="1 1 1" />
+        <MeshOBJLoader name="mesh" filename="mesh/c_open.obj" triangulate="0"/>
+        <MeshClosingEngine name="closer" inputPosition="@mesh.position" inputTriangles="@mesh.triangles" inputQuads="@mesh.quads"/>
+    
+        <Node name="plain visu of closing area (red)" >
+            <OglModel name="closingVisual"  position="@../closer.closingPosition" triangles="@../closer.closingTriangles" color="1 0.1 0.1 1"/>
+        </Node>
+    
+        <Node name="visu of closed mesh (green)" >
+            <OglModel name="closedMesh"  position="@../closer.position" vertices="@../closer.position" triangles="@../closer.triangles" quads="@../closer.quads" color="0.5 1 0.5 1" translation="0 0 4"/>
+        </Node>
+    
+        <Node name="visu of original open mesh (wireframe)" >
+            <VisualStyle displayFlags="showVisual showWireframe" />
+            <OglModel name="visual"  src="@../mesh" color="0.5 0.5 1 1" />
+        </Node>
+    </Node>
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('root', gravity="0 0 0", dt="1")
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.Engine.Generate")
+       root.addObject('RequiredPlugin', name="Sofa.Component.IO.Mesh")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Setting")
+       root.addObject('RequiredPlugin', name="Sofa.Component.Visual")
+       root.addObject('RequiredPlugin', name="Sofa.GL.Component.Rendering3D")
+       root.addObject('DefaultAnimationLoop', )
+       root.addObject('BackgroundSetting', color="1 1 1")
+       root.addObject('MeshOBJLoader', name="mesh", filename="mesh/c_open.obj", triangulate="0")
+       root.addObject('MeshClosingEngine', name="closer", inputPosition="@mesh.position", inputTriangles="@mesh.triangles", inputQuads="@mesh.quads")
+
+       plain_visu_of_closing_area_(red) = root.addChild('plain visu of closing area (red)')
+
+       plain_visu_of_closing_area_(red).addObject('OglModel', name="closingVisual", position="@../closer.closingPosition", triangles="@../closer.closingTriangles", color="1 0.1 0.1 1")
+
+       visu_of_closed_mesh_(green) = root.addChild('visu of closed mesh (green)')
+
+       visu_of_closed_mesh_(green).addObject('OglModel', name="closedMesh", position="@../closer.position", vertices="@../closer.position", triangles="@../closer.triangles", quads="@../closer.quads", color="0.5 1 0.5 1", translation="0 0 4")
+
+       visu_of_original_open_mesh_(wireframe) = root.addChild('visu of original open mesh (wireframe)')
+
+       visu_of_original_open_mesh_(wireframe).addObject('VisualStyle', displayFlags="showVisual showWireframe")
+       visu_of_original_open_mesh_(wireframe).addObject('OglModel', name="visual", src="@../mesh", color="0.5 0.5 1 1")
+    ```
+

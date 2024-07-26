@@ -161,3 +161,50 @@ Links:
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 
+=== "XML"
+
+    ```xml
+    <Node>
+    	<RequiredPlugin name="Sofa.Component.IO.Mesh"/> <!-- Needed to use components [VoxelGridLoader] -->
+    	<RequiredPlugin name="Sofa.Component.LinearSolver.Iterative"/> <!-- Needed to use components [CGLinearSolver] -->
+    	<RequiredPlugin name="Sofa.Component.ODESolver.Backward"/> <!-- Needed to use components [EulerImplicitSolver] -->
+    	<RequiredPlugin name="Sofa.Component.StateContainer"/> <!-- Needed to use components [MechanicalObject] -->
+    	<RequiredPlugin name="Sofa.Component.Topology.Container.Dynamic"/> <!-- Needed to use components [HexahedronSetGeometryAlgorithms HexahedronSetTopologyContainer] -->
+    
+    	<DefaultAnimationLoop/>
+    	<EulerImplicitSolver  rayleighStiffness="0.1" rayleighMass="0.1" />
+    	<CGLinearSolver  iterations="25" tolerance="1e-5" threshold="1e-5"/>
+    	<Node>
+    		<VoxelGridLoader name="gridloader" filename="textures/Test_64_64_4.raw" voxelSize="0.1 0.1 0.1" resolution="64 64 4" bgValue="0" />
+    		<HexahedronSetTopologyContainer src="@gridloader" />
+    		<HexahedronSetGeometryAlgorithms drawHexa="1"/>
+    		<MechanicalObject showObject="1"/>
+    	</Node>
+    </Node>
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       node = root_node.addChild('node')
+
+       node.addObject('RequiredPlugin', name="Sofa.Component.IO.Mesh")
+       node.addObject('RequiredPlugin', name="Sofa.Component.LinearSolver.Iterative")
+       node.addObject('RequiredPlugin', name="Sofa.Component.ODESolver.Backward")
+       node.addObject('RequiredPlugin', name="Sofa.Component.StateContainer")
+       node.addObject('RequiredPlugin', name="Sofa.Component.Topology.Container.Dynamic")
+       node.addObject('DefaultAnimationLoop', )
+       node.addObject('EulerImplicitSolver', rayleighStiffness="0.1", rayleighMass="0.1")
+       node.addObject('CGLinearSolver', iterations="25", tolerance="1e-5", threshold="1e-5")
+
+       node = node.addChild('node')
+
+       node.addObject('VoxelGridLoader', name="gridloader", filename="textures/Test_64_64_4.raw", voxelSize="0.1 0.1 0.1", resolution="64 64 4", bgValue="0")
+       node.addObject('HexahedronSetTopologyContainer', src="@gridloader")
+       node.addObject('HexahedronSetGeometryAlgorithms', drawHexa="1")
+       node.addObject('MechanicalObject', showObject="1")
+    ```
+
