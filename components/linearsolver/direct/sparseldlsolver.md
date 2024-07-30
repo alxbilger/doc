@@ -89,7 +89,6 @@ node.addObject('SparseLDLSolver')
 An example scene involving a SparseLDLSolver is available in [*examples/Component/LinearSolver/Direct/FEMBAR_SparseLDLSolver.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/LinearSolver/Direct/FEMBAR_SparseLDLSolver.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# SparseLDLSolver
 
 Direct Linear Solver using a Sparse LDL^T factorization.
 

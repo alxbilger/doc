@@ -64,7 +64,6 @@ node.addObject('BilateralLagrangianConstraint', template='Vec3d' object1='@CUBE_
 An example scene involving a BilateralLagrangianConstraint is available in [*examples/Component/Constraint/Lagrangian/BilateralLagrangianConstraint_PGS.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Constraint/Lagrangian/BilateralLagrangianConstraint_PGS.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# BilateralLagrangianConstraint
 
 BilateralLagrangianConstraint defining an holonomic equality constraint (attachment)
 

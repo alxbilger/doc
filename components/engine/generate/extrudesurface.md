@@ -33,7 +33,6 @@ Examples
 An example scene involving the ExtrudeSurface engine is available in [*examples/Component/Engine/Generate/ExtrudeSurface.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Engine/Generate/ExtrudeSurface.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# ExtrudeSurface
 
 This class truns on spiral any topological model
 

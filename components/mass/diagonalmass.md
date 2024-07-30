@@ -97,7 +97,6 @@ node.addObject('DiagonalMass', massDensity='1000')
 An example scene involving a DiagonalMass is available in [*examples/Component/Mass/DiagonalMass.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Mass/DiagonalMass.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# DiagonalMass
 
 Define a specific mass for each particle
 

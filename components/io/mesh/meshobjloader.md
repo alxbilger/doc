@@ -32,7 +32,6 @@ node.addObject('MeshOBJLoader', name="ObjLoader", filename="mesh/floor3.obj")
 
 An example scene involving a MeshOBJLoader is available in [*examples/Component/IO/Mesh/MeshOBJLoader.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/IO/Mesh/MeshObjLoader.scn)<!-- automatically generated doc START -->
 <!-- generate_doc -->
-# MeshOBJLoader
 
 Specific mesh loader for OBJ file format.
 

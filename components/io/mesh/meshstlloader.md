@@ -33,7 +33,6 @@ node.addObject('MeshSTLLoader', name="STLLoader", filename="mesh/circle_knot_asc
 An example scene involving a MeshSTLLoader is available in [*examples/Component/IO/Mesh/MeshSTLLoader.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/IO/Mesh/MeshSTLLoader.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# MeshSTLLoader
 
 Loader for the STL file format. STL can be used to represent the surface of object using with a triangulation.
 

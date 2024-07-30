@@ -73,7 +73,6 @@ addVisualStyle(root)->setShowVisual().setShowBehavior().setShowMapping(false);
 ```
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# VisualStyle
 
 Edit the visual style.
  Allowed values for displayFlags data are a combination of the following:

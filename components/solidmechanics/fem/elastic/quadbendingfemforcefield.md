@@ -50,7 +50,6 @@ With a description of each data
 An example scene involving a QuadBendingFEMForceField is available in [*examples/Component/SolidMechanics/FEM/QuadBendingFEMForceField.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/SolidMechanics/FEM/QuadBendingFEMForceField.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# QuadBendingFEMForceField
 
 Bending Quad finite elements
 

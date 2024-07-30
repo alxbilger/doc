@@ -57,7 +57,6 @@ node.addObject('AttachProjectiveConstraint', object1="@M1", object2="@M2", indic
 An example scene involving a AttachProjectiveConstraint is available in [*examples/Component/Constraint/Projective/AttachProjectiveConstraint.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Constraint/Projective/AttachProjectiveConstraint.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# AttachProjectiveConstraint
 
 Attach given pair of particles, projecting the positions of the second particles to the first ones
 

@@ -77,7 +77,6 @@ node.addObject('MinProximityIntersection', name='Proximity', alarmDistance='.5',
 An example scene involving a MinProximityIntersection is available in [*examples/Component/Collision/Geometry/TriangleModel.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Collision/Geometry/TriangleModel.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# MinProximityIntersection
 
 A set of methods to compute if two primitives are close enough to consider they collide
 

@@ -59,7 +59,6 @@ node.addObject('AsyncSparseLDLSolver')
 - Finally, the example in [*examples/Component/LinearSolver/Preconditioner/FEMBAR_PCG_WarpedAsyncSparseLDLSolver.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/LinearSolver/Preconditioner/FEMBAR_PCG_WarpedAsyncSparseLDLSolver.scn) shows how the factorization in AsyncSparseLDLSolver can be warped using a WarpPreconditioner.
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# AsyncSparseLDLSolver
 
 Asynchronous direct Linear Solver using a Sparse LDL^T factorization.
 

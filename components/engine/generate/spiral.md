@@ -28,7 +28,6 @@ Examples
 An example scene involving the Spiral engine is available in [*examples/Component/Engine/Generate/spiral.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Engine/Generate/spiral.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# Spiral
 
 This class truns on spiral any topological model
 

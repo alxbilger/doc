@@ -124,7 +124,6 @@ node.addObject('EulerImplicitSolver', name='ODEsolver', rayleighStiffness='0.1' 
 An example scene involving a StaticSolver is available in [*examples/Component/ODESolver/Backward/EulerImplicitSolver.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/ODESolver/Backward/EulerImplicitSolver.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# EulerImplicitSolver
 
 Time integrator using implicit backward Euler scheme
 

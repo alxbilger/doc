@@ -60,7 +60,6 @@ node.addObject('CGLinearSolver', iterations='100', tolerance='1e-5', threshold='
 A lot of scene examples are available in SOFA involving a CGLinearSolver. One is available in [*examples/Demos/liver.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Demos/liver.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# CGLinearSolver
 
 Linear system solver using the conjugate gradient iterative algorithm
 

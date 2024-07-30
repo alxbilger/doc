@@ -47,7 +47,6 @@ With a description of each data
 An example scene involving a ConstantForceField is available in [*examples/Component/MechanicalLoad/ConstantForceField.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/MechanicalLoad/ConstantForceField.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# ConstantForceField
 
 Constant forces applied to given degrees of freedom
 

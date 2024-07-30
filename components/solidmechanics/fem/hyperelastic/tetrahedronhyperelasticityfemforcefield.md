@@ -65,7 +65,6 @@ node.addObject('TetrahedronHyperelasticityFEMForceField', name="HyperElasticMate
 An example scene involving a TetrahedronHyperelasticityFEMForceField is available in [*examples/Component/SolidMechanics/FEM/TetrahedronHyperelasticityFEMForceField.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/SolidMechanics/FEM/TetrahedronHyperelasticityFEMForceField.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# TetrahedronHyperelasticityFEMForceField
 
 Generic Tetrahedral finite elements
 

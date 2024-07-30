@@ -24,7 +24,6 @@ Examples
 An example scene involving the PointsFromIndices engine is available in [*examples/Component/Engine/Select/PointsFromIndices.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Engine/Select/PointsFromIndices.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# PointsFromIndices
 
 Find the points given a list of indices
 

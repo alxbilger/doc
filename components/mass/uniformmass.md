@@ -96,7 +96,6 @@ node.addObject('UniformMass', totalMass='10')
 An example scene involving a UniformMass is available in [*examples/Component/Mass/UniformMass.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Mass/UniformMass.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# UniformMass
 
 Define the same mass for all the particles
 

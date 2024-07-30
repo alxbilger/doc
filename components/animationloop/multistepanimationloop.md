@@ -47,7 +47,6 @@ node.addObject('MultiStepAnimationLoop', collisionSteps='10', integrationSteps='
 An example scene involving a MultiStepAnimationLoop is available in [*examples/Component/AnimationLoop/MultiStepAnimationLoop.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/AnimationLoop/MultiStepAnimationLoop.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# MultiStepAnimationLoop
 
 Multi steps animation loop, multi integration steps in a single animation step are managed.
 

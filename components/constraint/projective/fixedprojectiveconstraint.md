@@ -83,7 +83,6 @@ node.addObject('FixedProjectiveConstraint', indices='3 39 64')
 An example scene involving a FixedProjectiveConstraint is available in [*examples/Component/Constraint/Projective/FixedProjectiveConstraint.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Constraint/Projective/FixedProjectiveConstraint.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# FixedProjectiveConstraint
 
 Attach given particles to their initial positions
 

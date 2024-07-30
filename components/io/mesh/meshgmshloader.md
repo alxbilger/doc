@@ -33,7 +33,6 @@ node.addObject('MeshGmshLoader', name="ObjLoader", filename="mesh/square3.msh", 
 
 An example scene involving a MeshGmshLoader is available in [*examples/Component/IO/Mesh/MeshGmshLoader.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/IO/Mesh/MeshGmshLoader.scn)<!-- automatically generated doc START -->
 <!-- generate_doc -->
-# MeshGmshLoader
 
 Specific mesh loader for Gmsh file format.
 

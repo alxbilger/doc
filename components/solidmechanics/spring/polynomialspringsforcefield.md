@@ -73,7 +73,6 @@ node.createObject('DiagonalMass', massDensity='1000')
 An example scene involving a PolynomialSpringsForceField is available in [*examples/Component/SolidMechanics/Spring/PolynomialSpringsForceField.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/SolidMechanics/Spring/PolynomialSpringsForceField.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# PolynomialSpringsForceField
 
 Simple elastic springs applied to given degrees of freedom between their current and rest shape position
 

@@ -51,7 +51,6 @@ With a description of each data
 An example scene involving a TetrahedronFEMForceField is available in [*examples/Component/SolidMechanics/FEM/TetrahedronFEMForceField.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/SolidMechanics/FEM/TetrahedronFEMForceField.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# TetrahedronFEMForceField
 
 Tetrahedral finite elements
 

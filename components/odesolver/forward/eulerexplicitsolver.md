@@ -67,7 +67,6 @@ Examples of scenes involving a EulerExplicitSolver are available in [*examples/C
 - [EulerSymplecticSolver_diagonal.scn](https://github.com/sofa-framework/sofa/blob/master/examples/Component/ODESolver/Forward/EulerSymplecticSolver_diagonal.scn): symplectic and diagonal mass matrix
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# EulerExplicitSolver
 
 A simple explicit time integrator
 

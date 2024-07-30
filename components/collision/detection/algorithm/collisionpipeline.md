@@ -80,7 +80,6 @@ Inheritance Diagram
 Read more on [SOFA API documentation](https://www.sofa-framework.org/api/master/sofa/html/classsofa_1_1component_1_1collision_1_1_default_pipeline.html)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# CollisionPipeline
 
 The default collision detection and modeling pipeline
 

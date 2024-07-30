@@ -47,7 +47,6 @@ node.addObject('FreeMotionAnimationLoop')
 An example scene involving a FreeAnimationLoop is available in [*examples/Component/AnimationLoop/FreeMotionAnimationLoop.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/AnimationLoop/FreeMotionAnimationLoop.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# FreeMotionAnimationLoop
 
 
 The animation loop to use with constraints.

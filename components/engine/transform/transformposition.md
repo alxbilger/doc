@@ -32,7 +32,6 @@ Examples
 An example scene involving the TransformPosition engine is available in [*examples/Component/Engine/Transform/TransformPosition.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Engine/Transform/TransformPosition.scn)
 <!-- automatically generated doc START -->
 <!-- generate_doc -->
-# TransformPosition
 
 Transform position of 3d points
 
