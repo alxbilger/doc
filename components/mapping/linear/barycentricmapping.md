@@ -122,9 +122,9 @@ Use the rest position of the input and output models to initialize the mapping
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|input|Input object to map|State<Vec3d>|
-|output|Output object to map|State<Rigid3d>|
-|mapper|Internal mapper created depending on the type of topology|TopologyBarycentricMapper<Vec3d,Rigid3d>|
+|input|Input object to map|State&lt;Vec3d&gt;|
+|output|Output object to map|State&lt;Rigid3d&gt;|
+|mapper|Internal mapper created depending on the type of topology|TopologyBarycentricMapper&lt;Vec3d,Rigid3d&gt;|
 |input_topology|Input topology container (usually the surrounding domain).|BaseMeshTopology|
 |output_topology|Output topology container (usually the immersed domain).|BaseMeshTopology|
 
@@ -247,9 +247,9 @@ Use the rest position of the input and output models to initialize the mapping
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|input|Input object to map|State<Vec3d>|
-|output|Output object to map|State<Vec3d>|
-|mapper|Internal mapper created depending on the type of topology|TopologyBarycentricMapper<Vec3d,Vec3d>|
+|input|Input object to map|State&lt;Vec3d&gt;|
+|output|Output object to map|State&lt;Vec3d&gt;|
+|mapper|Internal mapper created depending on the type of topology|TopologyBarycentricMapper&lt;Vec3d,Vec3d&gt;|
 |input_topology|Input topology container (usually the surrounding domain).|BaseMeshTopology|
 |output_topology|Output topology container (usually the immersed domain).|BaseMeshTopology|
 

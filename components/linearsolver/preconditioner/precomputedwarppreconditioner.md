@@ -125,6 +125,6 @@ Scale rotations in draw function
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|linearSystem|The linear system to solve|TypedMatrixLinearSystem<CompressedRowSparseMatrixd>|
+|linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixd&gt;|
 |linearSolver|Link towards the linear solver used to precompute the first matrix|LinearSolver|
 

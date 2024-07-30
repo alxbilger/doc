@@ -144,7 +144,7 @@ if true the sphere force field is applied on both sides
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
-|mstate|MechanicalState used by this component|MechanicalState<Vec1d>|
+|mstate|MechanicalState used by this component|MechanicalState&lt;Vec1d&gt;|
 
 Templates:
 
@@ -287,7 +287,7 @@ if true the sphere force field is applied on both sides
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
-|mstate|MechanicalState used by this component|MechanicalState<Vec2d>|
+|mstate|MechanicalState used by this component|MechanicalState&lt;Vec2d&gt;|
 
 Templates:
 
@@ -430,7 +430,7 @@ if true the sphere force field is applied on both sides
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
-|mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
+|mstate|MechanicalState used by this component|MechanicalState&lt;Vec3d&gt;|
 
 ## Examples 
 

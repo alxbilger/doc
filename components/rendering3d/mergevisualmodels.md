@@ -423,7 +423,7 @@ Initial Scale of the object
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |topology|link to the topology container|BaseMeshTopology|
-|input1|input visual model(1)|VisualModelImpl<Vec3d>|
+|input1|input visual model(1)|VisualModelImpl&lt;Vec3d&gt;|
 
 ## Examples 
 

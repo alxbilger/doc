@@ -161,8 +161,8 @@ enable/disable drawing of the ellipsoid
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
-|object1|First object associated to this component|MechanicalState<Vec3d>|
-|object2|Second object associated to this component|MechanicalState<Rigid3d>|
+|object1|First object associated to this component|MechanicalState&lt;Vec3d&gt;|
+|object2|Second object associated to this component|MechanicalState&lt;Rigid3d&gt;|
 
 ## Examples 
 

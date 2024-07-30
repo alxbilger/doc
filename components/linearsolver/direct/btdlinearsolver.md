@@ -118,5 +118,5 @@ display debug informations about subpartSolve computation
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|linearSystem|The linear system to solve|TypedMatrixLinearSystem<BTDMatrix6d>|
+|linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;BTDMatrix6d&gt;|
 

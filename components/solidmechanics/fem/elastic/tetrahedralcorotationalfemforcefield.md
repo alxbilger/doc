@@ -175,7 +175,7 @@ Allow specification of different stiffness per element. If there are N element a
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
-|mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
+|mstate|MechanicalState used by this component|MechanicalState&lt;Vec3d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
 
 ## Examples 

@@ -206,8 +206,8 @@ The way springs will be drawn:
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
-|object1|First object associated to this component|MechanicalState<Vec1d>|
-|object2|Second object associated to this component|MechanicalState<Vec1d>|
+|object1|First object associated to this component|MechanicalState&lt;Vec1d&gt;|
+|object2|Second object associated to this component|MechanicalState&lt;Vec1d&gt;|
 
 Templates:
 
@@ -412,8 +412,8 @@ The way springs will be drawn:
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
-|object1|First object associated to this component|MechanicalState<Vec2d>|
-|object2|Second object associated to this component|MechanicalState<Vec2d>|
+|object1|First object associated to this component|MechanicalState&lt;Vec2d&gt;|
+|object2|Second object associated to this component|MechanicalState&lt;Vec2d&gt;|
 
 Templates:
 
@@ -618,8 +618,8 @@ The way springs will be drawn:
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
-|object1|First object associated to this component|MechanicalState<Vec3d>|
-|object2|Second object associated to this component|MechanicalState<Vec3d>|
+|object1|First object associated to this component|MechanicalState&lt;Vec3d&gt;|
+|object2|Second object associated to this component|MechanicalState&lt;Vec3d&gt;|
 
 Templates:
 
@@ -824,8 +824,8 @@ The way springs will be drawn:
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
-|object1|First object associated to this component|MechanicalState<Vec6d>|
-|object2|Second object associated to this component|MechanicalState<Vec6d>|
+|object1|First object associated to this component|MechanicalState&lt;Vec6d&gt;|
+|object2|Second object associated to this component|MechanicalState&lt;Vec6d&gt;|
 
 ## Examples 
 

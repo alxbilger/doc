@@ -87,5 +87,5 @@ Parallelize the computation of the product J*M^{-1}*J^T where M is the matrix of
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|linearSystem|The linear system to solve|TypedMatrixLinearSystem<BlockDiagonalMatrixMat3x3d>|
+|linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;BlockDiagonalMatrixMat3x3d&gt;|
 

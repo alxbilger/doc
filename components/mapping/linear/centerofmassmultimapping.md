@@ -115,8 +115,8 @@ set to true to apply this mapping to restPosition at init
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|input|Input Object(s)|State<Rigid3d>|
-|output|Output Object(s)|State<Rigid3d>|
+|input|Input Object(s)|State&lt;Rigid3d&gt;|
+|output|Output Object(s)|State&lt;Rigid3d&gt;|
 
 Templates:
 
@@ -230,8 +230,8 @@ set to true to apply this mapping to restPosition at init
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|input|Input Object(s)|State<Rigid3d>|
-|output|Output Object(s)|State<Vec3d>|
+|input|Input Object(s)|State&lt;Rigid3d&gt;|
+|output|Output Object(s)|State&lt;Vec3d&gt;|
 
 Templates:
 
@@ -345,6 +345,6 @@ set to true to apply this mapping to restPosition at init
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|input|Input Object(s)|State<Vec3d>|
-|output|Output Object(s)|State<Vec3d>|
+|input|Input Object(s)|State&lt;Vec3d&gt;|
+|output|Output Object(s)|State&lt;Vec3d&gt;|
 

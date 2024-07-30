@@ -115,7 +115,7 @@ set to true to apply this mapping to restPosition at init
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|input1|Input Object(s) (1st Data type)|State<Vec3d>|
-|input2|Input Object(s) (2st Data type)|State<Rigid3d>|
-|output|Output Object(s)|State<Vec3d>|
+|input1|Input Object(s) (1st Data type)|State&lt;Vec3d&gt;|
+|input2|Input Object(s) (2st Data type)|State&lt;Rigid3d&gt;|
+|output|Output Object(s)|State&lt;Vec3d&gt;|
 

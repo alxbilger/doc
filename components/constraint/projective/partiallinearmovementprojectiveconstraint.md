@@ -190,7 +190,7 @@ Visualization of the movement to be applied to constrained dofs.
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
-|mstate|MechanicalState used by this component|MechanicalState<Rigid3d>|
+|mstate|MechanicalState used by this component|MechanicalState&lt;Rigid3d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
 
 Templates:
@@ -380,7 +380,7 @@ Visualization of the movement to be applied to constrained dofs.
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
-|mstate|MechanicalState used by this component|MechanicalState<Vec1d>|
+|mstate|MechanicalState used by this component|MechanicalState&lt;Vec1d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
 
 Templates:
@@ -570,7 +570,7 @@ Visualization of the movement to be applied to constrained dofs.
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
-|mstate|MechanicalState used by this component|MechanicalState<Vec2d>|
+|mstate|MechanicalState used by this component|MechanicalState&lt;Vec2d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
 
 Templates:
@@ -760,7 +760,7 @@ Visualization of the movement to be applied to constrained dofs.
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
-|mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
+|mstate|MechanicalState used by this component|MechanicalState&lt;Vec3d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
 
 Templates:
@@ -950,6 +950,6 @@ Visualization of the movement to be applied to constrained dofs.
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
-|mstate|MechanicalState used by this component|MechanicalState<Vec6d>|
+|mstate|MechanicalState used by this component|MechanicalState&lt;Vec6d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
 

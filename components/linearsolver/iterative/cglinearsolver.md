@@ -174,7 +174,7 @@ Graph of residuals at each iteration
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|linearSystem|The linear system to solve|TypedMatrixLinearSystem<CompressedRowSparseMatrixMat2x2d>|
+|linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat2x2d&gt;|
 
 Templates:
 
@@ -295,7 +295,7 @@ Graph of residuals at each iteration
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|linearSystem|The linear system to solve|TypedMatrixLinearSystem<CompressedRowSparseMatrixMat3x3d>|
+|linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat3x3d&gt;|
 
 Templates:
 
@@ -416,7 +416,7 @@ Graph of residuals at each iteration
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|linearSystem|The linear system to solve|TypedMatrixLinearSystem<CompressedRowSparseMatrixMat4x4d>|
+|linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat4x4d&gt;|
 
 Templates:
 
@@ -537,7 +537,7 @@ Graph of residuals at each iteration
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|linearSystem|The linear system to solve|TypedMatrixLinearSystem<CompressedRowSparseMatrixMat6x6d>|
+|linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat6x6d&gt;|
 
 Templates:
 
@@ -658,7 +658,7 @@ Graph of residuals at each iteration
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|linearSystem|The linear system to solve|TypedMatrixLinearSystem<CompressedRowSparseMatrixMat8x8d>|
+|linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat8x8d&gt;|
 
 Templates:
 
@@ -779,7 +779,7 @@ Graph of residuals at each iteration
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|linearSystem|The linear system to solve|TypedMatrixLinearSystem<CompressedRowSparseMatrixd>|
+|linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixd&gt;|
 
 Templates:
 
@@ -900,7 +900,7 @@ Graph of residuals at each iteration
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|linearSystem|The linear system to solve|TypedMatrixLinearSystem<FullMatrix>|
+|linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;FullMatrix&gt;|
 
 Templates:
 
@@ -1021,7 +1021,7 @@ Graph of residuals at each iteration
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|linearSystem|The linear system to solve|TypedMatrixLinearSystem<GraphScattered>|
+|linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;GraphScattered&gt;|
 
 Templates:
 
@@ -1142,7 +1142,7 @@ Graph of residuals at each iteration
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|linearSystem|The linear system to solve|TypedMatrixLinearSystem<SparseMatrix>|
+|linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;SparseMatrix&gt;|
 
 ## Examples 
 

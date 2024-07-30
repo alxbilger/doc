@@ -101,6 +101,6 @@ Number of steps before the next refresh of the system matrix in the main solver
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|linearSystem|The linear system to solve|TypedMatrixLinearSystem<RotationMatrixd>|
+|linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;RotationMatrixd&gt;|
 |linearSolver|Link towards the linear solver used to build the warp conditioner|LinearSolver|
 

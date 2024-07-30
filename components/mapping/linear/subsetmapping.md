@@ -164,8 +164,8 @@ True to resize the output MechanicalState to match the size of indices
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|input|Input object to map|State<Rigid3d>|
-|output|Output object to map|State<Rigid3d>|
+|input|Input object to map|State&lt;Rigid3d&gt;|
+|output|Output object to map|State&lt;Rigid3d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
 
 Templates:
@@ -329,8 +329,8 @@ True to resize the output MechanicalState to match the size of indices
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|input|Input object to map|State<Vec1d>|
-|output|Output object to map|State<Vec1d>|
+|input|Input object to map|State&lt;Vec1d&gt;|
+|output|Output object to map|State&lt;Vec1d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
 
 Templates:
@@ -494,8 +494,8 @@ True to resize the output MechanicalState to match the size of indices
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
-|input|Input object to map|State<Vec3d>|
-|output|Output object to map|State<Vec3d>|
+|input|Input object to map|State&lt;Vec3d&gt;|
+|output|Output object to map|State&lt;Vec3d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
 
 ## Examples 
