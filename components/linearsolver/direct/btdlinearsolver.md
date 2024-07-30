@@ -15,7 +15,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -110,7 +110,7 @@ display debug informations about subpartSolve computation
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

@@ -11,7 +11,7 @@ __parents__:
 
 - PauseAnimation
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -68,7 +68,7 @@ if true, handle the events, otherwise ignore the events
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

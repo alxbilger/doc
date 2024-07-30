@@ -19,7 +19,7 @@ __parents__:
 
 - ForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -221,7 +221,7 @@ DEBUG: color used to render force vectors
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

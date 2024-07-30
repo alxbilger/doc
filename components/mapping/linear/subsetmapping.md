@@ -15,7 +15,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -156,7 +156,7 @@ True to resize the output MechanicalState to match the size of indices
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -178,7 +178,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -319,7 +319,7 @@ True to resize the output MechanicalState to match the size of indices
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -341,7 +341,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -482,7 +482,7 @@ True to resize the output MechanicalState to match the size of indices
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

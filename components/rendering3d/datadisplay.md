@@ -12,7 +12,7 @@ __parents__:
 - VisualModel
 - VisualState
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -184,7 +184,7 @@ Normals of the model
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

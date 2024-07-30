@@ -11,7 +11,7 @@ __parents__:
 
 - VisualModel
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -106,7 +106,7 @@ Display the frame or not
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

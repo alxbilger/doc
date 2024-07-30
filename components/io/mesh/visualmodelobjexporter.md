@@ -11,7 +11,7 @@ __parents__:
 
 - BaseSimulationExporter
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -103,7 +103,7 @@ Enable or disable the component. (default=true)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

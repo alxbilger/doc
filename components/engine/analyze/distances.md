@@ -15,7 +15,7 @@ __parents__:
 
 - DataEngine
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -180,7 +180,7 @@ scale for the gradients displayed.
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

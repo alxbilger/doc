@@ -11,7 +11,7 @@ __parents__:
 
 - VisualModel
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -110,7 +110,7 @@ perform depth test
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

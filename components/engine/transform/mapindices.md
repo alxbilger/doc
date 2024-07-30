@@ -20,7 +20,7 @@ __parents__:
 
 - DataEngine
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -118,7 +118,7 @@ Output indices
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

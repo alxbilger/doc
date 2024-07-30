@@ -11,7 +11,7 @@ __parents__:
 
 - TopologicalMapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -89,7 +89,7 @@ If true the list of initial triangles is initially empty. Only additional triang
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

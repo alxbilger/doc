@@ -11,7 +11,7 @@ __parents__:
 
 - VisualModel
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -138,7 +138,7 @@ Update the display of the label every nb of time steps
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

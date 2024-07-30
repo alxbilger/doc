@@ -15,7 +15,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -95,7 +95,7 @@ Define a sequence of oscillating particules:
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -116,7 +116,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -196,7 +196,7 @@ Define a sequence of oscillating particules:
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

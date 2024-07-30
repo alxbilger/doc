@@ -11,7 +11,7 @@ __parents__:
 
 - TriangleCollisionModel
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -174,7 +174,7 @@ use the curvature of the mesh to avoid some self-intersection test
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

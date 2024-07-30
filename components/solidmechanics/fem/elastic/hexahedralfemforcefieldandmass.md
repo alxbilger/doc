@@ -16,7 +16,7 @@ __parents__:
 - Mass
 - HexahedralFEMForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -164,7 +164,7 @@ Lumped masses
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

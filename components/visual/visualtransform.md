@@ -11,7 +11,7 @@ __parents__:
 
 - VisualModel
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -89,7 +89,7 @@ True to apply transform to all nodes below
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

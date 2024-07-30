@@ -16,7 +16,7 @@ __parents__:
 
 - DataEngine
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -135,7 +135,7 @@ the number of cubes in the x,y,z directions. If resolution in the z direction is
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

@@ -80,7 +80,7 @@ __parents__:
 
 - VisualModel
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -151,7 +151,7 @@ Display Flags
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

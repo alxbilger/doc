@@ -11,7 +11,7 @@ __parents__:
 
 - TopologicalMapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -103,7 +103,7 @@ Which input topology element map to a given point in the output topology : 0 -> 
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

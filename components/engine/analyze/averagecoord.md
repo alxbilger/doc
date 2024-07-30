@@ -15,7 +15,7 @@ __parents__:
 
 - DataEngine
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -100,7 +100,7 @@ average of the values with the given indices in the given coordinate vector
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -121,7 +121,7 @@ __parents__:
 
 - DataEngine
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -206,7 +206,7 @@ average of the values with the given indices in the given coordinate vector
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -227,7 +227,7 @@ __parents__:
 
 - DataEngine
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -312,7 +312,7 @@ average of the values with the given indices in the given coordinate vector
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -333,7 +333,7 @@ __parents__:
 
 - DataEngine
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -418,7 +418,7 @@ average of the values with the given indices in the given coordinate vector
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

@@ -54,7 +54,7 @@ __parents__:
 
 - BaseAnimationLoop
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -149,7 +149,7 @@ If true, solves all the ODEs in parallel during the free motion step.
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

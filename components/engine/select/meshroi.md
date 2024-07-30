@@ -17,7 +17,7 @@ __parents__:
 
 - DataEngine
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -342,7 +342,7 @@ rendering size for mesh and topological elements
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

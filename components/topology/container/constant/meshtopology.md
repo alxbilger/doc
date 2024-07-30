@@ -11,7 +11,7 @@ __parents__:
 
 - BaseMeshTopology
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -162,7 +162,7 @@ if true, draw the topology hexahedra
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

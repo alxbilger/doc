@@ -15,7 +15,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -115,7 +115,7 @@ coordinates on which to apply velocities
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -137,7 +137,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -237,7 +237,7 @@ coordinates on which to apply velocities
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -259,7 +259,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -359,7 +359,7 @@ coordinates on which to apply velocities
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -381,7 +381,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -481,7 +481,7 @@ coordinates on which to apply velocities
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -503,7 +503,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -603,7 +603,7 @@ coordinates on which to apply velocities
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

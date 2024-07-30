@@ -15,7 +15,7 @@ __parents__:
 
 - SpringForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -155,7 +155,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -177,7 +177,7 @@ __parents__:
 
 - SpringForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -317,7 +317,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -339,7 +339,7 @@ __parents__:
 
 - SpringForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -479,7 +479,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -501,7 +501,7 @@ __parents__:
 
 - SpringForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -641,7 +641,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -663,7 +663,7 @@ __parents__:
 
 - SpringForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -803,7 +803,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

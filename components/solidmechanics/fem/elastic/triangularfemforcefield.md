@@ -15,7 +15,7 @@ __parents__:
 
 - ForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -173,7 +173,7 @@ Flag activating rendering of triangles to fracture
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

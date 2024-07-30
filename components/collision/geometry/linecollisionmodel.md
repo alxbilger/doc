@@ -15,7 +15,7 @@ __parents__:
 
 - CollisionModel
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -171,7 +171,7 @@ Display Collision Model Points free position(in green)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

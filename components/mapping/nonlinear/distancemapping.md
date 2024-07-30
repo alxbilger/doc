@@ -15,7 +15,7 @@ __parents__:
 
 - Mapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -148,7 +148,7 @@ Color for object display. (default=[1.0,1.0,0.0,1.0])
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -170,7 +170,7 @@ __parents__:
 
 - Mapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -303,7 +303,7 @@ Color for object display. (default=[1.0,1.0,0.0,1.0])
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

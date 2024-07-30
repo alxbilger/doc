@@ -15,7 +15,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -114,7 +114,7 @@ Use the rest position of the input and output models to initialize the mapping
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -138,7 +138,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -237,7 +237,7 @@ Use the rest position of the input and output models to initialize the mapping
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

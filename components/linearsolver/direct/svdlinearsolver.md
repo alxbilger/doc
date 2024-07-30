@@ -15,7 +15,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -100,7 +100,7 @@ Condition number of the matrix: ratio between the largest and smallest singular 
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -120,7 +120,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -205,7 +205,7 @@ Condition number of the matrix: ratio between the largest and smallest singular 
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -225,7 +225,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -310,7 +310,7 @@ Condition number of the matrix: ratio between the largest and smallest singular 
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

@@ -15,7 +15,7 @@ __parents__:
 
 - BaseLinearElasticityFEMForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -152,7 +152,7 @@ size of the hexa
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

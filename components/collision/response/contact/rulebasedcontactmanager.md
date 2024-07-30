@@ -11,7 +11,7 @@ __parents__:
 
 - CollisionResponse
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -100,7 +100,7 @@ Rules are applied in the order they are specified. If none match a given contact
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

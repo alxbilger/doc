@@ -11,7 +11,7 @@ __parents__:
 
 - Light
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -190,7 +190,7 @@ Draw Light Source
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

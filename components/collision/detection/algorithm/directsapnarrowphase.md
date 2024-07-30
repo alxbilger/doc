@@ -11,7 +11,7 @@ __parents__:
 
 - NarrowPhaseDetection
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -85,7 +85,7 @@ Show only boxes which will be sent to narrow phase
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

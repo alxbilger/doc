@@ -104,7 +104,7 @@ __parents__:
 
 - Mass
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -237,7 +237,7 @@ Factor length of the axis displayed (only used for rigids)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -260,7 +260,7 @@ __parents__:
 
 - Mass
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -393,7 +393,7 @@ Factor length of the axis displayed (only used for rigids)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -416,7 +416,7 @@ __parents__:
 
 - Mass
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -549,7 +549,7 @@ Factor length of the axis displayed (only used for rigids)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -572,7 +572,7 @@ __parents__:
 
 - Mass
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -705,7 +705,7 @@ Factor length of the axis displayed (only used for rigids)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -728,7 +728,7 @@ __parents__:
 
 - Mass
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -861,7 +861,7 @@ Factor length of the axis displayed (only used for rigids)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -884,7 +884,7 @@ __parents__:
 
 - Mass
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -1017,7 +1017,7 @@ Factor length of the axis displayed (only used for rigids)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -1040,7 +1040,7 @@ __parents__:
 
 - Mass
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -1173,7 +1173,7 @@ Factor length of the axis displayed (only used for rigids)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -1196,7 +1196,7 @@ __parents__:
 
 - Mass
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -1329,7 +1329,7 @@ Factor length of the axis displayed (only used for rigids)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

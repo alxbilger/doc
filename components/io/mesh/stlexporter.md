@@ -11,7 +11,7 @@ __parents__:
 
 - BaseSimulationExporter
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -131,7 +131,7 @@ quads indices
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

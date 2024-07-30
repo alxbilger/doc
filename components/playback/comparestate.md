@@ -11,7 +11,7 @@ __parents__:
 
 - ReadState
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -120,7 +120,7 @@ translate the input mechanical object
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

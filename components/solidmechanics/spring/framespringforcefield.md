@@ -15,7 +15,7 @@ __parents__:
 
 - PairInteractionForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -103,7 +103,7 @@ dislpay the illicit part of the joint rotation
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

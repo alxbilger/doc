@@ -77,7 +77,7 @@ __parents__:
 
 - BaseProximityIntersection
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -176,7 +176,7 @@ Use external cone computation
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

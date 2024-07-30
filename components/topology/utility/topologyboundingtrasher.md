@@ -15,7 +15,7 @@ __parents__:
 
 - BaseObject
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -96,7 +96,7 @@ Draw bounding box (default = false)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

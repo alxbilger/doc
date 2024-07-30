@@ -11,7 +11,7 @@ __parents__:
 
 - TopologicalMapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -194,7 +194,7 @@ Internal destination -> source topology hexahedra map
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

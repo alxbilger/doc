@@ -15,7 +15,7 @@ __parents__:
 
 - Mapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -123,7 +123,7 @@ If available (cached), the geometric stiffness matrix is used in order to comput
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

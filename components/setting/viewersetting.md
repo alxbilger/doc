@@ -11,7 +11,7 @@ __parents__:
 
 - ConfigurationSetting
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -96,7 +96,7 @@ The method used to pick objects
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

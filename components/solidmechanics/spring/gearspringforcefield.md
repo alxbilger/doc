@@ -15,7 +15,7 @@ __parents__:
 
 - PairInteractionForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -117,7 +117,7 @@ modify the size of the debug information of a given factor
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

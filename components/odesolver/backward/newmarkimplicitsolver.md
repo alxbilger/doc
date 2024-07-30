@@ -80,7 +80,7 @@ __parents__:
 - OdeSolver
 - LinearSolverAccessor
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -179,7 +179,7 @@ If true, do not use realloc and free visitors in fwdInteractionForceField.
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

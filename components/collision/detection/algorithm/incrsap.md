@@ -12,7 +12,7 @@ __parents__:
 - BroadPhaseDetection
 - NarrowPhaseDetection
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -76,7 +76,7 @@ if not empty, objects that do not intersect this bounding-box will be ignored
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

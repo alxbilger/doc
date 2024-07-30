@@ -11,7 +11,7 @@ __parents__:
 
 - BaseCamera
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -187,7 +187,7 @@ Projection Matrix
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

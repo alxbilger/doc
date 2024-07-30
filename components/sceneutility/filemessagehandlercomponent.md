@@ -11,7 +11,7 @@ __parents__:
 
 - BaseObject
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -75,7 +75,7 @@ Name of the file into which the message will be saved in.
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

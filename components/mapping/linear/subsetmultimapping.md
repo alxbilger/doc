@@ -15,7 +15,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -114,7 +114,7 @@ list of couples (parent index + index in the parent)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -135,7 +135,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -234,7 +234,7 @@ list of couples (parent index + index in the parent)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -255,7 +255,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -354,7 +354,7 @@ list of couples (parent index + index in the parent)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -375,7 +375,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -474,7 +474,7 @@ list of couples (parent index + index in the parent)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -495,7 +495,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -594,7 +594,7 @@ list of couples (parent index + index in the parent)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

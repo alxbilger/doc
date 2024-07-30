@@ -11,7 +11,7 @@ __parents__:
 
 - BaseObject
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -75,7 +75,7 @@ Check topology at each step
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

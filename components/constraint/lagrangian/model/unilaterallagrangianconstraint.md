@@ -61,7 +61,7 @@ __parents__:
 
 - PairInteractionConstraint
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -140,7 +140,7 @@ Use a negative value for infinite constraints
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

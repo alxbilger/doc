@@ -16,7 +16,7 @@ __parents__:
 
 - EdgeSetGeometryAlgorithms
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -139,7 +139,7 @@ RGB code color used to draw quads.
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

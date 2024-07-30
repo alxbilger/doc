@@ -11,7 +11,7 @@ __parents__:
 
 - VoxelLoader
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -152,7 +152,7 @@ Interpret voxel as either hexa or points
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

@@ -20,7 +20,7 @@ __parents__:
 
 - MechanicalState
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -308,7 +308,7 @@ Rotation of the DOFs, applied the after the rest position has been computed
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

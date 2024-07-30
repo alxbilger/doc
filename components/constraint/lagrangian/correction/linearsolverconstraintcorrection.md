@@ -17,7 +17,7 @@ __parents__:
 
 - ConstraintCorrection
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -81,7 +81,7 @@ constraints are reordered along a wire-like topology (from tip to base)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

@@ -15,7 +15,7 @@ __parents__:
 
 - CollisionModel
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -192,7 +192,7 @@ The default local axis cylinder is modeled around
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

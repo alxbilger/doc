@@ -57,7 +57,7 @@ __parents__:
 
 - ForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -170,7 +170,7 @@ Thickness of the elements
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

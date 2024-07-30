@@ -15,7 +15,7 @@ __parents__:
 
 - Constraint
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -108,7 +108,7 @@ if false, constrains the pos to be zero / if true constraint the current positio
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

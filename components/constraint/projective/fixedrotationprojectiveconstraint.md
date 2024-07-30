@@ -15,7 +15,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -108,7 +108,7 @@ Prevent Rotation around Z axis
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

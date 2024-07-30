@@ -15,7 +15,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -149,7 +149,7 @@ Scale factor applied on the linear force accumulated on the rigid model
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

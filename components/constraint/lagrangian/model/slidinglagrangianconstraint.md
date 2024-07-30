@@ -15,7 +15,7 @@ __parents__:
 
 - PairInteractionConstraint
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -122,7 +122,7 @@ force (impulse) used to solve the constraint
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

@@ -103,7 +103,7 @@ __parents__:
 
 - Mass
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -265,7 +265,7 @@ display the rest positions
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -287,7 +287,7 @@ __parents__:
 
 - Mass
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -449,7 +449,7 @@ display the rest positions
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -471,7 +471,7 @@ __parents__:
 
 - Mass
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -633,7 +633,7 @@ display the rest positions
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -655,7 +655,7 @@ __parents__:
 
 - Mass
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -817,7 +817,7 @@ display the rest positions
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -839,7 +839,7 @@ __parents__:
 
 - Mass
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -1001,7 +1001,7 @@ display the rest positions
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -1023,7 +1023,7 @@ __parents__:
 
 - Mass
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -1185,7 +1185,7 @@ display the rest positions
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

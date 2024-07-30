@@ -15,7 +15,7 @@ __parents__:
 
 - ForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -125,7 +125,7 @@ To display conductivity map.
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -147,7 +147,7 @@ __parents__:
 
 - ForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -257,7 +257,7 @@ To display conductivity map.
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -279,7 +279,7 @@ __parents__:
 
 - ForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -389,7 +389,7 @@ To display conductivity map.
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

@@ -16,7 +16,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -136,7 +136,7 @@ If true, independent matrices (global matrix vs mapped matrices) are assembled i
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

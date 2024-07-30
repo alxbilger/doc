@@ -15,7 +15,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -79,7 +79,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -100,7 +100,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -164,7 +164,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -185,7 +185,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -249,7 +249,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -270,7 +270,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -334,7 +334,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -355,7 +355,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -419,7 +419,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -440,7 +440,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -504,7 +504,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -525,7 +525,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -589,7 +589,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -610,7 +610,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -674,7 +674,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -695,7 +695,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -759,7 +759,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -780,7 +780,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -844,7 +844,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -865,7 +865,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -929,7 +929,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

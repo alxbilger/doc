@@ -17,7 +17,7 @@ __parents__:
 
 - GeometryAlgorithms
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -98,7 +98,7 @@ Debug : view Point indices
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

@@ -15,7 +15,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -115,7 +115,7 @@ Indices of the fixed points
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -137,7 +137,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -237,7 +237,7 @@ Indices of the fixed points
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -259,7 +259,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -359,7 +359,7 @@ Indices of the fixed points
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

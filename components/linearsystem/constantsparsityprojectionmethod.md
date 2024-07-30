@@ -15,7 +15,7 @@ __parents__:
 
 - MatrixProjectionMethod
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -86,7 +86,7 @@ Compute the matrix product in parallel
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

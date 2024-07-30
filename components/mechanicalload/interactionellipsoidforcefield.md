@@ -15,7 +15,7 @@ __parents__:
 
 - MixedInteractionForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -152,7 +152,7 @@ enable/disable drawing of the ellipsoid
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

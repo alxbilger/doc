@@ -15,7 +15,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -86,7 +86,7 @@ Omega coefficient
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -106,7 +106,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -177,7 +177,7 @@ Omega coefficient
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

@@ -11,7 +11,7 @@ __parents__:
 
 - BaseObject
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -158,7 +158,7 @@ Activate rendering of internal datasets
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

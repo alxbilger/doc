@@ -15,7 +15,7 @@ __parents__:
 
 - ForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -107,7 +107,7 @@ origin of the axis
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -128,7 +128,7 @@ __parents__:
 
 - ForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -220,7 +220,7 @@ origin of the axis
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

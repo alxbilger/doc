@@ -11,7 +11,7 @@ __parents__:
 
 - HexahedronSetTopologyContainer
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -173,7 +173,7 @@ Size of the Voxels
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

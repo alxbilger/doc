@@ -80,7 +80,7 @@ __parents__:
 
 - PairInteractionForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -234,7 +234,7 @@ Scale for indices display (default=0.02)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

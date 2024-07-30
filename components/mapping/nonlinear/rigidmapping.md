@@ -15,7 +15,7 @@ __parents__:
 
 - Mapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -166,7 +166,7 @@ are the output DOFs initially expressed in global coordinates
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -187,7 +187,7 @@ __parents__:
 
 - Mapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -338,7 +338,7 @@ are the output DOFs initially expressed in global coordinates
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -359,7 +359,7 @@ __parents__:
 
 - Mapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -510,7 +510,7 @@ are the output DOFs initially expressed in global coordinates
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

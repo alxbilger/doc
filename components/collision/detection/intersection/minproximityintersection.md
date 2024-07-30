@@ -84,7 +84,7 @@ __parents__:
 
 - BaseProximityIntersection
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -190,7 +190,7 @@ activate Line-Line  intersection tests
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

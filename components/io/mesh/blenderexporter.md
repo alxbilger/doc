@@ -16,7 +16,7 @@ __parents__:
 
 - BaseObject
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -108,7 +108,7 @@ number of element by hair strand
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

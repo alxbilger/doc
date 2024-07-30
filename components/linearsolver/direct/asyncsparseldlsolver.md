@@ -66,7 +66,7 @@ __parents__:
 
 - SparseLDLSolver
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -144,7 +144,7 @@ Number of non-zero values in the lower triangular matrix of the factorization. T
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -165,7 +165,7 @@ __parents__:
 
 - SparseLDLSolver
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -243,7 +243,7 @@ Number of non-zero values in the lower triangular matrix of the factorization. T
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

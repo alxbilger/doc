@@ -16,7 +16,7 @@ __parents__:
 
 - Controller
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -108,7 +108,7 @@ Main direction and orientation of the controlled DOF
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

@@ -11,7 +11,7 @@ __parents__:
 
 - BaseLoader
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -110,7 +110,7 @@ Translation applied to sphere positions
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

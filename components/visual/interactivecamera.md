@@ -11,7 +11,7 @@ __parents__:
 
 - BaseCamera
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -208,7 +208,7 @@ Pivot (0 => Camera lookAt, 1 => Camera position, 2 => Scene center, 3 => World c
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

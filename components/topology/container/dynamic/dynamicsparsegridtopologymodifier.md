@@ -11,7 +11,7 @@ __parents__:
 
 - HexahedronSetTopologyModifier
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -82,7 +82,7 @@ Remove isolated DOFs
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

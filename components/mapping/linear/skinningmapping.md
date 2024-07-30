@@ -15,7 +15,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -152,7 +152,7 @@ Show influence.
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

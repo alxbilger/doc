@@ -11,7 +11,7 @@ __parents__:
 
 - TopologicalMapping
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -110,7 +110,7 @@ Flip Normal ? (Inverse point order when creating quad)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

@@ -11,7 +11,7 @@ __parents__:
 
 - VisualManager
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -103,7 +103,7 @@ enable/disable drawing of lights shadow textures. (default=false)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

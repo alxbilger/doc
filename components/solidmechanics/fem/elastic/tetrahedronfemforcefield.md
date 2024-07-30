@@ -59,7 +59,7 @@ __parents__:
 - BaseLinearElasticityFEMForceField
 - BaseObject
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -294,7 +294,7 @@ draw gap between elements (when showWireFrame is disabled) [0,1]: 0: no gap, 1: 
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

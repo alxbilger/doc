@@ -15,7 +15,7 @@ __parents__:
 
 - BaseLinearElasticityFEMForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -159,7 +159,7 @@ Internal tetrahedron data
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

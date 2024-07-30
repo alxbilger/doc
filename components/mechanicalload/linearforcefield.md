@@ -15,7 +15,7 @@ __parents__:
 
 - ForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -114,7 +114,7 @@ Size of the drawn arrows (0->no arrows, sign->direction of drawing
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -136,7 +136,7 @@ __parents__:
 
 - ForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -235,7 +235,7 @@ Size of the drawn arrows (0->no arrows, sign->direction of drawing
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -257,7 +257,7 @@ __parents__:
 
 - ForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -356,7 +356,7 @@ Size of the drawn arrows (0->no arrows, sign->direction of drawing
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -378,7 +378,7 @@ __parents__:
 
 - ForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -477,7 +477,7 @@ Size of the drawn arrows (0->no arrows, sign->direction of drawing
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -499,7 +499,7 @@ __parents__:
 
 - ForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -598,7 +598,7 @@ Size of the drawn arrows (0->no arrows, sign->direction of drawing
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

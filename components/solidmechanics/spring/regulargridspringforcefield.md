@@ -15,7 +15,7 @@ __parents__:
 
 - StiffSpringForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -197,7 +197,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -219,7 +219,7 @@ __parents__:
 
 - StiffSpringForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -401,7 +401,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -423,7 +423,7 @@ __parents__:
 
 - StiffSpringForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -605,7 +605,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -627,7 +627,7 @@ __parents__:
 
 - StiffSpringForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -809,7 +809,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

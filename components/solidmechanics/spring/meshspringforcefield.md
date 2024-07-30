@@ -15,7 +15,7 @@ __parents__:
 
 - StiffSpringForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -260,7 +260,7 @@ Size of drawed lines
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -283,7 +283,7 @@ __parents__:
 
 - StiffSpringForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -528,7 +528,7 @@ Size of drawed lines
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -551,7 +551,7 @@ __parents__:
 
 - StiffSpringForceField
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -796,7 +796,7 @@ Size of drawed lines
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

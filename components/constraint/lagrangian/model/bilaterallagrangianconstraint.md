@@ -71,7 +71,7 @@ __parents__:
 
 - PairInteractionConstraint
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -192,7 +192,7 @@ keep the initial difference in orientation (only for rigids)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -216,7 +216,7 @@ __parents__:
 
 - PairInteractionConstraint
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -337,7 +337,7 @@ keep the initial difference in orientation (only for rigids)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

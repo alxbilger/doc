@@ -64,7 +64,7 @@ __parents__:
 
 - PairInteractionProjectiveConstraintSet
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -234,7 +234,7 @@ Vector of factors adapting the application of the constraint per pair of points 
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -256,7 +256,7 @@ __parents__:
 
 - PairInteractionProjectiveConstraintSet
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -426,7 +426,7 @@ Vector of factors adapting the application of the constraint per pair of points 
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -448,7 +448,7 @@ __parents__:
 
 - PairInteractionProjectiveConstraintSet
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -618,7 +618,7 @@ Vector of factors adapting the application of the constraint per pair of points 
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -640,7 +640,7 @@ __parents__:
 
 - PairInteractionProjectiveConstraintSet
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -810,7 +810,7 @@ Vector of factors adapting the application of the constraint per pair of points 
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
@@ -832,7 +832,7 @@ __parents__:
 
 - PairInteractionProjectiveConstraintSet
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -1002,7 +1002,7 @@ Vector of factors adapting the application of the constraint per pair of points 
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

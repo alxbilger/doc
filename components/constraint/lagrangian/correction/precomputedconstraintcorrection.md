@@ -17,7 +17,7 @@ __parents__:
 
 - ConstraintCorrection
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -116,7 +116,7 @@ If not empty, the compliance will be saved in this repertory
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

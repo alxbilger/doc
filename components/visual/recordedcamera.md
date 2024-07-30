@@ -11,7 +11,7 @@ __parents__:
 
 - BaseCamera
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -316,7 +316,7 @@ If true, will draw the translation path
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

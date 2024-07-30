@@ -11,7 +11,7 @@ __parents__:
 
 - ConfigurationSetting
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -75,7 +75,7 @@ Path where will be saved the gnuplot files
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |

@@ -87,7 +87,7 @@ __parents__:
 
 - Pipeline
 
-## Data: 
+## Data
 
 <table>
     <thead>
@@ -168,7 +168,7 @@ Draw the detected collisions. (default=false)
 </tbody>
 </table>
 
-## Links: 
+## Links
 
 
 | Name | Description | Destination type name |
