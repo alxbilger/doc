@@ -46,6 +46,14 @@ node.addObject('FreeMotionAnimationLoop')
 
 An example scene involving a FreeAnimationLoop is available in [*examples/Component/AnimationLoop/FreeMotionAnimationLoop.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/AnimationLoop/FreeMotionAnimationLoop.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# FreeMotionAnimationLoop
+
+
+The animation loop to use with constraints.
+You must add this loop at the beginning of the scene if you are using constraints."
+
+
 __Target__: Sofa.Component.AnimationLoop
 
 __namespace__: sofa::component::animationloop
@@ -54,7 +62,7 @@ __parents__:
 
 - BaseAnimationLoop
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -149,7 +157,7 @@ If true, solves all the ODEs in parallel during the free motion step.
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

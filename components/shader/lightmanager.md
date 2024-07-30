@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # LightManager
 
 Manage a set of lights that can cast hard and soft shadows.Soft Shadows is done using Variance Shadow Mapping (http://developer.download.nvidia.com/SDK/10.5/direct3d/Source/VarianceShadowMapping/Doc/VarianceShadowMapping.pdf)
@@ -11,7 +12,7 @@ __parents__:
 
 - VisualManager
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -103,7 +104,7 @@ enable/disable drawing of lights shadow textures. (default=false)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

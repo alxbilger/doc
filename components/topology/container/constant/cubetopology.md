@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # CubeTopology
 
 Surface of a cube in 3D
@@ -11,7 +12,7 @@ __parents__:
 
 - MeshTopology
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -211,7 +212,7 @@ if true, draw the topology hexahedra
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

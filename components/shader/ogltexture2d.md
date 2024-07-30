@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # OglTexture2D
 
 OglTexture2D
@@ -11,7 +12,7 @@ __parents__:
 
 - OglTexture
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -229,7 +230,7 @@ Texture2D Filename
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

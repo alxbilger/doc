@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # WriteTopology
 
 Write topology containers informations to file at each timestep
@@ -11,7 +12,7 @@ __parents__:
 
 - BaseObject
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -110,7 +111,7 @@ period between outputs
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

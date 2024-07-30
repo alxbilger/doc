@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # TopologyBoundingTrasher
 
 A class to remove all elements going outside from the given Bounding Box.
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - BaseObject
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -96,7 +99,7 @@ Draw bounding box (default = false)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

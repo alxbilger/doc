@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # OglUInt3Attribute
 
 OglUInt3Attribute
@@ -11,7 +12,7 @@ __parents__:
 
 - OglAttribute
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -103,7 +104,7 @@ Activate handling of topological changes on the values of this attribute (resize
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

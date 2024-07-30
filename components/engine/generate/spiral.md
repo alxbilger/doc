@@ -27,6 +27,18 @@ Examples
 
 An example scene involving the Spiral engine is available in [*examples/Component/Engine/Generate/spiral.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Engine/Generate/spiral.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# Spiral
+
+This class truns on spiral any topological model
+
+
+## Vec3d
+
+Templates:
+
+- Vec3d
+
 __Target__: Sofa.Component.Engine.Generate
 
 __namespace__: sofa::component::engine::generate
@@ -35,7 +47,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -119,7 +131,7 @@ Position coordinates of the degrees of freedom
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # OglColorMap
 
 Provides color palette and support for conversion of numbers to colors.
@@ -11,7 +12,7 @@ __parents__:
 
 - VisualModel
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -141,7 +142,7 @@ Activate rendering of color scale legend on the side
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

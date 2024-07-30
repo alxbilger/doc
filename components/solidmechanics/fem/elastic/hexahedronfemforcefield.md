@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # HexahedronFEMForceField
 
 Hexahedral finite elements
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - BaseLinearElasticityFEMForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -152,7 +155,7 @@ size of the hexa
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

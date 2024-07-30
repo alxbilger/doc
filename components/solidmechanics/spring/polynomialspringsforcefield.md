@@ -72,6 +72,18 @@ node.createObject('DiagonalMass', massDensity='1000')
 
 An example scene involving a PolynomialSpringsForceField is available in [*examples/Component/SolidMechanics/Spring/PolynomialSpringsForceField.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/SolidMechanics/Spring/PolynomialSpringsForceField.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# PolynomialSpringsForceField
+
+Simple elastic springs applied to given degrees of freedom between their current and rest shape position
+
+
+## Vec3d
+
+Templates:
+
+- Vec3d
+
 __Target__: Sofa.Component.SolidMechanics.Spring
 
 __namespace__: sofa::component::solidmechanics::spring
@@ -80,7 +92,7 @@ __parents__:
 
 - PairInteractionForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -234,7 +246,7 @@ Scale for indices display (default=0.02)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

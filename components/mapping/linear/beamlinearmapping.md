@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # BeamLinearMapping
 
 Set the positions and velocities of points attached to a beam using linear interpolation between DOFs
 
+
+## Rigid3d,Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -114,7 +117,7 @@ true if initial coordinates are in the beam local coordinate system (i.e. a poin
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # OrderIndependentTransparencyManager
 
 OrderIndependentTransparencyManager
@@ -11,7 +12,7 @@ __parents__:
 
 - VisualManager
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -82,7 +83,7 @@ Depth scale
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

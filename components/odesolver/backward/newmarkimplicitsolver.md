@@ -71,6 +71,12 @@ node.addObject('NewmarkImplicitSolver', rayleighMass='0.01', rayleighStiffness='
 
 An example scene involving a NewmarkImplicitSolver is available in [*examples/Component/ODESolver/Backward/NewmarkImplicitSolver.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/ODESolver/Backward/NewmarkImplicitSolver.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# NewmarkImplicitSolver
+
+Implicit time integrator using Newmark scheme
+
+
 __Target__: Sofa.Component.ODESolver.Backward
 
 __namespace__: sofa::component::odesolver::backward
@@ -80,7 +86,7 @@ __parents__:
 - OdeSolver
 - LinearSolverAccessor
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -179,7 +185,7 @@ If true, do not use realloc and free visitors in fwdInteractionForceField.
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

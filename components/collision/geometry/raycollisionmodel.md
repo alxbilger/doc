@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # RayCollisionModel
 
 Collision model representing a ray in space, e.g. a mouse click
@@ -11,7 +12,7 @@ __parents__:
 
 - CollisionModel
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -160,7 +161,7 @@ The default length for all rays in this collision model
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # Hexa2TetraTopologicalMapping
 
 Special case of mapping where HexahedronSetTopology is converted to TetrahedronSetTopology
@@ -11,7 +12,7 @@ __parents__:
 
 - TopologicalMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -76,7 +77,7 @@ Boolean enabling to swapp hexa-edges
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

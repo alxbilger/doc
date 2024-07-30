@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # WarpPreconditioner
 
 Linear system solver wrapping another (precomputed) linear solver by a per-node rotation matrix
 
+
+## RotationMatrixd
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -93,7 +96,7 @@ Number of steps before the next refresh of the system matrix in the main solver
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

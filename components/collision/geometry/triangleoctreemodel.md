@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # TriangleOctreeModel
 
 collision model using a triangular mesh mapped to an Octree
@@ -11,7 +12,7 @@ __parents__:
 
 - TriangleCollisionModel
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -174,7 +175,7 @@ use the curvature of the mesh to avoid some self-intersection test
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

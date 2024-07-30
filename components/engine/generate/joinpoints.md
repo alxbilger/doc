@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # JoinPoints
 
 ?
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -99,7 +102,7 @@ Merged Points
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

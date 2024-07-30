@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # InteractionEllipsoidForceField
 
 Repulsion applied by an ellipsoid toward the exterior or the interior
 
+
+## Vec3d,Rigid3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - MixedInteractionForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -152,7 +155,7 @@ enable/disable drawing of the ellipsoid
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

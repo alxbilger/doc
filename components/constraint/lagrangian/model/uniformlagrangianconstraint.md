@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # UniformLagrangianConstraint
 
 A constraint equation applied on all dofs.
 
+
+## Vec1d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - Constraint
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -108,7 +111,7 @@ if false, constrains the pos to be zero / if true constraint the current positio
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

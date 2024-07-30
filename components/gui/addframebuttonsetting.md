@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # AddFrameButtonSetting
 
 Add a frame to a skinned model
@@ -11,7 +12,7 @@ __parents__:
 
 - MouseButtonSetting
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -75,7 +76,7 @@ Mouse button used
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

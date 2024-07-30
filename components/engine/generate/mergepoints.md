@@ -26,6 +26,22 @@ Examples
 
 An example scene involving the MergePoints engine is available in [*examples/Component/Engine/Generate/MergePoints.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Engine/Generate/MergePoints.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# MergePoints
+
+Merge 2 cordinate vectors
+
+
+## Rigid2d...
+
+Templates:
+
+- Rigid2d
+- Rigid3d
+- Vec1d
+- Vec2d
+- Vec3d
+
 __Target__: Sofa.Component.Engine.Generate
 
 __namespace__: sofa::component::engine::generate
@@ -34,7 +50,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -146,7 +162,7 @@ position coordinates resulting from the merge
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

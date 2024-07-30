@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # SkeletalMotionProjectiveConstraint
 
 animate a skeleton
 
+
+## Rigid3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -115,7 +118,7 @@ is the constraint active?
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

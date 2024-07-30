@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # BackgroundSetting
 
 Background setting
@@ -11,7 +12,7 @@ __parents__:
 
 - ConfigurationSetting
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -82,7 +83,7 @@ Image to be used as background
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # CompareState
 
 Compare State vectors from a reference frame to the associated Mechanical State
@@ -11,7 +12,7 @@ __parents__:
 
 - ReadState
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -120,7 +121,7 @@ translate the input mechanical object
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

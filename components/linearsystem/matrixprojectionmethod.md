@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # MatrixProjectionMethod
 
 Matrix mapping computing the matrix projection using the Eigen library
 
+
+## CompressedRowSparseMatrixd
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - BaseMatrixProjectionMethod
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -79,7 +82,7 @@ True if mapping jacobians are considered constant over time. They are computed o
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

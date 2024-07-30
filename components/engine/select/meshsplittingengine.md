@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # MeshSplittingEngine
 
 This class breaks a mesh in multiple parts, based on selected vertices or cells.
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -138,7 +141,7 @@ output vertices(1)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

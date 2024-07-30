@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # BeamFEMForceField
 
 Beam finite elements
 
+
+## Rigid3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -128,7 +131,7 @@ use symmetric assembly of the matrix K
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # SubsetMapping
 
 TODO-SubsetMappingClass
 
+
+## Rigid3d,Rigid3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -156,7 +159,7 @@ True to resize the output MechanicalState to match the size of indices
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -167,6 +170,9 @@ True to resize the output MechanicalState to match the size of indices
 |input|Input object to map|State&lt;Rigid3d&gt;|
 |output|Output object to map|State&lt;Rigid3d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec1d,Vec1d
 
 Templates:
 
@@ -180,7 +186,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -321,7 +327,7 @@ True to resize the output MechanicalState to match the size of indices
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -332,6 +338,9 @@ True to resize the output MechanicalState to match the size of indices
 |input|Input object to map|State&lt;Vec1d&gt;|
 |output|Output object to map|State&lt;Vec1d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec3d,Vec3d
 
 Templates:
 
@@ -345,7 +354,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -486,7 +495,7 @@ True to resize the output MechanicalState to match the size of indices
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

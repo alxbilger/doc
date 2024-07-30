@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # RotationMatrixSystem
 
 Rotation matrix warpping the main linear system
 
+
+## RotationMatrixd
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -79,7 +82,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

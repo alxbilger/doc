@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # TriangularFEMForceField
 
 Corotational Triangular finite elements for dynamic topology
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -173,7 +176,7 @@ Flag activating rendering of triangles to fracture
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # TriangleBendingSprings
 
 Springs added to a traingular mesh to prevent bending
 
+
+## Vec2d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - StiffSpringForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -155,7 +158,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -167,6 +170,9 @@ The way springs will be drawn:
 |object1|First object associated to this component|MechanicalState&lt;Vec2d&gt;|
 |object2|Second object associated to this component|MechanicalState&lt;Vec2d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec3d
 
 Templates:
 
@@ -180,7 +186,7 @@ __parents__:
 
 - StiffSpringForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -320,7 +326,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

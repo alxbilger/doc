@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # ProjectiveTransformEngine
 
 Project the position of 3d points onto a plane according to a projection matrix
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -106,7 +109,7 @@ output array of projected 3d points
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

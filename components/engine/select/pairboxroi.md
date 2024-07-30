@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # PairBoxROI
 
 Find the primitives (vertex/edge/triangle/tetrahedron) inside a given box
 
+
+## Rigid3d...
 
 Templates:
 
@@ -17,7 +20,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -153,7 +156,7 @@ Draw Size
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

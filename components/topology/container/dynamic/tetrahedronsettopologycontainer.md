@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # TetrahedronSetTopologyContainer
 
 Tetrahedron set topology container
@@ -11,7 +12,7 @@ __parents__:
 
 - TriangleSetTopologyContainer
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -131,7 +132,7 @@ List of tetrahedron indices
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

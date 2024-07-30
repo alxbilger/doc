@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # BlockJacobiPreconditioner
 
 Linear solver based on a NxN block diagonal matrix (i.e. block Jacobi preconditioner)
 
+
+## FullVector
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -79,7 +82,7 @@ Parallelize the computation of the product J*M^{-1}*J^T where M is the matrix of
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

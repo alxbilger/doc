@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # TriangleSetTopologyContainer
 
 Triangle set topology container
@@ -11,7 +12,7 @@ __parents__:
 
 - EdgeSetTopologyContainer
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -117,7 +118,7 @@ List of triangle indices
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

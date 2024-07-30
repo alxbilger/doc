@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # SphereQuadTopology
 
 Sphere topology constructed with deformed quads
@@ -11,7 +12,7 @@ __parents__:
 
 - CubeTopology
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -225,7 +226,7 @@ if true, draw the topology hexahedra
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # ViewerSetting
 
 Configuration for the Viewer of your application
@@ -11,7 +12,7 @@ __parents__:
 
 - ConfigurationSetting
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -96,7 +97,7 @@ The method used to pick objects
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

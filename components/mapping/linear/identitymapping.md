@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # IdentityMapping
 
 Special case of mapping where the child points are the same as the parent points
 
+
+## Rigid2d,Rigid2d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -107,7 +110,7 @@ set to true to apply this mapping to restPosition at init
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -117,6 +120,9 @@ set to true to apply this mapping to restPosition at init
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State&lt;Rigid2d&gt;|
 |output|Output object to map|State&lt;Rigid2d&gt;|
+
+<!-- generate_doc -->
+## Rigid2d,Vec2d
 
 Templates:
 
@@ -130,7 +136,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -222,7 +228,7 @@ set to true to apply this mapping to restPosition at init
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -232,6 +238,9 @@ set to true to apply this mapping to restPosition at init
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State&lt;Rigid2d&gt;|
 |output|Output object to map|State&lt;Vec2d&gt;|
+
+<!-- generate_doc -->
+## Rigid3d,Rigid3d
 
 Templates:
 
@@ -245,7 +254,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -337,7 +346,7 @@ set to true to apply this mapping to restPosition at init
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -347,6 +356,9 @@ set to true to apply this mapping to restPosition at init
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State&lt;Rigid3d&gt;|
 |output|Output object to map|State&lt;Rigid3d&gt;|
+
+<!-- generate_doc -->
+## Rigid3d,Vec3d
 
 Templates:
 
@@ -360,7 +372,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -452,7 +464,7 @@ set to true to apply this mapping to restPosition at init
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -462,6 +474,9 @@ set to true to apply this mapping to restPosition at init
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State&lt;Rigid3d&gt;|
 |output|Output object to map|State&lt;Vec3d&gt;|
+
+<!-- generate_doc -->
+## Vec1d,Vec1d
 
 Templates:
 
@@ -475,7 +490,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -567,7 +582,7 @@ set to true to apply this mapping to restPosition at init
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -577,6 +592,9 @@ set to true to apply this mapping to restPosition at init
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State&lt;Vec1d&gt;|
 |output|Output object to map|State&lt;Vec1d&gt;|
+
+<!-- generate_doc -->
+## Vec2d,Vec2d
 
 Templates:
 
@@ -590,7 +608,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -682,7 +700,7 @@ set to true to apply this mapping to restPosition at init
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -692,6 +710,9 @@ set to true to apply this mapping to restPosition at init
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State&lt;Vec2d&gt;|
 |output|Output object to map|State&lt;Vec2d&gt;|
+
+<!-- generate_doc -->
+## Vec3d,Vec3d
 
 Templates:
 
@@ -705,7 +726,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -797,7 +818,7 @@ set to true to apply this mapping to restPosition at init
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -807,6 +828,9 @@ set to true to apply this mapping to restPosition at init
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State&lt;Vec3d&gt;|
 |output|Output object to map|State&lt;Vec3d&gt;|
+
+<!-- generate_doc -->
+## Vec6d,Vec3d
 
 Templates:
 
@@ -820,7 +844,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -912,7 +936,7 @@ set to true to apply this mapping to restPosition at init
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -922,6 +946,9 @@ set to true to apply this mapping to restPosition at init
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State&lt;Vec6d&gt;|
 |output|Output object to map|State&lt;Vec3d&gt;|
+
+<!-- generate_doc -->
+## Vec6d,Vec6d
 
 Templates:
 
@@ -935,7 +962,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -1027,7 +1054,7 @@ set to true to apply this mapping to restPosition at init
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

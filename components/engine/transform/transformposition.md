@@ -31,6 +31,18 @@ Examples
 
 An example scene involving the TransformPosition engine is available in [*examples/Component/Engine/Transform/TransformPosition.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Engine/Transform/TransformPosition.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# TransformPosition
+
+Transform position of 3d points
+
+
+## Vec3d
+
+Templates:
+
+- Vec3d
+
 __Target__: Sofa.Component.Engine.Transform
 
 __namespace__: sofa::component::engine::transform
@@ -39,7 +51,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -217,7 +229,7 @@ Point size
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

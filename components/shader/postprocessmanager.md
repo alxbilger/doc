@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # PostProcessManager
 
 PostProcessManager
@@ -11,7 +12,7 @@ __parents__:
 
 - VisualModel
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -89,7 +90,7 @@ Set zFar distance (for Depth Buffer)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -58,6 +58,18 @@ node.addObject('AsyncSparseLDLSolver')
 - The example in [*examples/Component/LinearSolver/Preconditioner/FEMBAR_PCG_AsyncSparseLDLSolver.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/LinearSolver/Preconditioner/FEMBAR_PCG_AsyncSparseLDLSolver.scn) shows how to use AsyncSparseLDLSolver as a preconditioner of ShewchukPCGLinearSolver.
 - Finally, the example in [*examples/Component/LinearSolver/Preconditioner/FEMBAR_PCG_WarpedAsyncSparseLDLSolver.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/LinearSolver/Preconditioner/FEMBAR_PCG_WarpedAsyncSparseLDLSolver.scn) shows how the factorization in AsyncSparseLDLSolver can be warped using a WarpPreconditioner.
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# AsyncSparseLDLSolver
+
+Asynchronous direct Linear Solver using a Sparse LDL^T factorization.
+
+
+## CompressedRowSparseMatrixMat3x3d
+
+Templates:
+
+- CompressedRowSparseMatrixMat3x3d
+
 __Target__: Sofa.Component.LinearSolver.Direct
 
 __namespace__: sofa::component::linearsolver::direct
@@ -66,7 +78,7 @@ __parents__:
 
 - SparseLDLSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -144,7 +156,7 @@ Number of non-zero values in the lower triangular matrix of the factorization. T
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -154,6 +166,9 @@ Number of non-zero values in the lower triangular matrix of the factorization. T
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat3x3d&gt;|
 |orderingMethod|Ordering method used by this component|BaseOrderingMethod|
+
+<!-- generate_doc -->
+## CompressedRowSparseMatrixd
 
 Templates:
 
@@ -167,7 +182,7 @@ __parents__:
 
 - SparseLDLSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -245,7 +260,7 @@ Number of non-zero values in the lower triangular matrix of the factorization. T
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

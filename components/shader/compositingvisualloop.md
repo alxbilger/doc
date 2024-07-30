@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # CompositingVisualLoop
 
 Visual loop enabling multipass rendering. Needs multiple fbo data and a compositing shader
@@ -11,7 +12,7 @@ __parents__:
 
 - DefaultVisualManagerLoop
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -89,7 +90,7 @@ Set the fragment shader filename to load
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # RestShapeSpringsForceField
 
 Elastic springs generating forces on degrees of freedom between their current and rest shape position
 
+
+## Rigid3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -145,7 +148,7 @@ draw Spring
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -157,6 +160,9 @@ draw Spring
 |mstate|MechanicalState used by this component|MechanicalState&lt;Rigid3d&gt;|
 |external_rest_shape|rest_shape can be defined by the position of an external Mechanical State|MechanicalState&lt;Rigid3d&gt;|
 |topology|Link to be set to the topology container in the component graph|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec1d
 
 Templates:
 
@@ -170,7 +176,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -300,7 +306,7 @@ draw Spring
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -312,6 +318,9 @@ draw Spring
 |mstate|MechanicalState used by this component|MechanicalState&lt;Vec1d&gt;|
 |external_rest_shape|rest_shape can be defined by the position of an external Mechanical State|MechanicalState&lt;Vec1d&gt;|
 |topology|Link to be set to the topology container in the component graph|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec3d
 
 Templates:
 
@@ -325,7 +334,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -455,7 +464,7 @@ draw Spring
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

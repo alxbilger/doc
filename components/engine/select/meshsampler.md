@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # MeshSampler
 
 Select uniformly distributed points on a mesh based on Euclidean or Geodesic distance measure
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -120,7 +123,7 @@ Computed sample coordinates.
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # OglSceneFrame
 
 Display a frame at the corner of the scene view
@@ -11,7 +12,7 @@ __parents__:
 
 - VisualModel
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -106,7 +107,7 @@ Display the frame or not
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

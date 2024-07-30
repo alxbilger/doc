@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # CompareTopology
 
 Compare Topology containers from a reference frame to the associated Topology
@@ -11,7 +12,7 @@ __parents__:
 
 - ReadTopology
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -96,7 +97,7 @@ set to 'true' to re-read the file when reaching the end
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

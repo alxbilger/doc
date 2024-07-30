@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # OglViewport
 
 OglViewport
@@ -11,7 +12,7 @@ __parents__:
 
 - VisualManager
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -169,7 +170,7 @@ Draw a frame representing the camera (see it in main viewport)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -23,6 +23,18 @@ Examples
 
 An example scene involving the PointsFromIndices engine is available in [*examples/Component/Engine/Select/PointsFromIndices.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Engine/Select/PointsFromIndices.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# PointsFromIndices
+
+Find the points given a list of indices
+
+
+## Vec3d
+
+Templates:
+
+- Vec3d
+
 __Target__: Sofa.Component.Engine.Select
 
 __namespace__: sofa::component::engine::select
@@ -31,7 +43,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -115,7 +127,7 @@ Coordinates of the points contained in indices
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

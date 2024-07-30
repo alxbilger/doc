@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # RepulsiveSpringForceField
 
 Springs which only repell
 
+
+## Vec1d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - StiffSpringForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -155,7 +158,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -166,6 +169,9 @@ The way springs will be drawn:
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState&lt;Vec1d&gt;|
 |object2|Second object associated to this component|MechanicalState&lt;Vec1d&gt;|
+
+<!-- generate_doc -->
+## Vec2d
 
 Templates:
 
@@ -179,7 +185,7 @@ __parents__:
 
 - StiffSpringForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -319,7 +325,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -330,6 +336,9 @@ The way springs will be drawn:
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState&lt;Vec2d&gt;|
 |object2|Second object associated to this component|MechanicalState&lt;Vec2d&gt;|
+
+<!-- generate_doc -->
+## Vec3d
 
 Templates:
 
@@ -343,7 +352,7 @@ __parents__:
 
 - StiffSpringForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -483,7 +492,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

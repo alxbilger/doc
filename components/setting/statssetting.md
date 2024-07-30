@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # StatsSetting
 
 Stats settings
@@ -11,7 +12,7 @@ __parents__:
 
 - ConfigurationSetting
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -96,7 +97,7 @@ Trace the time spent by each visitor, and allows to profile precisely one step o
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

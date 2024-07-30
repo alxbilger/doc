@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # OglCylinderModel
 
 A simple visualization for set of cylinder.
@@ -12,7 +13,7 @@ __parents__:
 - VisualModel
 - VisualState
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -121,7 +122,7 @@ Normals of the model
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

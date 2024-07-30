@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # FixedRotationProjectiveConstraint
 
 Prevents rotation around x or/and y or/and z axis
 
+
+## Rigid3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -108,7 +111,7 @@ Prevent Rotation around Z axis
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

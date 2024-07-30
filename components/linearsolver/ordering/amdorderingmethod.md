@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # AMDOrderingMethod
 
 Approximate minimum degree ordering implemented in the Eigen library
@@ -11,7 +12,7 @@ __parents__:
 
 - BaseEigenOrderingMethod
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -68,7 +69,7 @@ if true, handle the events, otherwise ignore the events
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

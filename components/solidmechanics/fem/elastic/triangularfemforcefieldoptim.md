@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # TriangularFEMForceFieldOptim
 
 Corotational Triangular finite elements
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -152,7 +155,7 @@ Threshold value to render only stress vectors higher to this threshold
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

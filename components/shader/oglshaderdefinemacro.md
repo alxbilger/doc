@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # OglShaderDefineMacro
 
 OglShaderDefineMacro
@@ -11,7 +12,7 @@ __parents__:
 
 - OglShaderMacro
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -89,7 +90,7 @@ Set a value for define macro
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

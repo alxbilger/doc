@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # ConstantSparsityProjectionMethod
 
 Matrix mapping computing the matrix projection taking advantage of the constant sparsity pattern
 
+
+## CompressedRowSparseMatrixd
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - MatrixProjectionMethod
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -86,7 +89,7 @@ Compute the matrix product in parallel
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,8 +1,11 @@
+<!-- generate_doc -->
 # MouseInteractor
 
 Perform tasks related to the interaction with the mouse
 Perform tasks related to the interaction with the mouse and rigid objects
 
+
+## Rigid3d...
 
 Templates:
 
@@ -18,7 +21,7 @@ __parents__:
 
 - BaseMouseInteractor
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -75,7 +78,7 @@ if true, handle the events, otherwise ignore the events
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

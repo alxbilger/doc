@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # TriangularBiquadraticSpringsForceField
 
 Biquadratic Springs on a Triangular Mesh
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -142,7 +145,7 @@ Regularization of the Stiffnes Matrix (between 0 and 1)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

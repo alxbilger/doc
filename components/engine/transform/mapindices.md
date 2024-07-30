@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # MapIndices
 
 Apply a permutation to a set of indices
 
+
+## I...
 
 Templates:
 
@@ -20,7 +23,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -118,7 +121,7 @@ Output indices
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

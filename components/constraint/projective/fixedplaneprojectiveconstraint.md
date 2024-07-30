@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # FixedPlaneProjectiveConstraint
 
 Project particles on a given plane
 
+
+## Rigid3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -115,7 +118,7 @@ Indices of the fixed points
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -126,6 +129,9 @@ Indices of the fixed points
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Rigid3d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec3d
 
 Templates:
 
@@ -139,7 +145,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -239,7 +245,7 @@ Indices of the fixed points
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -250,6 +256,9 @@ Indices of the fixed points
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Vec3d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec6d
 
 Templates:
 
@@ -263,7 +272,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -363,7 +372,7 @@ Indices of the fixed points
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

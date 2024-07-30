@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # OglRenderingSRGB
 
 OglRenderingSRGB
@@ -11,7 +12,7 @@ __parents__:
 
 - VisualManager
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -75,7 +76,7 @@ Display the object or not
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # NullForceFeedback
 
 Null force feedback for haptic feedback device
@@ -11,7 +12,7 @@ __parents__:
 
 - ForceFeedback
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -82,7 +83,7 @@ Tool indice in the OmniDriver
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

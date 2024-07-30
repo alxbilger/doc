@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # VisualModelImpl
 
 Generic visual model. If a viewer is active it will replace the VisualModel alias, otherwise nothing will be displayed.
 
+
+## Vec3d
 
 Templates:
 
@@ -16,7 +19,7 @@ __parents__:
 - VisualModel
 - VisualState
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -310,7 +313,7 @@ Initial Scale of the object
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # Tetra2TriangleTopologicalMapping
 
 Special case of mapping where TetrahedronSetTopology is converted to TriangleSetTopology
@@ -11,7 +12,7 @@ __parents__:
 
 - TopologicalMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -89,7 +90,7 @@ If true the list of initial triangles is initially empty. Only additional triang
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

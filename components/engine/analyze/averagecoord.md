@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # AverageCoord
 
 Compute the average of coordinates
 
+
+## Rigid2d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -100,7 +103,7 @@ average of the values with the given indices in the given coordinate vector
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -110,6 +113,9 @@ average of the values with the given indices in the given coordinate vector
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Rigid2d&gt;|
+
+<!-- generate_doc -->
+## Rigid3d
 
 Templates:
 
@@ -123,7 +129,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -208,7 +214,7 @@ average of the values with the given indices in the given coordinate vector
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -218,6 +224,9 @@ average of the values with the given indices in the given coordinate vector
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Rigid3d&gt;|
+
+<!-- generate_doc -->
+## Vec2d
 
 Templates:
 
@@ -231,7 +240,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -316,7 +325,7 @@ average of the values with the given indices in the given coordinate vector
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -326,6 +335,9 @@ average of the values with the given indices in the given coordinate vector
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Vec2d&gt;|
+
+<!-- generate_doc -->
+## Vec3d
 
 Templates:
 
@@ -339,7 +351,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -424,7 +436,7 @@ average of the values with the given indices in the given coordinate vector
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

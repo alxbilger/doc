@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # MinResLinearSolver
 
 Linear system solver using the MINRES iterative algorithm
 
+
+## CompressedRowSparseMatrixMat2x2d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -100,7 +103,7 @@ Graph of residuals at each iteration
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -109,6 +112,9 @@ Graph of residuals at each iteration
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat2x2d&gt;|
+
+<!-- generate_doc -->
+## CompressedRowSparseMatrixMat3x3d
 
 Templates:
 
@@ -122,7 +128,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -207,7 +213,7 @@ Graph of residuals at each iteration
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -216,6 +222,9 @@ Graph of residuals at each iteration
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat3x3d&gt;|
+
+<!-- generate_doc -->
+## CompressedRowSparseMatrixMat4x4d
 
 Templates:
 
@@ -229,7 +238,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -314,7 +323,7 @@ Graph of residuals at each iteration
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -323,6 +332,9 @@ Graph of residuals at each iteration
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat4x4d&gt;|
+
+<!-- generate_doc -->
+## CompressedRowSparseMatrixMat6x6d
 
 Templates:
 
@@ -336,7 +348,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -421,7 +433,7 @@ Graph of residuals at each iteration
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -430,6 +442,9 @@ Graph of residuals at each iteration
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat6x6d&gt;|
+
+<!-- generate_doc -->
+## CompressedRowSparseMatrixMat8x8d
 
 Templates:
 
@@ -443,7 +458,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -528,7 +543,7 @@ Graph of residuals at each iteration
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -537,6 +552,9 @@ Graph of residuals at each iteration
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat8x8d&gt;|
+
+<!-- generate_doc -->
+## CompressedRowSparseMatrixd
 
 Templates:
 
@@ -550,7 +568,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -635,7 +653,7 @@ Graph of residuals at each iteration
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -644,6 +662,9 @@ Graph of residuals at each iteration
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixd&gt;|
+
+<!-- generate_doc -->
+## FullMatrix
 
 Templates:
 
@@ -657,7 +678,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -742,7 +763,7 @@ Graph of residuals at each iteration
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -751,6 +772,9 @@ Graph of residuals at each iteration
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;FullMatrix&gt;|
+
+<!-- generate_doc -->
+## GraphScattered
 
 Templates:
 
@@ -764,7 +788,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -849,7 +873,7 @@ Graph of residuals at each iteration
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -858,6 +882,9 @@ Graph of residuals at each iteration
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;GraphScattered&gt;|
+
+<!-- generate_doc -->
+## SparseMatrix
 
 Templates:
 
@@ -871,7 +898,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -956,7 +983,7 @@ Graph of residuals at each iteration
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

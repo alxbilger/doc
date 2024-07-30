@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # OglModel
 
 Generic visual model for OpenGL display
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - VisualModelImpl
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -407,7 +410,7 @@ Initial Scale of the object
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

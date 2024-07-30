@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # SmoothMeshEngine
 
 Compute the laplacian smoothing of a mesh
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -123,7 +126,7 @@ showOutput
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # PointProjectiveConstraint
 
 Project particles to a point
 
+
+## Vec1d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -118,7 +121,7 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -129,6 +132,9 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Vec1d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec2d
 
 Templates:
 
@@ -142,7 +148,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -245,7 +251,7 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -256,6 +262,9 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Vec2d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec3d
 
 Templates:
 
@@ -269,7 +278,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -372,7 +381,7 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -383,6 +392,9 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Vec3d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec6d
 
 Templates:
 
@@ -396,7 +408,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -499,7 +511,7 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

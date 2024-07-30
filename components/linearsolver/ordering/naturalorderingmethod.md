@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # NaturalOrderingMethod
 
 Natural order (no permutation). Corresponding to an identity matrix.
@@ -11,7 +12,7 @@ __parents__:
 
 - BaseOrderingMethod
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -68,7 +69,7 @@ if true, handle the events, otherwise ignore the events
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

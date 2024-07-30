@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # MakeDataAlias
 
 This object create an alias to a data field. 
@@ -11,7 +12,7 @@ __parents__:
 
 - BaseObject
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -89,7 +90,7 @@ The alias of the data field.
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # OffSequenceLoader
 
 Read and load an .off file at each timestep
@@ -11,7 +12,7 @@ __parents__:
 
 - MeshOffLoader
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -319,7 +320,7 @@ Groups of Pyramids
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

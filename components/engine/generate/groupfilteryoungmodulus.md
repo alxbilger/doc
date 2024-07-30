@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # GroupFilterYoungModulus
 
 This class gives a vector of young modulus according of a list of defined groups
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -127,7 +130,7 @@ Vector of young modulus for each primitive
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # SubsetTopologicalMapping
 
 This class is a specific implementation of TopologicalMapping where the destination topology is a subset of the source topology. The implementation currently assumes that both topologies have been initialized correctly.
@@ -11,7 +12,7 @@ __parents__:
 
 - TopologicalMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -194,7 +195,7 @@ Internal destination -> source topology hexahedra map
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

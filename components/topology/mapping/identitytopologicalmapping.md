@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # IdentityTopologicalMapping
 
 This class is a specific implementation of TopologicalMapping where the destination topology should be kept identical to the source topology. The implementation currently assumes that both topology have been initialized identically.
@@ -11,7 +12,7 @@ __parents__:
 
 - TopologicalMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -68,7 +69,7 @@ if true, handle the events, otherwise ignore the events
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

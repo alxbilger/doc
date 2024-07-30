@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # DynamicSparseGridGeometryAlgorithms
 
 Hexahedron set geometry algorithms
 
+
+## Vec2d...
 
 Templates:
 
@@ -16,7 +19,7 @@ __parents__:
 
 - HexahedronSetGeometryAlgorithms
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -167,7 +170,7 @@ RGB code color used to draw hexahedra.
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # NullForceFeedbackT
 
 Null force feedback for haptic feedback device
 
+
+## Rigid3d...
 
 Templates:
 
@@ -16,7 +19,7 @@ __parents__:
 
 - MechanicalStateForceFeedback
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -87,7 +90,7 @@ Tool indice in the OmniDriver
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # SquareMapping
 
 Compute the square
 
+
+## Vec1d,Vec1d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - Mapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -123,7 +126,7 @@ If available (cached), the geometric stiffness matrix is used in order to comput
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

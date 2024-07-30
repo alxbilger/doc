@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # OglTexture
 
 OglTexture
@@ -12,7 +13,7 @@ __parents__:
 - VisualModel
 - ShaderElement
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -223,7 +224,7 @@ Texture filename of negative-Z cubemap face
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # TubularMapping
 
 Create a Tube around rigid points
 
+
+## Rigid3d,Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -128,7 +131,7 @@ Radius of created circles
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

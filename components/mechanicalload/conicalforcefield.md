@@ -182,6 +182,18 @@ cone color. (default=0.0,0.0,0.0,1.0,1.0)
 </Node>
 ```
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# ConicalForceField
+
+Repulsion applied by a cone toward the exterior
+
+
+## Vec3d
+
+Templates:
+
+- Vec3d
+
 __Target__: Sofa.Component.MechanicalLoad
 
 __namespace__: sofa::component::mechanicalload
@@ -190,7 +202,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -296,7 +308,7 @@ cone color. (default=0.0,0.0,0.0,1.0,1.0)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

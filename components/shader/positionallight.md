@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # PositionalLight
 
 A positional light illuminating the scene.The light has a location from which the ray are starting in all direction  (cannot cast shadows for now)
@@ -11,7 +12,7 @@ __parents__:
 
 - Light
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -190,7 +191,7 @@ Draw Light Source
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # SkinningMapping
 
 skin a model from a set of rigid dofs
 
+
+## Rigid3d,Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -152,7 +155,7 @@ Show influence.
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # ValuesFromPositions
 
 Assign values to primitives (vertex/edge/triangle/tetrahedron) based on a linear interpolation of values along a direction
 
+
+## Rigid3d...
 
 Templates:
 
@@ -16,7 +19,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -201,7 +204,7 @@ vector length visualisation.
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

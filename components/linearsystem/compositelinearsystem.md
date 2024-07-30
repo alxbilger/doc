@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # CompositeLinearSystem
 
 Component acting like a linear system, but delegates the linear system functionalities to a list of real linear systems
 
+
+## BlockDiagonalMatrixMat3x3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -79,7 +82,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -89,6 +92,9 @@ Size of the global matrix
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystems|List of linear systems to assemble|TypedMatrixLinearSystem&lt;BlockDiagonalMatrixMat3x3d&gt;|
 |solverLinearSystem|Among the list of linear systems, which one is to be used by the linear solver|TypedMatrixLinearSystem&lt;BlockDiagonalMatrixMat3x3d&gt;|
+
+<!-- generate_doc -->
+## CompressedRowSparseMatrixMat2x2d
 
 Templates:
 
@@ -102,7 +108,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -166,7 +172,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -176,6 +182,9 @@ Size of the global matrix
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystems|List of linear systems to assemble|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat2x2d&gt;|
 |solverLinearSystem|Among the list of linear systems, which one is to be used by the linear solver|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat2x2d&gt;|
+
+<!-- generate_doc -->
+## CompressedRowSparseMatrixMat3x3d
 
 Templates:
 
@@ -189,7 +198,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -253,7 +262,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -263,6 +272,9 @@ Size of the global matrix
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystems|List of linear systems to assemble|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat3x3d&gt;|
 |solverLinearSystem|Among the list of linear systems, which one is to be used by the linear solver|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat3x3d&gt;|
+
+<!-- generate_doc -->
+## CompressedRowSparseMatrixMat4x4d
 
 Templates:
 
@@ -276,7 +288,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -340,7 +352,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -350,6 +362,9 @@ Size of the global matrix
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystems|List of linear systems to assemble|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat4x4d&gt;|
 |solverLinearSystem|Among the list of linear systems, which one is to be used by the linear solver|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat4x4d&gt;|
+
+<!-- generate_doc -->
+## CompressedRowSparseMatrixMat6x6d
 
 Templates:
 
@@ -363,7 +378,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -427,7 +442,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -437,6 +452,9 @@ Size of the global matrix
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystems|List of linear systems to assemble|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat6x6d&gt;|
 |solverLinearSystem|Among the list of linear systems, which one is to be used by the linear solver|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat6x6d&gt;|
+
+<!-- generate_doc -->
+## CompressedRowSparseMatrixMat8x8d
 
 Templates:
 
@@ -450,7 +468,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -514,7 +532,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -524,6 +542,9 @@ Size of the global matrix
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystems|List of linear systems to assemble|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat8x8d&gt;|
 |solverLinearSystem|Among the list of linear systems, which one is to be used by the linear solver|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat8x8d&gt;|
+
+<!-- generate_doc -->
+## CompressedRowSparseMatrixd
 
 Templates:
 
@@ -537,7 +558,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -601,7 +622,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -611,6 +632,9 @@ Size of the global matrix
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystems|List of linear systems to assemble|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixd&gt;|
 |solverLinearSystem|Among the list of linear systems, which one is to be used by the linear solver|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixd&gt;|
+
+<!-- generate_doc -->
+## DiagonalMatrix
 
 Templates:
 
@@ -624,7 +648,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -688,7 +712,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -698,6 +722,9 @@ Size of the global matrix
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystems|List of linear systems to assemble|TypedMatrixLinearSystem&lt;DiagonalMatrix&gt;|
 |solverLinearSystem|Among the list of linear systems, which one is to be used by the linear solver|TypedMatrixLinearSystem&lt;DiagonalMatrix&gt;|
+
+<!-- generate_doc -->
+## FullMatrix
 
 Templates:
 
@@ -711,7 +738,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -775,7 +802,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -785,6 +812,9 @@ Size of the global matrix
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystems|List of linear systems to assemble|TypedMatrixLinearSystem&lt;FullMatrix&gt;|
 |solverLinearSystem|Among the list of linear systems, which one is to be used by the linear solver|TypedMatrixLinearSystem&lt;FullMatrix&gt;|
+
+<!-- generate_doc -->
+## RotationMatrixd
 
 Templates:
 
@@ -798,7 +828,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -862,7 +892,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -872,6 +902,9 @@ Size of the global matrix
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystems|List of linear systems to assemble|TypedMatrixLinearSystem&lt;RotationMatrixd&gt;|
 |solverLinearSystem|Among the list of linear systems, which one is to be used by the linear solver|TypedMatrixLinearSystem&lt;RotationMatrixd&gt;|
+
+<!-- generate_doc -->
+## SparseMatrix
 
 Templates:
 
@@ -885,7 +918,7 @@ __parents__:
 
 - TypedMatrixLinearSystem
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -949,7 +982,7 @@ Size of the global matrix
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

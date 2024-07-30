@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # TorsionForceField
 
 Applies a torque to specified points
 
+
+## Rigid3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -107,7 +110,7 @@ origin of the axis
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -117,6 +120,9 @@ origin of the axis
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Rigid3d&gt;|
+
+<!-- generate_doc -->
+## Vec3d
 
 Templates:
 
@@ -130,7 +136,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -222,7 +228,7 @@ origin of the axis
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

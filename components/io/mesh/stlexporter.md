@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # STLExporter
 
 Save a topology in file
@@ -11,7 +12,7 @@ __parents__:
 
 - BaseSimulationExporter
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -131,7 +132,7 @@ quads indices
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

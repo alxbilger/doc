@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # DampVelocitySolver
 
 Reduce the velocities
@@ -11,7 +12,7 @@ __parents__:
 
 - OdeSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -82,7 +83,7 @@ Threshold under which the velocities are canceled.
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

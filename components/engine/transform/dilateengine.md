@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # DilateEngine
 
 Dilates a given mesh by moving vertices along their normal.
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -134,7 +137,7 @@ point thickness
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -46,6 +46,18 @@ With a description of each data
 
 An example scene involving a ConstantForceField is available in [*examples/Component/MechanicalLoad/ConstantForceField.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/MechanicalLoad/ConstantForceField.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# ConstantForceField
+
+Constant forces applied to given degrees of freedom
+
+
+## Rigid2d
+
+Templates:
+
+- Rigid2d
+
 __Target__: Sofa.Component.MechanicalLoad
 
 __namespace__: sofa::component::mechanicalload
@@ -54,7 +66,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -166,7 +178,7 @@ Color for object display (default: [0.2,0.9,0.3,1.0])
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -177,6 +189,9 @@ Color for object display (default: [0.2,0.9,0.3,1.0])
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Rigid2d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Rigid3d
 
 Templates:
 
@@ -190,7 +205,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -302,7 +317,7 @@ Color for object display (default: [0.2,0.9,0.3,1.0])
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -313,6 +328,9 @@ Color for object display (default: [0.2,0.9,0.3,1.0])
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Rigid3d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec1d
 
 Templates:
 
@@ -326,7 +344,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -438,7 +456,7 @@ Color for object display (default: [0.2,0.9,0.3,1.0])
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -449,6 +467,9 @@ Color for object display (default: [0.2,0.9,0.3,1.0])
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Vec1d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec2d
 
 Templates:
 
@@ -462,7 +483,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -574,7 +595,7 @@ Color for object display (default: [0.2,0.9,0.3,1.0])
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -585,6 +606,9 @@ Color for object display (default: [0.2,0.9,0.3,1.0])
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Vec2d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec3d
 
 Templates:
 
@@ -598,7 +622,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -710,7 +734,7 @@ Color for object display (default: [0.2,0.9,0.3,1.0])
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -721,6 +745,9 @@ Color for object display (default: [0.2,0.9,0.3,1.0])
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Vec3d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec6d
 
 Templates:
 
@@ -734,7 +761,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -846,7 +873,7 @@ Color for object display (default: [0.2,0.9,0.3,1.0])
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

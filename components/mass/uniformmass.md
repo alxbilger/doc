@@ -95,6 +95,18 @@ node.addObject('UniformMass', totalMass='10')
 
 An example scene involving a UniformMass is available in [*examples/Component/Mass/UniformMass.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Mass/UniformMass.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# UniformMass
+
+Define the same mass for all the particles
+
+
+## Rigid2d
+
+Templates:
+
+- Rigid2d
+
 __Target__: Sofa.Component.Mass
 
 __namespace__: sofa::component::mass
@@ -103,7 +115,7 @@ __parents__:
 
 - Mass
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -265,7 +277,7 @@ display the rest positions
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -276,6 +288,9 @@ display the rest positions
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Rigid2d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Rigid3d
 
 Templates:
 
@@ -289,7 +304,7 @@ __parents__:
 
 - Mass
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -451,7 +466,7 @@ display the rest positions
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -462,6 +477,9 @@ display the rest positions
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Rigid3d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec1d
 
 Templates:
 
@@ -475,7 +493,7 @@ __parents__:
 
 - Mass
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -637,7 +655,7 @@ display the rest positions
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -648,6 +666,9 @@ display the rest positions
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Vec1d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec2d
 
 Templates:
 
@@ -661,7 +682,7 @@ __parents__:
 
 - Mass
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -823,7 +844,7 @@ display the rest positions
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -834,6 +855,9 @@ display the rest positions
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Vec2d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec3d
 
 Templates:
 
@@ -847,7 +871,7 @@ __parents__:
 
 - Mass
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -1009,7 +1033,7 @@ display the rest positions
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -1020,6 +1044,9 @@ display the rest positions
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Vec3d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec6d
 
 Templates:
 
@@ -1033,7 +1060,7 @@ __parents__:
 
 - Mass
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -1195,7 +1222,7 @@ display the rest positions
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # SofaDefaultPathSetting
 
 Default Paths for Sofa Application
@@ -11,7 +12,7 @@ __parents__:
 
 - ConfigurationSetting
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -75,7 +76,7 @@ Path where will be saved the gnuplot files
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

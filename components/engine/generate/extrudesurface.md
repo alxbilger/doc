@@ -32,6 +32,18 @@ Examples
 
 An example scene involving the ExtrudeSurface engine is available in [*examples/Component/Engine/Generate/ExtrudeSurface.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Engine/Generate/ExtrudeSurface.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# ExtrudeSurface
+
+This class truns on spiral any topological model
+
+
+## Vec3d
+
+Templates:
+
+- Vec3d
+
 __Target__: Sofa.Component.Engine.Generate
 
 __namespace__: sofa::component::engine::generate
@@ -40,7 +52,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -152,7 +164,7 @@ Subset triangle topology used for the extrusion
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # TaitSurfacePressureForceField
 
 This component computes the volume enclosed by a surface mesh and apply a pressure force following Tait's equation: $P = P_0 - B((V/V_0)^\gamma - 1)$.
@@ -6,6 +7,8 @@ This ForceField can be used to apply :
  * an ideal gas pressure (set $\gamma=1$ and use $B$)
  * a pressure from water (set $\gamma=7$ and use $B$)
 
+
+## Vec3d
 
 Templates:
 
@@ -19,7 +22,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -221,7 +224,7 @@ DEBUG: color used to render force vectors
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

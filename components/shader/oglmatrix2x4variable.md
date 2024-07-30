@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # OglMatrix2x4Variable
 
 OglMatrix2x4Variable
@@ -11,7 +12,7 @@ __parents__:
 
 - OglMatrix2Variable
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -103,7 +104,7 @@ Transpose the matrix (e.g. to use row-dominant matrices in OpenGL
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

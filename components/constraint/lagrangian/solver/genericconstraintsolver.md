@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # GenericConstraintSolver
 
 A Generic Constraint Solver using the Linear Complementarity Problem formulation to solve Constraint based components
@@ -11,7 +12,7 @@ __parents__:
 
 - ConstraintSolverImpl
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -217,7 +218,7 @@ OUTPUT: current error
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # FastTriangularBendingSprings
 
 Springs added to a triangular mesh to prevent bending
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -100,7 +103,7 @@ Internal edge data
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

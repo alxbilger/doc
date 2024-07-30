@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # SumEngine
 
 Computing the Sum between two vector of dofs
 
+
+## Vec1d...
 
 Templates:
 
@@ -16,7 +19,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -93,7 +96,7 @@ output sum
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # ClusteringEngine
 
 Group points into overlapping clusters according to a user defined number of clusters and radius
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -141,7 +144,7 @@ Computed clusters.
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

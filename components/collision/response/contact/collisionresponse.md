@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # CollisionResponse
 
 Default class to create reactions to the collisions
@@ -11,7 +12,7 @@ __parents__:
 
 - ContactManager
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -82,7 +83,7 @@ contact response parameters (syntax: name1=value1&name2=value2&...)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

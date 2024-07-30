@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # StaticSolver
 
 Static ODE Solver
@@ -12,7 +13,7 @@ __parents__:
 - OdeSolver
 - LinearSolverAccessor
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -111,7 +112,7 @@ Boolean stopping Netwon iterations when the residual is greater than the one fro
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

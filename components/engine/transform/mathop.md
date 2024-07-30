@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # MathOp
 
 Apply a math operation to combine several inputs
 
+
+## vector<RigidCoord2d>...
 
 Templates:
 
@@ -23,7 +26,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -118,7 +121,7 @@ input values 2
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

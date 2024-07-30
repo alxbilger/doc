@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # HermiteSplineProjectiveConstraint
 
 Apply a hermite cubic spline trajectory to given points
 
+
+## Rigid3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -150,7 +153,7 @@ second interpolation vector
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -161,6 +164,9 @@ second interpolation vector
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Rigid3d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec3d
 
 Templates:
 
@@ -174,7 +180,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -309,7 +315,7 @@ second interpolation vector
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

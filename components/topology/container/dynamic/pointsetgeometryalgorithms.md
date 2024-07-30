@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # PointSetGeometryAlgorithms
 
 Point set geometry algorithms
 
+
+## Vec1d...
 
 Templates:
 
@@ -17,7 +20,7 @@ __parents__:
 
 - GeometryAlgorithms
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -98,7 +101,7 @@ Debug : view Point indices
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # DynamicSparseGridTopologyModifier
 
 Hexahedron set topology modifier
@@ -11,7 +12,7 @@ __parents__:
 
 - HexahedronSetTopologyModifier
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -82,7 +83,7 @@ Remove isolated DOFs
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

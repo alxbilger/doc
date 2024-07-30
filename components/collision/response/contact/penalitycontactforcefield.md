@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # PenalityContactForceField
 
 Contact using repulsive springs
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - PairInteractionForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -79,7 +82,7 @@ Rayleigh damping - stiffness matrix coefficient
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

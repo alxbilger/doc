@@ -69,6 +69,12 @@ node.addObject('LocalMinDistance', name='LMD-proximity', alarmDistance='.5', con
 
 An example scene involving a LocalMinDistance is available in [*examples/Component/Collision/Response/FrictionContact.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Collision/Response/FrictionContact.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# LocalMinDistance
+
+A set of methods to compute (for constraint methods) if two primitives are close enough to consider they collide
+
+
 __Target__: Sofa.Component.Collision.Detection.Intersection
 
 __namespace__: sofa::component::collision::detection::intersection
@@ -77,7 +83,7 @@ __parents__:
 
 - BaseProximityIntersection
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -176,7 +182,7 @@ Use external cone computation
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

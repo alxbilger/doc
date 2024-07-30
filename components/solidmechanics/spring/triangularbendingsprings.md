@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # TriangularBendingSprings
 
 Springs added to a triangular mesh to prevent bending
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -110,7 +113,7 @@ option to draw springs
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

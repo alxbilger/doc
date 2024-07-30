@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # Triangle2EdgeTopologicalMapping
 
 Special case of mapping where TriangleSetTopology is converted to EdgeSetTopology
@@ -11,7 +12,7 @@ __parents__:
 
 - TopologicalMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -68,7 +69,7 @@ if true, handle the events, otherwise ignore the events
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # BTDLinearSolver
 
 Linear system solver using Thomas Algorithm for Block Tridiagonal matrices
 
+
+## BTDMatrix6d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -110,7 +113,7 @@ display debug informations about subpartSolve computation
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

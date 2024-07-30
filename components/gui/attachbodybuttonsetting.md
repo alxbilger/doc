@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # AttachBodyButtonSetting
 
 Attach Body Button configuration
@@ -11,7 +12,7 @@ __parents__:
 
 - MouseButtonSetting
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -99,7 +100,7 @@ Show factor size of the JointSpringForcefield  when interacting with rigids
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

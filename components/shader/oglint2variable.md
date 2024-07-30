@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # OglInt2Variable
 
 OglInt2Variable
@@ -11,7 +12,7 @@ __parents__:
 
 - OglVariable
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -96,7 +97,7 @@ Set Uniform Value
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

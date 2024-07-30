@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # NearestPointROI
 
 Attach given pair of particles, projecting the positions of the second particles to the first ones
 
+
+## Rigid2d
 
 Templates:
 
@@ -16,7 +19,7 @@ __parents__:
 - DataEngine
 - PairStateAccessor
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -139,7 +142,7 @@ List of distances between pairs of points
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -150,6 +153,9 @@ List of distances between pairs of points
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState&lt;Rigid2d&gt;|
 |object2|Second object associated to this component|MechanicalState&lt;Rigid2d&gt;|
+
+<!-- generate_doc -->
+## Rigid3d
 
 Templates:
 
@@ -164,7 +170,7 @@ __parents__:
 - DataEngine
 - PairStateAccessor
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -287,7 +293,7 @@ List of distances between pairs of points
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -298,6 +304,9 @@ List of distances between pairs of points
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState&lt;Rigid3d&gt;|
 |object2|Second object associated to this component|MechanicalState&lt;Rigid3d&gt;|
+
+<!-- generate_doc -->
+## Vec1d
 
 Templates:
 
@@ -312,7 +321,7 @@ __parents__:
 - DataEngine
 - PairStateAccessor
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -435,7 +444,7 @@ List of distances between pairs of points
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -446,6 +455,9 @@ List of distances between pairs of points
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState&lt;Vec1d&gt;|
 |object2|Second object associated to this component|MechanicalState&lt;Vec1d&gt;|
+
+<!-- generate_doc -->
+## Vec2d
 
 Templates:
 
@@ -460,7 +472,7 @@ __parents__:
 - DataEngine
 - PairStateAccessor
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -583,7 +595,7 @@ List of distances between pairs of points
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -594,6 +606,9 @@ List of distances between pairs of points
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState&lt;Vec2d&gt;|
 |object2|Second object associated to this component|MechanicalState&lt;Vec2d&gt;|
+
+<!-- generate_doc -->
+## Vec3d
 
 Templates:
 
@@ -608,7 +623,7 @@ __parents__:
 - DataEngine
 - PairStateAccessor
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -731,7 +746,7 @@ List of distances between pairs of points
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -742,6 +757,9 @@ List of distances between pairs of points
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState&lt;Vec3d&gt;|
 |object2|Second object associated to this component|MechanicalState&lt;Vec3d&gt;|
+
+<!-- generate_doc -->
+## Vec6d
 
 Templates:
 
@@ -756,7 +774,7 @@ __parents__:
 - DataEngine
 - PairStateAccessor
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -879,7 +897,7 @@ List of distances between pairs of points
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

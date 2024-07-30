@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # OglMatrix4VectorVariable
 
 OglMatrix4VectorVariable
@@ -11,7 +12,7 @@ __parents__:
 
 - OglVariable
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -103,7 +104,7 @@ Transpose the matrix (e.g. to use row-dominant matrices in OpenGL
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

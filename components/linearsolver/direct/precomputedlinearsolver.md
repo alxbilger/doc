@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # PrecomputedLinearSolver
 
 Linear system solver based on a precomputed inverse matrix
 
+
+## FullVector
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -93,7 +96,7 @@ Dump system matrix in a file
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # RecordedCamera
 
 A camera that is moving along a predetermined path.
@@ -11,7 +12,7 @@ __parents__:
 
 - BaseCamera
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -316,7 +317,7 @@ If true, will draw the translation path
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # TetrahedronSetGeometryAlgorithms
 
 Tetrahedron set geometry algorithms
 
+
+## Vec2d...
 
 Templates:
 
@@ -16,7 +19,7 @@ __parents__:
 
 - TriangleSetGeometryAlgorithms
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -195,7 +198,7 @@ RGBA code color used to draw tetrahedra.
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # APIVersion
 
 Specify the APIVersion of the component used in a scene.
@@ -11,7 +12,7 @@ __parents__:
 
 - BaseObject
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -75,7 +76,7 @@ The API Level of the scene ('17.06', '17.12', '18.06', ...)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

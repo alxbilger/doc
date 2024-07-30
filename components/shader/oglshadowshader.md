@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # OglShadowShader
 
 This component sets the shader system responsible of the shadowing.
@@ -11,7 +12,7 @@ __parents__:
 
 - OglShader
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -180,7 +181,7 @@ clamp the vertex color between 0 and 1
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

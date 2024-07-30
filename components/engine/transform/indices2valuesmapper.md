@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # Indices2ValuesMapper
 
 ?
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -113,7 +116,7 @@ New map between indices and values
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # VectorSpringForceField
 
 Spring force field acting along the edges of a mesh
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - PairInteractionForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -114,7 +117,7 @@ Activate/Desactivate topology mode of the component (springs on each edge)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

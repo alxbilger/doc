@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # ShewchukPCGLinearSolver
 
 Linear system solver using the conjugate gradient iterative algorithm
 
+
+## GraphScattered
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -121,7 +124,7 @@ Graph of residuals at each iteration
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

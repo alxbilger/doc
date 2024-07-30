@@ -63,6 +63,18 @@ node.addObject('BilateralLagrangianConstraint', template='Vec3d' object1='@CUBE_
 
 An example scene involving a BilateralLagrangianConstraint is available in [*examples/Component/Constraint/Lagrangian/BilateralLagrangianConstraint_PGS.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Constraint/Lagrangian/BilateralLagrangianConstraint_PGS.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# BilateralLagrangianConstraint
+
+BilateralLagrangianConstraint defining an holonomic equality constraint (attachment)
+
+
+## Rigid3d
+
+Templates:
+
+- Rigid3d
+
 __Target__: Sofa.Component.Constraint.Lagrangian.Model
 
 __namespace__: sofa::component::constraint::lagrangian::model
@@ -71,7 +83,7 @@ __parents__:
 
 - PairInteractionConstraint
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -192,7 +204,7 @@ keep the initial difference in orientation (only for rigids)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -206,6 +218,9 @@ keep the initial difference in orientation (only for rigids)
 |topology1|link to the first topology container|BaseMeshTopology|
 |topology2|link to the second topology container|BaseMeshTopology|
 
+<!-- generate_doc -->
+## Vec3d
+
 Templates:
 
 - Vec3d
@@ -218,7 +233,7 @@ __parents__:
 
 - PairInteractionConstraint
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -339,7 +354,7 @@ keep the initial difference in orientation (only for rigids)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

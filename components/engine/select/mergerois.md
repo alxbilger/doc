@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # MergeROIs
 
 Merge a list of ROIs (vector<Indices>) into a single Data (vector<svector<Indices>>)
@@ -11,7 +12,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -82,7 +83,7 @@ Vector of ROIs
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

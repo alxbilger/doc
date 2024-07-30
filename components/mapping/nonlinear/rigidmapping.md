@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # RigidMapping
 
 Set the positions and velocities of points attached to a rigid parent
 
+
+## Rigid2d,Vec2d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - Mapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -166,7 +169,7 @@ are the output DOFs initially expressed in global coordinates
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -176,6 +179,9 @@ are the output DOFs initially expressed in global coordinates
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State&lt;Rigid2d&gt;|
 |output|Output object to map|State&lt;Vec2d&gt;|
+
+<!-- generate_doc -->
+## Rigid3d,Rigid3d
 
 Templates:
 
@@ -189,7 +195,7 @@ __parents__:
 
 - Mapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -340,7 +346,7 @@ are the output DOFs initially expressed in global coordinates
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -350,6 +356,9 @@ are the output DOFs initially expressed in global coordinates
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State&lt;Rigid3d&gt;|
 |output|Output object to map|State&lt;Rigid3d&gt;|
+
+<!-- generate_doc -->
+## Rigid3d,Vec3d
 
 Templates:
 
@@ -363,7 +372,7 @@ __parents__:
 
 - Mapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -514,7 +523,7 @@ are the output DOFs initially expressed in global coordinates
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

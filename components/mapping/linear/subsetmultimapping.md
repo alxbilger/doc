@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # SubsetMultiMapping
 
 Compute a subset of the input MechanicalObjects according to a dof index list
 
+
+## Rigid3d,Rigid3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -114,7 +117,7 @@ list of couples (parent index + index in the parent)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -124,6 +127,9 @@ list of couples (parent index + index in the parent)
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input Object(s)|State&lt;Rigid3d&gt;|
 |output|Output Object(s)|State&lt;Rigid3d&gt;|
+
+<!-- generate_doc -->
+## Rigid3d,Vec3d
 
 Templates:
 
@@ -137,7 +143,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -236,7 +242,7 @@ list of couples (parent index + index in the parent)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -246,6 +252,9 @@ list of couples (parent index + index in the parent)
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input Object(s)|State&lt;Rigid3d&gt;|
 |output|Output Object(s)|State&lt;Vec3d&gt;|
+
+<!-- generate_doc -->
+## Vec1d,Vec1d
 
 Templates:
 
@@ -259,7 +268,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -358,7 +367,7 @@ list of couples (parent index + index in the parent)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -368,6 +377,9 @@ list of couples (parent index + index in the parent)
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input Object(s)|State&lt;Vec1d&gt;|
 |output|Output Object(s)|State&lt;Vec1d&gt;|
+
+<!-- generate_doc -->
+## Vec2d,Vec2d
 
 Templates:
 
@@ -381,7 +393,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -480,7 +492,7 @@ list of couples (parent index + index in the parent)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -490,6 +502,9 @@ list of couples (parent index + index in the parent)
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input Object(s)|State&lt;Vec2d&gt;|
 |output|Output Object(s)|State&lt;Vec2d&gt;|
+
+<!-- generate_doc -->
+## Vec3d,Vec3d
 
 Templates:
 
@@ -503,7 +518,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -602,7 +617,7 @@ list of couples (parent index + index in the parent)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

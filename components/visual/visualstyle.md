@@ -72,6 +72,30 @@ node and return a WriteAccessor on the display flags:
 addVisualStyle(root)->setShowVisual().setShowBehavior().setShowMapping(false);
 ```
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# VisualStyle
+
+Edit the visual style.
+ Allowed values for displayFlags data are a combination of the following:
+showAll, hideAll,
+    showVisual, hideVisual,
+        showVisualModels, hideVisualModels,
+    showBehavior, hideBehavior,
+        showBehaviorModels, hideBehaviorModels,
+        showForceFields, hideForceFields,
+        showInteractionForceFields, hideInteractionForceFields
+    showMapping, hideMapping
+        showMappings, hideMappings
+        showMechanicalMappings, hideMechanicalMappings
+    showCollision, hideCollision
+        showCollisionModels, hideCollisionModels
+        showBoundingCollisionModels, hideBoundingCollisionModels
+    showOptions hideOptions
+        showRendering hideRendering
+        showNormals hideNormals
+        showWireframe hideWireframe
+
+
 __Target__: Sofa.Component.Visual
 
 __namespace__: sofa::component::visual
@@ -80,7 +104,7 @@ __parents__:
 
 - VisualModel
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -151,7 +175,7 @@ Display Flags
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # EdgePressureForceField
 
 Apply a force on edges, distributed on the edge nodes
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -159,7 +162,7 @@ draw arrows of edge pressures
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

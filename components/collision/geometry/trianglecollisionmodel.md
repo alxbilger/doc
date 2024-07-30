@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # TriangleCollisionModel
 
 collision model using a triangular mesh, as described in BaseMeshTopology
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - CollisionModel
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -178,7 +181,7 @@ use the curvature of the mesh to avoid some self-intersection test
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

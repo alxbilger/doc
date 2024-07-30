@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # SphereLoader
 
 Loader for sphere model description files
@@ -11,7 +12,7 @@ __parents__:
 
 - BaseLoader
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -110,7 +111,7 @@ Translation applied to sphere positions
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

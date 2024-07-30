@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # VisualModelOBJExporter
 
 Export the scene under the Wavefront OBJ format.When several frames are exported the file name have the following pattern: outfile000.obj outfile001.obj.
@@ -11,7 +12,7 @@ __parents__:
 
 - BaseSimulationExporter
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -103,7 +104,7 @@ Enable or disable the component. (default=true)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

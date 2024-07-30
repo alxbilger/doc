@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # ExtrudeEdgesAndGenerateQuads
 
 This engine extrudes an edge-based curve into a quad surface patch
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -141,7 +144,7 @@ List of all quads generated during the extrusion
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

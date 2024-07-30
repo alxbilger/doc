@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # EdgeSetTopologyContainer
 
 Edge set topology container
@@ -11,7 +12,7 @@ __parents__:
 
 - PointSetTopologyContainer
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -110,7 +111,7 @@ It true, will check the connexity of the mesh.
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

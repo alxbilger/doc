@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # PrecomputedWarpPreconditioner
 
 Linear system solver based on a precomputed inverse matrix, wrapped by a per-node rotation matrix
 
+
+## CompressedRowSparseMatrixd
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -117,7 +120,7 @@ Scale rotations in draw function
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # SSORPreconditioner
 
 Linear system solver / preconditioner based on Symmetric Successive Over-Relaxation (SSOR). If the matrix is decomposed as $A = D + L + L^T$, this solver computes $(1/(2-w))(D/w+L)(D/w)^{-1}(D/w+L)^T x = b, or $(D+L)D^{-1}(D+L)^T x = b$ if $w=1$.
 
+
+## CompressedRowSparseMatrixMat3x3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -86,7 +89,7 @@ Omega coefficient
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -95,6 +98,9 @@ Omega coefficient
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat3x3d&gt;|
+
+<!-- generate_doc -->
+## CompressedRowSparseMatrixd
 
 Templates:
 
@@ -108,7 +114,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -179,7 +185,7 @@ Omega coefficient
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # TopologicalChangeProcessor
 
 Read topological Changes and process them.
@@ -11,7 +12,7 @@ __parents__:
 
 - BaseObject
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -190,7 +191,7 @@ draw information
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

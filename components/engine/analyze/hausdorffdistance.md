@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # HausdorffDistance
 
 Compute the Hausdorff distance of two point clouds
 
+
+## Rigid2d...
 
 Templates:
 
@@ -19,7 +22,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -124,7 +127,7 @@ Symmetrical Hausdorff distance
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

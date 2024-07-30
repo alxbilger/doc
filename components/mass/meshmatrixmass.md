@@ -157,6 +157,18 @@ node.addObject('MeshMatrixMass', massDensity='1000')
 
 An example scene involving a MeshMatrixMass is available in [*examples/Component/Mass/MeshMatrixMass.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Mass/MeshMatrixMass.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# MeshMatrixMass
+
+Define a specific mass for each particle
+
+
+## Vec1d,Vec1d
+
+Templates:
+
+- Vec1d,Vec1d
+
 __Target__: Sofa.Component.Mass
 
 __namespace__: sofa::component::mass
@@ -165,7 +177,7 @@ __parents__:
 
 - Mass
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -318,7 +330,7 @@ factor length of the axis displayed (only used for rigids)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -330,6 +342,9 @@ factor length of the axis displayed (only used for rigids)
 |mstate|MechanicalState used by this component|MechanicalState&lt;Vec1d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
 |geometryState|link to the MechanicalObject associated with the geometry|MechanicalState&lt;Vec1d&gt;|
+
+<!-- generate_doc -->
+## Vec1d,Vec2d
 
 Templates:
 
@@ -343,7 +358,7 @@ __parents__:
 
 - Mass
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -496,7 +511,7 @@ factor length of the axis displayed (only used for rigids)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -508,6 +523,9 @@ factor length of the axis displayed (only used for rigids)
 |mstate|MechanicalState used by this component|MechanicalState&lt;Vec1d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
 |geometryState|link to the MechanicalObject associated with the geometry|MechanicalState&lt;Vec2d&gt;|
+
+<!-- generate_doc -->
+## Vec1d,Vec3d
 
 Templates:
 
@@ -521,7 +539,7 @@ __parents__:
 
 - Mass
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -674,7 +692,7 @@ factor length of the axis displayed (only used for rigids)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -686,6 +704,9 @@ factor length of the axis displayed (only used for rigids)
 |mstate|MechanicalState used by this component|MechanicalState&lt;Vec1d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
 |geometryState|link to the MechanicalObject associated with the geometry|MechanicalState&lt;Vec3d&gt;|
+
+<!-- generate_doc -->
+## Vec2d,Vec2d
 
 Templates:
 
@@ -699,7 +720,7 @@ __parents__:
 
 - Mass
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -852,7 +873,7 @@ factor length of the axis displayed (only used for rigids)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -864,6 +885,9 @@ factor length of the axis displayed (only used for rigids)
 |mstate|MechanicalState used by this component|MechanicalState&lt;Vec2d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
 |geometryState|link to the MechanicalObject associated with the geometry|MechanicalState&lt;Vec2d&gt;|
+
+<!-- generate_doc -->
+## Vec2d,Vec3d
 
 Templates:
 
@@ -877,7 +901,7 @@ __parents__:
 
 - Mass
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -1030,7 +1054,7 @@ factor length of the axis displayed (only used for rigids)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -1042,6 +1066,9 @@ factor length of the axis displayed (only used for rigids)
 |mstate|MechanicalState used by this component|MechanicalState&lt;Vec2d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
 |geometryState|link to the MechanicalObject associated with the geometry|MechanicalState&lt;Vec3d&gt;|
+
+<!-- generate_doc -->
+## Vec3d,Vec3d
 
 Templates:
 
@@ -1055,7 +1082,7 @@ __parents__:
 
 - Mass
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -1208,7 +1235,7 @@ factor length of the axis displayed (only used for rigids)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

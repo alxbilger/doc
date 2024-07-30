@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # QuadPressureForceField
 
 QuadPressure
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -131,7 +134,7 @@ draw quads which have a given pressure
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

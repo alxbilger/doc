@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # MeshTetraStuffing
 
 Create a tetrahedral volume mesh from a surface, using the algorithm from F. Labelle and J.R. Shewchuk, "Isosurface Stuffing: Fast Tetrahedral Meshes with Good Dihedral Angles", SIGGRAPH 2007.
@@ -11,7 +12,7 @@ __parents__:
 
 - BaseObject
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -158,7 +159,7 @@ Activate rendering of internal datasets
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

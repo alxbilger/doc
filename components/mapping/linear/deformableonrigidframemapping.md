@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # DeformableOnRigidFrameMapping
 
 Set the positions and velocities of points attached to a rigid parent
 
+
+## Vec3d,Rigid3d,Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -149,7 +152,7 @@ Scale factor applied on the linear force accumulated on the rigid model
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

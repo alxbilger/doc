@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # Camera
 
 A Camera that render the scene from a given location & orientation.
@@ -11,7 +12,7 @@ __parents__:
 
 - BaseCamera
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -187,7 +188,7 @@ Projection Matrix
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

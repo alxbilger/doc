@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # MeshClosingEngine
 
 Merge several meshes
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -141,7 +144,7 @@ Triangles of the closing parts
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

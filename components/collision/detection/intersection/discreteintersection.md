@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # DiscreteIntersection
 
 TODO-DiscreteIntersectionClass
@@ -11,7 +12,7 @@ __parents__:
 
 - Intersection
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -68,7 +69,7 @@ if true, handle the events, otherwise ignore the events
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

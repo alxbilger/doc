@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # CentralDifferenceSolver
 
 Explicit time integrator using central difference (also known as Verlet of Leap-frog)
@@ -11,7 +12,7 @@ __parents__:
 
 - OdeSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -82,7 +83,7 @@ If true, do not use realloc and free visitors in fwdInteractionForceField.
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

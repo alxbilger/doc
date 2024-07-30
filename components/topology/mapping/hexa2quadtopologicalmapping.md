@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # Hexa2QuadTopologicalMapping
 
 Special case of mapping where HexahedronSetTopology is converted to QuadSetTopology
@@ -11,7 +12,7 @@ __parents__:
 
 - TopologicalMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -75,7 +76,7 @@ Flip Normal ? (Inverse point order when creating triangle)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

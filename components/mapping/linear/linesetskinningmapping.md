@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # LineSetSkinningMapping
 
 skin a model from a set of rigid lines
 
+
+## Rigid3d,Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -128,7 +131,7 @@ Set the coefficient used to compute the weight of lines
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

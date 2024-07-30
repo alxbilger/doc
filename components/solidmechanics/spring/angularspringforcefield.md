@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # AngularSpringForceField
 
 Angular springs applied to rotational degrees of freedom of a rigid body or frame
 
+
+## Rigid3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -117,7 +120,7 @@ draw Spring
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

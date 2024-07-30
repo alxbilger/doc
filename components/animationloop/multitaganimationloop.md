@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # MultiTagAnimationLoop
 
 Simple animation loop that given a list of tags, animate the graph one tag after another.
@@ -11,7 +12,7 @@ __parents__:
 
 - BaseAnimationLoop
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -75,7 +76,7 @@ If true, compute the global bounding box of the scene at each time step. Used mo
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

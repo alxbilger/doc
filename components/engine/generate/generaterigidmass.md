@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # GenerateRigidMass
 
 An engine computing the RigidMass of a mesh : mass, volume and inertia matrix.
 
+
+## Rigid3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -155,7 +158,7 @@ output: vector going from the mass center to the space origin
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

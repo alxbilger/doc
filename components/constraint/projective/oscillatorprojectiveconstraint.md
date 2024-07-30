@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # OscillatorProjectiveConstraint
 
 Apply a sinusoidal trajectory to given points
 
+
+## Rigid3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -95,7 +98,7 @@ Define a sequence of oscillating particules:
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -105,6 +108,9 @@ Define a sequence of oscillating particules:
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Rigid3d&gt;|
+
+<!-- generate_doc -->
+## Vec3d
 
 Templates:
 
@@ -118,7 +124,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -198,7 +204,7 @@ Define a sequence of oscillating particules:
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

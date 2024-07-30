@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # HexahedralFEMForceFieldAndMass
 
 Hexahedral finite elements with mass
 
+
+## Vec3d
 
 Templates:
 
@@ -16,7 +19,7 @@ __parents__:
 - Mass
 - HexahedralFEMForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -164,7 +167,7 @@ Lumped masses
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

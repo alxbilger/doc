@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # CylinderCollisionModel
 
 Collision model which represents a set of rigid cylinders
 
+
+## Rigid3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - CollisionModel
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -192,7 +195,7 @@ The default local axis cylinder is modeled around
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

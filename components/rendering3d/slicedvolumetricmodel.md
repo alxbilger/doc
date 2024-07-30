@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # SlicedVolumetricModel
 
 A simple visualization for a cloud of points.
@@ -11,7 +12,7 @@ __parents__:
 
 - VisualModel
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -96,7 +97,7 @@ Number of billboards.
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

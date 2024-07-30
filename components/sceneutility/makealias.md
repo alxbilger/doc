@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # MakeAlias
 
 This object create an alias to a component name to make the scene more readable. 
@@ -11,7 +12,7 @@ __parents__:
 
 - BaseObject
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -82,7 +83,7 @@ The new alias of the component.
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

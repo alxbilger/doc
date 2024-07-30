@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # PointSetTopologyContainer
 
 Point set topology container
@@ -11,7 +12,7 @@ __parents__:
 
 - TopologyContainer
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -96,7 +97,7 @@ Number of points
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

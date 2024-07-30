@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # SimpleTesselatedTetraTopologicalMapping
 
 Special case of mapping where TetrahedronSetTopology is converted into a finer TetrahedronSetTopology
@@ -11,7 +12,7 @@ __parents__:
 
 - TopologicalMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -103,7 +104,7 @@ Which input topology element map to a given point in the output topology : 0 -> 
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

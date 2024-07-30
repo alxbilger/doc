@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # RigidToQuatEngine
 
 Transform a couple of Vec3 and Quaternion in Rigid
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -106,7 +109,7 @@ Rigid (Position + Orientation)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

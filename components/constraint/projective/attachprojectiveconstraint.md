@@ -56,6 +56,18 @@ node.addObject('AttachProjectiveConstraint', object1="@M1", object2="@M2", indic
 
 An example scene involving a AttachProjectiveConstraint is available in [*examples/Component/Constraint/Projective/AttachProjectiveConstraint.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Constraint/Projective/AttachProjectiveConstraint.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# AttachProjectiveConstraint
+
+Attach given pair of particles, projecting the positions of the second particles to the first ones
+
+
+## Rigid2d
+
+Templates:
+
+- Rigid2d
+
 __Target__: Sofa.Component.Constraint.Projective
 
 __namespace__: sofa::component::constraint::projective
@@ -64,7 +76,7 @@ __parents__:
 
 - PairInteractionProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -234,7 +246,7 @@ Vector of factors adapting the application of the constraint per pair of points 
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -245,6 +257,9 @@ Vector of factors adapting the application of the constraint per pair of points 
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState&lt;Rigid2d&gt;|
 |object2|Second object associated to this component|MechanicalState&lt;Rigid2d&gt;|
+
+<!-- generate_doc -->
+## Rigid3d
 
 Templates:
 
@@ -258,7 +273,7 @@ __parents__:
 
 - PairInteractionProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -428,7 +443,7 @@ Vector of factors adapting the application of the constraint per pair of points 
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -439,6 +454,9 @@ Vector of factors adapting the application of the constraint per pair of points 
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState&lt;Rigid3d&gt;|
 |object2|Second object associated to this component|MechanicalState&lt;Rigid3d&gt;|
+
+<!-- generate_doc -->
+## Vec1d
 
 Templates:
 
@@ -452,7 +470,7 @@ __parents__:
 
 - PairInteractionProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -622,7 +640,7 @@ Vector of factors adapting the application of the constraint per pair of points 
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -633,6 +651,9 @@ Vector of factors adapting the application of the constraint per pair of points 
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState&lt;Vec1d&gt;|
 |object2|Second object associated to this component|MechanicalState&lt;Vec1d&gt;|
+
+<!-- generate_doc -->
+## Vec2d
 
 Templates:
 
@@ -646,7 +667,7 @@ __parents__:
 
 - PairInteractionProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -816,7 +837,7 @@ Vector of factors adapting the application of the constraint per pair of points 
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -827,6 +848,9 @@ Vector of factors adapting the application of the constraint per pair of points 
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState&lt;Vec2d&gt;|
 |object2|Second object associated to this component|MechanicalState&lt;Vec2d&gt;|
+
+<!-- generate_doc -->
+## Vec3d
 
 Templates:
 
@@ -840,7 +864,7 @@ __parents__:
 
 - PairInteractionProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -1010,7 +1034,7 @@ Vector of factors adapting the application of the constraint per pair of points 
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

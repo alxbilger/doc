@@ -66,6 +66,12 @@ Examples of scenes involving a EulerExplicitSolver are available in [*examples/C
 - [EulerSymplecticSolver.scn](https://github.com/sofa-framework/sofa/blob/master/examples/Component/ODESolver/Forward/EulerSymplecticSolver.scn): symplectic and non-diagonal mass matrix
 - [EulerSymplecticSolver_diagonal.scn](https://github.com/sofa-framework/sofa/blob/master/examples/Component/ODESolver/Forward/EulerSymplecticSolver_diagonal.scn): symplectic and diagonal mass matrix
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# EulerExplicitSolver
+
+A simple explicit time integrator
+
+
 __Target__: Sofa.Component.ODESolver.Forward
 
 __namespace__: sofa::component::odesolver::forward
@@ -74,7 +80,7 @@ __parents__:
 
 - OdeSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -145,7 +151,7 @@ If true, do not use realloc and free visitors in fwdInteractionForceField.
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # SelectLabelROI
 
 Select a subset of labeled points or cells stored in (vector<svector<label>>) given certain labels
 
+
+## B...
 
 Templates:
 
@@ -18,7 +21,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -102,7 +105,7 @@ selected point/cell indices
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

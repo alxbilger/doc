@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # MessageHandlerComponent
 
 This object controls the way Sofa print's info/warning/error/fatal messages. 
@@ -11,7 +12,7 @@ __parents__:
 
 - BaseObject
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -75,7 +76,7 @@ Type of the message handler to use among [sofa, clang                           
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

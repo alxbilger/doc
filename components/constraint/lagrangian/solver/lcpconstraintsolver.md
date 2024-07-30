@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # LCPConstraintSolver
 
 A Constraint Solver using the Linear Complementarity Problem formulation to solve BaseConstraint based components
@@ -11,7 +12,7 @@ __parents__:
 
 - ConstraintSolverImpl
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -218,7 +219,7 @@ Translation between levels
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

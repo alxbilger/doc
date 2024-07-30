@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # EdgeSetGeometryAlgorithms
 
 Edge set geometry algorithms
 
+
+## Rigid2d...
 
 Templates:
 
@@ -19,7 +22,7 @@ __parents__:
 
 - PointSetGeometryAlgorithms
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -121,7 +124,7 @@ RGB code color used to draw edges.
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

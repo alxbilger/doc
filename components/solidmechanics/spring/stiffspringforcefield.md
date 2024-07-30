@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # StiffSpringForceField
 
 Stiff springs for implicit integration
 
+
+## Rigid3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - SpringForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -155,7 +158,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -166,6 +169,9 @@ The way springs will be drawn:
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState&lt;Rigid3d&gt;|
 |object2|Second object associated to this component|MechanicalState&lt;Rigid3d&gt;|
+
+<!-- generate_doc -->
+## Vec1d
 
 Templates:
 
@@ -179,7 +185,7 @@ __parents__:
 
 - SpringForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -319,7 +325,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -330,6 +336,9 @@ The way springs will be drawn:
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState&lt;Vec1d&gt;|
 |object2|Second object associated to this component|MechanicalState&lt;Vec1d&gt;|
+
+<!-- generate_doc -->
+## Vec2d
 
 Templates:
 
@@ -343,7 +352,7 @@ __parents__:
 
 - SpringForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -483,7 +492,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -494,6 +503,9 @@ The way springs will be drawn:
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState&lt;Vec2d&gt;|
 |object2|Second object associated to this component|MechanicalState&lt;Vec2d&gt;|
+
+<!-- generate_doc -->
+## Vec3d
 
 Templates:
 
@@ -507,7 +519,7 @@ __parents__:
 
 - SpringForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -647,7 +659,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -658,6 +670,9 @@ The way springs will be drawn:
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState&lt;Vec3d&gt;|
 |object2|Second object associated to this component|MechanicalState&lt;Vec3d&gt;|
+
+<!-- generate_doc -->
+## Vec6d
 
 Templates:
 
@@ -671,7 +686,7 @@ __parents__:
 
 - SpringForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -811,7 +826,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

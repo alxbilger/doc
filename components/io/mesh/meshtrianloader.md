@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # MeshTrianLoader
 
 Specific mesh loader for trian (only triangulations) file format.
@@ -11,7 +12,7 @@ __parents__:
 
 - MeshLoader
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -333,7 +334,7 @@ Groups of Pyramids
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

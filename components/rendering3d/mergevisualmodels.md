@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # MergeVisualModels
 
 Merge several visual models
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - OglModel
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -414,7 +417,7 @@ Initial Scale of the object
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

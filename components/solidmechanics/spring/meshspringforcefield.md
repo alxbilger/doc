@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # MeshSpringForceField
 
 Spring force field acting along the edges of a mesh
 
+
+## Vec1d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - StiffSpringForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -260,7 +263,7 @@ Size of drawed lines
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -272,6 +275,9 @@ Size of drawed lines
 |object1|First object associated to this component|MechanicalState&lt;Vec1d&gt;|
 |object2|Second object associated to this component|MechanicalState&lt;Vec1d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec2d
 
 Templates:
 
@@ -285,7 +291,7 @@ __parents__:
 
 - StiffSpringForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -530,7 +536,7 @@ Size of drawed lines
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -542,6 +548,9 @@ Size of drawed lines
 |object1|First object associated to this component|MechanicalState&lt;Vec2d&gt;|
 |object2|Second object associated to this component|MechanicalState&lt;Vec2d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec3d
 
 Templates:
 
@@ -555,7 +564,7 @@ __parents__:
 
 - StiffSpringForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -800,7 +809,7 @@ Size of drawed lines
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

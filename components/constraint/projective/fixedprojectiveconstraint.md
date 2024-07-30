@@ -82,6 +82,18 @@ node.addObject('FixedProjectiveConstraint', indices='3 39 64')
 
 An example scene involving a FixedProjectiveConstraint is available in [*examples/Component/Constraint/Projective/FixedProjectiveConstraint.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Constraint/Projective/FixedProjectiveConstraint.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# FixedProjectiveConstraint
+
+Attach given particles to their initial positions
+
+
+## Rigid2d
+
+Templates:
+
+- Rigid2d
+
 __Target__: Sofa.Component.Constraint.Projective
 
 __namespace__: sofa::component::constraint::projective
@@ -90,7 +102,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -200,7 +212,7 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -211,6 +223,9 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Rigid2d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Rigid3d
 
 Templates:
 
@@ -224,7 +239,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -334,7 +349,7 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -345,6 +360,9 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Rigid3d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec1d
 
 Templates:
 
@@ -358,7 +376,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -468,7 +486,7 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -479,6 +497,9 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Vec1d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec2d
 
 Templates:
 
@@ -492,7 +513,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -602,7 +623,7 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -613,6 +634,9 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Vec2d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec3d
 
 Templates:
 
@@ -626,7 +650,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -736,7 +760,7 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -747,6 +771,9 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Vec3d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec6d
 
 Templates:
 
@@ -760,7 +787,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -870,7 +897,7 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

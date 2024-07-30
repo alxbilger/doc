@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # ExtrudeQuadsAndGenerateHexas
 
 This engine extrudes a quad-based surface into a set of hexahedral elements
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -162,7 +165,7 @@ List of hexahedra generated during the extrusion
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

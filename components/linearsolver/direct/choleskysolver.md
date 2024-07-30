@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # CholeskySolver
 
 Direct linear solver based on Cholesky factorization, for dense matrices
 
+
+## FullMatrix
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -79,7 +82,7 @@ Parallelize the computation of the product J*M^{-1}*J^T where M is the matrix of
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -88,6 +91,9 @@ Parallelize the computation of the product J*M^{-1}*J^T where M is the matrix of
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;FullMatrix&gt;|
+
+<!-- generate_doc -->
+## SparseMatrix
 
 Templates:
 
@@ -101,7 +107,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -165,7 +171,7 @@ Parallelize the computation of the product J*M^{-1}*J^T where M is the matrix of
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

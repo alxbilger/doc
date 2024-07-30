@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # IdentityMultiMapping
 
 Concatenate several States together
 
+
+## Rigid3d,Rigid3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -107,7 +110,7 @@ set to true to apply this mapping to restPosition at init
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -117,6 +120,9 @@ set to true to apply this mapping to restPosition at init
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input Object(s)|State&lt;Rigid3d&gt;|
 |output|Output Object(s)|State&lt;Rigid3d&gt;|
+
+<!-- generate_doc -->
+## Vec3d,Vec3d
 
 Templates:
 
@@ -130,7 +136,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -222,7 +228,7 @@ set to true to apply this mapping to restPosition at init
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

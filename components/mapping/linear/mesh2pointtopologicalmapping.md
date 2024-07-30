@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # Mesh2PointTopologicalMapping
 
 This class maps any mesh primitive (point, edge, triangle...) into a point using a relative position from the primitive
@@ -11,7 +12,7 @@ __parents__:
 
 - TopologicalMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -134,7 +135,7 @@ Coordinates for the points of the output topology created from the hexa of the i
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

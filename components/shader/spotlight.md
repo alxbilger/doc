@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # SpotLight
 
 A spot light illuminating the scene.The light has a location and a illumination cone restricting the directionstaken by the rays of light  (can cast shadows).
@@ -11,7 +12,7 @@ __parents__:
 
 - PositionalLight
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -218,7 +219,7 @@ Draw Light Source
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

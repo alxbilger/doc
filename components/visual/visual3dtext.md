@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # Visual3DText
 
 Display 3D camera-oriented text
@@ -11,7 +12,7 @@ __parents__:
 
 - VisualModel
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -110,7 +111,7 @@ perform depth test
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

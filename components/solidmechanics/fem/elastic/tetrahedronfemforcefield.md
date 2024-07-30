@@ -50,6 +50,18 @@ With a description of each data
 
 An example scene involving a TetrahedronFEMForceField is available in [*examples/Component/SolidMechanics/FEM/TetrahedronFEMForceField.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/SolidMechanics/FEM/TetrahedronFEMForceField.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# TetrahedronFEMForceField
+
+Tetrahedral finite elements
+
+
+## Vec3d
+
+Templates:
+
+- Vec3d
+
 __Target__: Sofa.Component.SolidMechanics.FEM.Elastic
 
 __namespace__: sofa::component::solidmechanics::fem::elastic
@@ -59,7 +71,7 @@ __parents__:
 - BaseLinearElasticityFEMForceField
 - BaseObject
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -294,7 +306,7 @@ draw gap between elements (when showWireFrame is disabled) [0,1]: 0: no gap, 1: 
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

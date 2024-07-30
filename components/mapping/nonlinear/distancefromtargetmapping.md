@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # DistanceFromTargetMapping
 
 Compute edge extensions
 
+
+## Rigid3d,Vec1d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - Mapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -155,7 +158,7 @@ Color for object display. (default=[1.0,1.0,0.0,1.0])
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -165,6 +168,9 @@ Color for object display. (default=[1.0,1.0,0.0,1.0])
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State&lt;Rigid3d&gt;|
 |output|Output object to map|State&lt;Vec1d&gt;|
+
+<!-- generate_doc -->
+## Vec1d,Vec1d
 
 Templates:
 
@@ -178,7 +184,7 @@ __parents__:
 
 - Mapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -318,7 +324,7 @@ Color for object display. (default=[1.0,1.0,0.0,1.0])
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -328,6 +334,9 @@ Color for object display. (default=[1.0,1.0,0.0,1.0])
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State&lt;Vec1d&gt;|
 |output|Output object to map|State&lt;Vec1d&gt;|
+
+<!-- generate_doc -->
+## Vec3d,Vec1d
 
 Templates:
 
@@ -341,7 +350,7 @@ __parents__:
 
 - Mapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -481,7 +490,7 @@ Color for object display. (default=[1.0,1.0,0.0,1.0])
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

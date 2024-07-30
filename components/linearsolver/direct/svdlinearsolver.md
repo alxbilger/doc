@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # SVDLinearSolver
 
 Linear system solver using a SVD decomposition of a dense matrix
 
+
+## CompressedRowSparseMatrixMat3x3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -100,7 +103,7 @@ Condition number of the matrix: ratio between the largest and smallest singular 
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -109,6 +112,9 @@ Condition number of the matrix: ratio between the largest and smallest singular 
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat3x3d&gt;|
+
+<!-- generate_doc -->
+## CompressedRowSparseMatrixd
 
 Templates:
 
@@ -122,7 +128,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -207,7 +213,7 @@ Condition number of the matrix: ratio between the largest and smallest singular 
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -216,6 +222,9 @@ Condition number of the matrix: ratio between the largest and smallest singular 
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixd&gt;|
+
+<!-- generate_doc -->
+## FullMatrix
 
 Templates:
 
@@ -229,7 +238,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -314,7 +323,7 @@ Condition number of the matrix: ratio between the largest and smallest singular 
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

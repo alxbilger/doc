@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # FixPickedParticleButtonSetting
 
 Fix a picked particle in space
@@ -11,7 +12,7 @@ __parents__:
 
 - MouseButtonSetting
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -82,7 +83,7 @@ Stiffness of the spring to fix a particule
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

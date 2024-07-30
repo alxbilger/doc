@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # SelectConnectedLabelsROI
 
 Select a subset of points or cells labeled from different sources, that are connected given a list of connection pairs
 
+
+## B...
 
 Templates:
 
@@ -18,7 +21,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -102,7 +105,7 @@ selected point/cell indices
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

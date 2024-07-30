@@ -88,6 +88,18 @@ node.addObject('SparseLDLSolver')
 
 An example scene involving a SparseLDLSolver is available in [*examples/Component/LinearSolver/Direct/FEMBAR_SparseLDLSolver.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/LinearSolver/Direct/FEMBAR_SparseLDLSolver.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# SparseLDLSolver
+
+Direct Linear Solver using a Sparse LDL^T factorization.
+
+
+## CompressedRowSparseMatrixMat3x3d
+
+Templates:
+
+- CompressedRowSparseMatrixMat3x3d
+
 __Target__: Sofa.Component.LinearSolver.Direct
 
 __namespace__: sofa::component::linearsolver::direct
@@ -96,7 +108,7 @@ __parents__:
 
 - SparseLDLSolverImpl
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -174,7 +186,7 @@ Number of non-zero values in the lower triangular matrix of the factorization. T
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -184,6 +196,9 @@ Number of non-zero values in the lower triangular matrix of the factorization. T
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat3x3d&gt;|
 |orderingMethod|Ordering method used by this component|BaseOrderingMethod|
+
+<!-- generate_doc -->
+## CompressedRowSparseMatrixd
 
 Templates:
 
@@ -197,7 +212,7 @@ __parents__:
 
 - SparseLDLSolverImpl
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -275,7 +290,7 @@ Number of non-zero values in the lower triangular matrix of the factorization. T
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

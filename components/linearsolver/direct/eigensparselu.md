@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # EigenSparseLU
 
 Direct Linear Solver using a Sparse LU factorization.
 
+
+## CompressedRowSparseMatrixMat3x3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - EigenDirectSparseSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -79,7 +82,7 @@ Parallelize the computation of the product J*M^{-1}*J^T where M is the matrix of
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -89,6 +92,9 @@ Parallelize the computation of the product J*M^{-1}*J^T where M is the matrix of
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem&lt;CompressedRowSparseMatrixMat3x3d&gt;|
 |orderingMethod|Ordering method used by this component|BaseOrderingMethod|
+
+<!-- generate_doc -->
+## CompressedRowSparseMatrixd
 
 Templates:
 
@@ -102,7 +108,7 @@ __parents__:
 
 - EigenDirectSparseSolver
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -166,7 +172,7 @@ Parallelize the computation of the product J*M^{-1}*J^T where M is the matrix of
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # PointCollisionModel
 
 Collision model which represents a set of points
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - CollisionModel
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -178,7 +181,7 @@ Display Collision Model Points free position(in green)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # NewProximityIntersection
 
 Optimized Proximity Intersection based on Triangle-Triangle tests, ignoring Edge-Edge cases
@@ -11,7 +12,7 @@ __parents__:
 
 - BaseProximityIntersection
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -89,7 +90,7 @@ Line-line collision detection enabled
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

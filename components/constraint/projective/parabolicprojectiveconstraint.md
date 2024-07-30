@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # ParabolicProjectiveConstraint
 
 Apply a parabolic trajectory to given points
 
+
+## Rigid3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -129,7 +132,7 @@ End Time of the motion
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -140,6 +143,9 @@ End Time of the motion
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState&lt;Rigid3d&gt;|
 |topology|link to the topology container|BaseMeshTopology|
+
+<!-- generate_doc -->
+## Vec3d
 
 Templates:
 
@@ -153,7 +159,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -267,7 +273,7 @@ End Time of the motion
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # BarycentricMapping
 
 Mapping using barycentric coordinates of the child with respect to cells of its parent
 
+
+## Vec3d,Rigid3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -114,7 +117,7 @@ Use the rest position of the input and output models to initialize the mapping
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
@@ -128,6 +131,9 @@ Use the rest position of the input and output models to initialize the mapping
 |input_topology|Input topology container (usually the surrounding domain).|BaseMeshTopology|
 |output_topology|Output topology container (usually the immersed domain).|BaseMeshTopology|
 
+<!-- generate_doc -->
+## Vec3d,Vec3d
+
 Templates:
 
 - Vec3d,Vec3d
@@ -140,7 +146,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -239,7 +245,7 @@ Use the rest position of the input and output models to initialize the mapping
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

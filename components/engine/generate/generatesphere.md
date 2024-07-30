@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # GenerateSphere
 
 Generate a sphereical (Bezier) Tetrahedral and Triangular Mesh
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -176,7 +179,7 @@ name of the Platonic triangulation used to create the spherical dome : either "t
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

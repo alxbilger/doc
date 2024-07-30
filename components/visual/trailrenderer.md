@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # TrailRenderer
 
 Render a trail behind particles
 
+
+## Rigid3d...
 
 Templates:
 
@@ -16,7 +19,7 @@ __parents__:
 
 - VisualModel
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -108,7 +111,7 @@ Thickness of the trail
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

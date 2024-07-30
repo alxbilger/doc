@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # TriangularAnisotropicFEMForceField
 
 Triangular finite element model using anisotropic material
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - TriangularFEMForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -208,7 +211,7 @@ Flag activating rendering of fiber directions within each triangle
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

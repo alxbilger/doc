@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # PointSplatModel
 
 A simple visualization for a cloud of points.
@@ -11,7 +12,7 @@ __parents__:
 
 - VisualModel
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -110,7 +111,7 @@ scalar field modulating point colors
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

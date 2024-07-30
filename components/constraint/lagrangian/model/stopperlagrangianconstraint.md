@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # StopperLagrangianConstraint
 
 TODO-StopperLagrangianConstraint
 
+
+## Vec1d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - Constraint
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -115,7 +118,7 @@ maximum value accepted
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

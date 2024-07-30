@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # NormalsFromPoints
 
 Compute vertex normals by averaging face normals
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -120,7 +123,7 @@ Computed vertex normals of the mesh
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

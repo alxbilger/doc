@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # InputEventReader
 
 Read events from file
@@ -11,7 +12,7 @@ __parents__:
 
 - BaseObject
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -117,7 +118,7 @@ Other filename where events will be stored (or read)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

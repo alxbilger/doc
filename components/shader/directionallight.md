@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # DirectionalLight
 
 A directional light illuminating the scene with parallel rays of light (can cast shadows).
@@ -11,7 +12,7 @@ __parents__:
 
 - Light
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -176,7 +177,7 @@ Draw Light Source
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

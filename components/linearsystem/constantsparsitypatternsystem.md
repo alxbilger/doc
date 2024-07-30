@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # ConstantSparsityPatternSystem
 
 Linear system taking advantage of the constant sparsity pattern of the global matrix to speed up the matrix assembly. Do not use if sparsity pattern is not constant (topological changes, ...).
 
+
+## CompressedRowSparseMatrixd
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - MatrixLinearSystem
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -135,7 +138,7 @@ If true, independent matrices (global matrix vs mapped matrices) are assembled i
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

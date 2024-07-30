@@ -32,6 +32,12 @@ node.addObject('MeshOffLoader', name="offLoader", filename="mesh/aneurysm3D_1.of
 
 An example scene involving a MeshOffLoader is available in [*examples/Component/IO/Mesh/MeshOffLoader.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/IO/Mesh/MeshOffLoader.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# MeshOffLoader
+
+Specific mesh loader for Off file format.
+
+
 __Target__: Sofa.Component.IO.Mesh
 
 __namespace__: sofa::component::io::mesh
@@ -40,7 +46,7 @@ __parents__:
 
 - MeshLoader
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -334,7 +340,7 @@ Groups of Pyramids
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

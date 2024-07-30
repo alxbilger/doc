@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # QuadSetTopologyModifier
 
 Quad set topology modifier
@@ -11,7 +12,7 @@ __parents__:
 
 - EdgeSetTopologyModifier
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -75,7 +76,7 @@ Propagate changes to Mechanical object DOFs
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

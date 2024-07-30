@@ -49,6 +49,18 @@ With a description of each data
 
 An example scene involving a QuadBendingFEMForceField is available in [*examples/Component/SolidMechanics/FEM/QuadBendingFEMForceField.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/SolidMechanics/FEM/QuadBendingFEMForceField.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# QuadBendingFEMForceField
+
+Bending Quad finite elements
+
+
+## Vec3d
+
+Templates:
+
+- Vec3d
+
 __Target__: Sofa.Component.SolidMechanics.FEM.Elastic
 
 __namespace__: sofa::component::solidmechanics::fem::elastic
@@ -57,7 +69,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -170,7 +182,7 @@ Thickness of the elements
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

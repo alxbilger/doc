@@ -32,6 +32,12 @@ node.addObject('MeshVTKLoader', name="VtkLoader", filename="mesh/liver.vtk", fli
 
 An example scene involving a MeshVTKLoader is available in [*examples/Component/IO/Mesh/MeshVTKLoader.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/IO/Mesh/MeshVTKLoader.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# MeshVTKLoader
+
+Mesh loader for the VTK/VTU file format.
+
+
 __Target__: Sofa.Component.IO.Mesh
 
 __namespace__: sofa::component::io::mesh
@@ -40,7 +46,7 @@ __parents__:
 
 - MeshLoader
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -334,7 +340,7 @@ Groups of Pyramids
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # LineCollisionModel
 
 collision model using a linear mesh, as described in MeshTopology
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - CollisionModel
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -171,7 +174,7 @@ Display Collision Model Points free position(in green)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

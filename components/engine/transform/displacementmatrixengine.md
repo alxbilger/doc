@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # DisplacementMatrixEngine
 
 Converts a vector of Rigid to a vector of displacement matrices.
 
+
+## Rigid3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - DisplacementTransformEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -106,7 +109,7 @@ Displacement transforms with respect to original rigid positions
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # OglTexturePointer
 
 OglTexturePointer
@@ -12,7 +13,7 @@ __parents__:
 - VisualModel
 - ShaderElement
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -104,7 +105,7 @@ enabled ?
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

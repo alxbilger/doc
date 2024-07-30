@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # AddDataRepository
 
 Add a path to DataRepository
@@ -11,7 +12,7 @@ __parents__:
 
 - BaseAddResourceRepository
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -75,7 +76,7 @@ Path to add to the pool of resources
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

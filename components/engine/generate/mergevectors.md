@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # MergeVectors
 
 Apply a merge operation to combine several inputs
 
+
+## vector<RigidCoord2d>...
 
 Templates:
 
@@ -25,7 +28,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -96,7 +99,7 @@ Output vector
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

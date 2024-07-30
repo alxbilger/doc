@@ -64,6 +64,18 @@ node.addObject('TetrahedronHyperelasticityFEMForceField', name="HyperElasticMate
 
 An example scene involving a TetrahedronHyperelasticityFEMForceField is available in [*examples/Component/SolidMechanics/FEM/TetrahedronHyperelasticityFEMForceField.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/SolidMechanics/FEM/TetrahedronHyperelasticityFEMForceField.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# TetrahedronHyperelasticityFEMForceField
+
+Generic Tetrahedral finite elements
+
+
+## Vec3d
+
+Templates:
+
+- Vec3d
+
 __Target__: Sofa.Component.SolidMechanics.FEM.HyperElastic
 
 __namespace__: sofa::component::solidmechanics::fem::hyperelastic
@@ -72,7 +84,7 @@ __parents__:
 
 - ForceField
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -178,7 +190,7 @@ Internal edge data
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,3 +1,4 @@
+<!-- generate_doc -->
 # MeshXspLoader
 
 Specific mesh loader for Xsp file format.
@@ -11,7 +12,7 @@ __parents__:
 
 - MeshLoader
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -305,7 +306,7 @@ Groups of Pyramids
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

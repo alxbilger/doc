@@ -123,6 +123,12 @@ node.addObject('EulerImplicitSolver', name='ODEsolver', rayleighStiffness='0.1' 
  
 An example scene involving a StaticSolver is available in [*examples/Component/ODESolver/Backward/EulerImplicitSolver.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/ODESolver/Backward/EulerImplicitSolver.scn)
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# EulerImplicitSolver
+
+Time integrator using implicit backward Euler scheme
+
+
 __Target__: Sofa.Component.ODESolver.Backward
 
 __namespace__: sofa::component::odesolver::backward
@@ -132,7 +138,7 @@ __parents__:
 - OdeSolver
 - LinearSolverAccessor
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -238,7 +244,7 @@ If true, do not use realloc and free visitors in fwdInteractionForceField.
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

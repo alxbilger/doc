@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # MeshROI
 
 Find the primitives (vertex/edge/triangle/tetrahedron) inside a given mesh
 
+
+## Rigid3d...
 
 Templates:
 
@@ -17,7 +20,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -342,7 +345,7 @@ rendering size for mesh and topological elements
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

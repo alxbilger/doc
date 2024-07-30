@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # QuatToRigidEngine
 
 Transform a vector of Rigids into two independant vectors for positions (Vec3) and orientations (Quat).
 
+
+## Vec3d
 
 Templates:
 
@@ -15,7 +18,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -106,7 +109,7 @@ Rigid (Position + Orientation)
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

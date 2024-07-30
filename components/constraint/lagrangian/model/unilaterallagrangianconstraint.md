@@ -53,6 +53,18 @@ Example
 
 An example scene involving a UnilateralLagrangianConstraint is available in [*examples/Component/Constraint/Lagrangian/FrictionContact_LCP_without_friction.scn*](https://github.com/sofa-framework/sofa/blob/master/examples/Component/Constraint/Lagrangian/FrictionContact_LCP_without_friction.scn). Note that in this example, the UnilateralLagrangianConstraint will be created as soon as a contact point is outputed from the collision detection phase.
 <!-- automatically generated doc START -->
+<!-- generate_doc -->
+# UnilateralLagrangianConstraint
+
+TODO-UnilateralLagrangianConstraint
+
+
+## Vec3d
+
+Templates:
+
+- Vec3d
+
 __Target__: Sofa.Component.Constraint.Lagrangian.Model
 
 __namespace__: sofa::component::constraint::lagrangian::model
@@ -61,7 +73,7 @@ __parents__:
 
 - PairInteractionConstraint
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -140,7 +152,7 @@ Use a negative value for infinite constraints
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

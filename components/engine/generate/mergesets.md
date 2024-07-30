@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # MergeSets
 
 Merge two sets of indices using specified boolean operation
 
+
+## I...
 
 Templates:
 
@@ -16,7 +19,7 @@ __parents__:
 
 - DataEngine
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -107,7 +110,7 @@ merged set of indices
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |

@@ -1,7 +1,10 @@
+<!-- generate_doc -->
 # SphereCollisionModel
 
 Collision model which represents a set of Spheres
 
+
+## Rigid3d...
 
 Templates:
 
@@ -16,7 +19,7 @@ __parents__:
 
 - CollisionModel
 
-## Data
+### Data
 
 <table>
     <thead>
@@ -182,7 +185,7 @@ Draw spheres as impostors instead of "real" spheres
 </tbody>
 </table>
 
-## Links
+### Links
 
 
 | Name | Description | Destination type name |
