@@ -168,6 +168,8 @@ The way springs will be drawn:
 |object2|Second object associated to this component|MechanicalState<Vec2d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+Templates:
+
 - Vec3d
 
 __Target__: Sofa.Component.SolidMechanics.Spring

@@ -177,6 +177,8 @@ are the output DOFs initially expressed in global coordinates
 |input|Input object to map|State<Rigid2d>|
 |output|Output object to map|State<Vec2d>|
 
+Templates:
+
 - Rigid3d,Rigid3d
 
 __Target__: Sofa.Component.Mapping.NonLinear
@@ -348,6 +350,8 @@ are the output DOFs initially expressed in global coordinates
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State<Rigid3d>|
 |output|Output object to map|State<Rigid3d>|
+
+Templates:
 
 - Rigid3d,Vec3d
 

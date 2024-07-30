@@ -118,6 +118,8 @@ set to true to apply this mapping to restPosition at init
 |input|Input object to map|State<Rigid2d>|
 |output|Output object to map|State<Rigid2d>|
 
+Templates:
+
 - Rigid2d,Vec2d
 
 __Target__: Sofa.Component.Mapping.Linear
@@ -230,6 +232,8 @@ set to true to apply this mapping to restPosition at init
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State<Rigid2d>|
 |output|Output object to map|State<Vec2d>|
+
+Templates:
 
 - Rigid3d,Rigid3d
 
@@ -344,6 +348,8 @@ set to true to apply this mapping to restPosition at init
 |input|Input object to map|State<Rigid3d>|
 |output|Output object to map|State<Rigid3d>|
 
+Templates:
+
 - Rigid3d,Vec3d
 
 __Target__: Sofa.Component.Mapping.Linear
@@ -456,6 +462,8 @@ set to true to apply this mapping to restPosition at init
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State<Rigid3d>|
 |output|Output object to map|State<Vec3d>|
+
+Templates:
 
 - Vec1d,Vec1d
 
@@ -570,6 +578,8 @@ set to true to apply this mapping to restPosition at init
 |input|Input object to map|State<Vec1d>|
 |output|Output object to map|State<Vec1d>|
 
+Templates:
+
 - Vec2d,Vec2d
 
 __Target__: Sofa.Component.Mapping.Linear
@@ -682,6 +692,8 @@ set to true to apply this mapping to restPosition at init
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State<Vec2d>|
 |output|Output object to map|State<Vec2d>|
+
+Templates:
 
 - Vec3d,Vec3d
 
@@ -796,6 +808,8 @@ set to true to apply this mapping to restPosition at init
 |input|Input object to map|State<Vec3d>|
 |output|Output object to map|State<Vec3d>|
 
+Templates:
+
 - Vec6d,Vec3d
 
 __Target__: Sofa.Component.Mapping.Linear
@@ -908,6 +922,8 @@ set to true to apply this mapping to restPosition at init
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State<Vec6d>|
 |output|Output object to map|State<Vec3d>|
+
+Templates:
 
 - Vec6d,Vec6d
 

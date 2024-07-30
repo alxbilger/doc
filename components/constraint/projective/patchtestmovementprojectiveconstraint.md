@@ -158,6 +158,8 @@ draw constrained points
 |mstate|MechanicalState used by this component|MechanicalState<Rigid3d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+Templates:
+
 - Vec3d
 
 __Target__: Sofa.Component.Constraint.Projective

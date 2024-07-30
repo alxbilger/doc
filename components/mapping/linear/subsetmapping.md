@@ -168,6 +168,8 @@ True to resize the output MechanicalState to match the size of indices
 |output|Output object to map|State<Rigid3d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+Templates:
+
 - Vec1d,Vec1d
 
 __Target__: Sofa.Component.Mapping.Linear
@@ -330,6 +332,8 @@ True to resize the output MechanicalState to match the size of indices
 |input|Input object to map|State<Vec1d>|
 |output|Output object to map|State<Vec1d>|
 |topology|link to the topology container|BaseMeshTopology|
+
+Templates:
 
 - Vec3d,Vec3d
 

@@ -146,6 +146,8 @@ The way springs will be drawn:
 |object1|First object associated to this component|MechanicalState<Rigid3d>|
 |object2|Second object associated to this component|MechanicalState<Rigid3d>|
 
+Templates:
+
 - Vec1d
 
 __Target__: Sofa.Component.SolidMechanics.Spring
@@ -286,6 +288,8 @@ The way springs will be drawn:
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState<Vec1d>|
 |object2|Second object associated to this component|MechanicalState<Vec1d>|
+
+Templates:
 
 - Vec2d
 
@@ -428,6 +432,8 @@ The way springs will be drawn:
 |object1|First object associated to this component|MechanicalState<Vec2d>|
 |object2|Second object associated to this component|MechanicalState<Vec2d>|
 
+Templates:
+
 - Vec3d
 
 __Target__: Sofa.Component.SolidMechanics.Spring
@@ -568,6 +574,8 @@ The way springs will be drawn:
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState<Vec3d>|
 |object2|Second object associated to this component|MechanicalState<Vec3d>|
+
+Templates:
 
 - Vec6d
 

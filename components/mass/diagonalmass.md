@@ -250,6 +250,8 @@ Factor length of the axis displayed (only used for rigids)
 |topology|link to the topology container|BaseMeshTopology|
 |geometryState|link to the MechanicalObject associated with the geometry|MechanicalState<Rigid2d>|
 
+Templates:
+
 - Rigid2d,Rigid3d
 
 __Target__: Sofa.Component.Mass
@@ -405,6 +407,8 @@ Factor length of the axis displayed (only used for rigids)
 |mstate|MechanicalState used by this component|MechanicalState<Rigid2d>|
 |topology|link to the topology container|BaseMeshTopology|
 |geometryState|link to the MechanicalObject associated with the geometry|MechanicalState<Rigid3d>|
+
+Templates:
 
 - Rigid3d,Rigid3d
 
@@ -562,6 +566,8 @@ Factor length of the axis displayed (only used for rigids)
 |topology|link to the topology container|BaseMeshTopology|
 |geometryState|link to the MechanicalObject associated with the geometry|MechanicalState<Rigid3d>|
 
+Templates:
+
 - Vec1d,Vec1d
 
 __Target__: Sofa.Component.Mass
@@ -717,6 +723,8 @@ Factor length of the axis displayed (only used for rigids)
 |mstate|MechanicalState used by this component|MechanicalState<Vec1d>|
 |topology|link to the topology container|BaseMeshTopology|
 |geometryState|link to the MechanicalObject associated with the geometry|MechanicalState<Vec1d>|
+
+Templates:
 
 - Vec1d,Vec2d
 
@@ -874,6 +882,8 @@ Factor length of the axis displayed (only used for rigids)
 |topology|link to the topology container|BaseMeshTopology|
 |geometryState|link to the MechanicalObject associated with the geometry|MechanicalState<Vec2d>|
 
+Templates:
+
 - Vec1d,Vec3d
 
 __Target__: Sofa.Component.Mass
@@ -1030,6 +1040,8 @@ Factor length of the axis displayed (only used for rigids)
 |topology|link to the topology container|BaseMeshTopology|
 |geometryState|link to the MechanicalObject associated with the geometry|MechanicalState<Vec3d>|
 
+Templates:
+
 - Vec2d,Vec3d
 
 __Target__: Sofa.Component.Mass
@@ -1185,6 +1197,8 @@ Factor length of the axis displayed (only used for rigids)
 |mstate|MechanicalState used by this component|MechanicalState<Vec2d>|
 |topology|link to the topology container|BaseMeshTopology|
 |geometryState|link to the MechanicalObject associated with the geometry|MechanicalState<Vec3d>|
+
+Templates:
 
 - Vec3d,Vec3d
 

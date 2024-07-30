@@ -146,6 +146,8 @@ if true the sphere force field is applied on both sides
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec1d>|
 
+Templates:
+
 - Vec2d
 
 __Target__: Sofa.Component.MechanicalLoad
@@ -286,6 +288,8 @@ if true the sphere force field is applied on both sides
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec2d>|
+
+Templates:
 
 - Vec3d
 

@@ -125,6 +125,8 @@ list of couples (parent index + index in the parent)
 |input|Input Object(s)|State<Rigid3d>|
 |output|Output Object(s)|State<Rigid3d>|
 
+Templates:
+
 - Rigid3d,Vec3d
 
 __Target__: Sofa.Component.Mapping.Linear
@@ -244,6 +246,8 @@ list of couples (parent index + index in the parent)
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input Object(s)|State<Rigid3d>|
 |output|Output Object(s)|State<Vec3d>|
+
+Templates:
 
 - Vec1d,Vec1d
 
@@ -365,6 +369,8 @@ list of couples (parent index + index in the parent)
 |input|Input Object(s)|State<Vec1d>|
 |output|Output Object(s)|State<Vec1d>|
 
+Templates:
+
 - Vec2d,Vec2d
 
 __Target__: Sofa.Component.Mapping.Linear
@@ -484,6 +490,8 @@ list of couples (parent index + index in the parent)
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input Object(s)|State<Vec2d>|
 |output|Output Object(s)|State<Vec2d>|
+
+Templates:
 
 - Vec3d,Vec3d
 

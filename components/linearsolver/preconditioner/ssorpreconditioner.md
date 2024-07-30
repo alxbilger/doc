@@ -96,6 +96,8 @@ Omega coefficient
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem<CompressedRowSparseMatrixMat3x3d>|
 
+Templates:
+
 - CompressedRowSparseMatrixd
 
 __Target__: Sofa.Component.LinearSolver.Preconditioner

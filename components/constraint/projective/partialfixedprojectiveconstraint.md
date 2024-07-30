@@ -151,6 +151,8 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 |mstate|MechanicalState used by this component|MechanicalState<Rigid2d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+Templates:
+
 - Rigid3d
 
 __Target__: Sofa.Component.Constraint.Projective
@@ -296,6 +298,8 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Rigid3d>|
 |topology|link to the topology container|BaseMeshTopology|
+
+Templates:
 
 - Vec1d
 
@@ -443,6 +447,8 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 |mstate|MechanicalState used by this component|MechanicalState<Vec1d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+Templates:
+
 - Vec2d
 
 __Target__: Sofa.Component.Constraint.Projective
@@ -589,6 +595,8 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 |mstate|MechanicalState used by this component|MechanicalState<Vec2d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+Templates:
+
 - Vec3d
 
 __Target__: Sofa.Component.Constraint.Projective
@@ -734,6 +742,8 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
 |topology|link to the topology container|BaseMeshTopology|
+
+Templates:
 
 - Vec6d
 

@@ -111,6 +111,8 @@ average of the values with the given indices in the given coordinate vector
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Rigid2d>|
 
+Templates:
+
 - Rigid3d
 
 __Target__: Sofa.Component.Engine.Analyze
@@ -217,6 +219,8 @@ average of the values with the given indices in the given coordinate vector
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Rigid3d>|
 
+Templates:
+
 - Vec2d
 
 __Target__: Sofa.Component.Engine.Analyze
@@ -322,6 +326,8 @@ average of the values with the given indices in the given coordinate vector
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec2d>|
+
+Templates:
 
 - Vec3d
 

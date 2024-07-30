@@ -127,6 +127,8 @@ Indices of the fixed points
 |mstate|MechanicalState used by this component|MechanicalState<Rigid3d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+Templates:
+
 - Vec3d
 
 __Target__: Sofa.Component.Constraint.Projective
@@ -248,6 +250,8 @@ Indices of the fixed points
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
 |topology|link to the topology container|BaseMeshTopology|
+
+Templates:
 
 - Vec6d
 

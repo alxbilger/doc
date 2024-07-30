@@ -89,6 +89,8 @@ Parallelize the computation of the product J*M^{-1}*J^T where M is the matrix of
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem<FullMatrix>|
 
+Templates:
+
 - SparseMatrix
 
 __Target__: Sofa.Component.LinearSolver.Direct

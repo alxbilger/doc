@@ -128,6 +128,8 @@ Use the rest position of the input and output models to initialize the mapping
 |input_topology|Input topology container (usually the surrounding domain).|BaseMeshTopology|
 |output_topology|Output topology container (usually the immersed domain).|BaseMeshTopology|
 
+Templates:
+
 - Vec3d,Vec3d
 
 __Target__: Sofa.Component.Mapping.Linear

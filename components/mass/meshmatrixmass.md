@@ -331,6 +331,8 @@ factor length of the axis displayed (only used for rigids)
 |topology|link to the topology container|BaseMeshTopology|
 |geometryState|link to the MechanicalObject associated with the geometry|MechanicalState<Vec1d>|
 
+Templates:
+
 - Vec1d,Vec2d
 
 __Target__: Sofa.Component.Mass
@@ -506,6 +508,8 @@ factor length of the axis displayed (only used for rigids)
 |mstate|MechanicalState used by this component|MechanicalState<Vec1d>|
 |topology|link to the topology container|BaseMeshTopology|
 |geometryState|link to the MechanicalObject associated with the geometry|MechanicalState<Vec2d>|
+
+Templates:
 
 - Vec1d,Vec3d
 
@@ -683,6 +687,8 @@ factor length of the axis displayed (only used for rigids)
 |topology|link to the topology container|BaseMeshTopology|
 |geometryState|link to the MechanicalObject associated with the geometry|MechanicalState<Vec3d>|
 
+Templates:
+
 - Vec2d,Vec2d
 
 __Target__: Sofa.Component.Mass
@@ -859,6 +865,8 @@ factor length of the axis displayed (only used for rigids)
 |topology|link to the topology container|BaseMeshTopology|
 |geometryState|link to the MechanicalObject associated with the geometry|MechanicalState<Vec2d>|
 
+Templates:
+
 - Vec2d,Vec3d
 
 __Target__: Sofa.Component.Mass
@@ -1034,6 +1042,8 @@ factor length of the axis displayed (only used for rigids)
 |mstate|MechanicalState used by this component|MechanicalState<Vec2d>|
 |topology|link to the topology container|BaseMeshTopology|
 |geometryState|link to the MechanicalObject associated with the geometry|MechanicalState<Vec3d>|
+
+Templates:
 
 - Vec3d,Vec3d
 

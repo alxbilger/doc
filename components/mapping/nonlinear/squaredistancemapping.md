@@ -146,6 +146,8 @@ Color for object display. (default=[1.0,1.0,0.0,1.0])
 |output|Output object to map|State<Vec1d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+Templates:
+
 - Vec3d,Vec1d
 
 __Target__: Sofa.Component.Mapping.NonLinear

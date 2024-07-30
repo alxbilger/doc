@@ -110,6 +110,8 @@ Graph of residuals at each iteration
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem<CompressedRowSparseMatrixMat2x2d>|
 
+Templates:
+
 - CompressedRowSparseMatrixMat3x3d
 
 __Target__: Sofa.Component.LinearSolver.Iterative
@@ -214,6 +216,8 @@ Graph of residuals at each iteration
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem<CompressedRowSparseMatrixMat3x3d>|
+
+Templates:
 
 - CompressedRowSparseMatrixMat4x4d
 
@@ -320,6 +324,8 @@ Graph of residuals at each iteration
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem<CompressedRowSparseMatrixMat4x4d>|
 
+Templates:
+
 - CompressedRowSparseMatrixMat6x6d
 
 __Target__: Sofa.Component.LinearSolver.Iterative
@@ -424,6 +430,8 @@ Graph of residuals at each iteration
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem<CompressedRowSparseMatrixMat6x6d>|
+
+Templates:
 
 - CompressedRowSparseMatrixMat8x8d
 
@@ -530,6 +538,8 @@ Graph of residuals at each iteration
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem<CompressedRowSparseMatrixMat8x8d>|
 
+Templates:
+
 - CompressedRowSparseMatrixd
 
 __Target__: Sofa.Component.LinearSolver.Iterative
@@ -634,6 +644,8 @@ Graph of residuals at each iteration
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem<CompressedRowSparseMatrixd>|
+
+Templates:
 
 - FullMatrix
 
@@ -740,6 +752,8 @@ Graph of residuals at each iteration
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem<FullMatrix>|
 
+Templates:
+
 - GraphScattered
 
 __Target__: Sofa.Component.LinearSolver.Iterative
@@ -844,6 +858,8 @@ Graph of residuals at each iteration
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem<GraphScattered>|
+
+Templates:
 
 - SparseMatrix
 

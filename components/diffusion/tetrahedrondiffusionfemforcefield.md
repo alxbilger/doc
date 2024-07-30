@@ -137,6 +137,8 @@ To display conductivity map.
 |mstate|MechanicalState used by this component|MechanicalState<Vec1d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+Templates:
+
 - Vec2d
 
 __Target__: Sofa.Component.Diffusion
@@ -268,6 +270,8 @@ To display conductivity map.
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec2d>|
 |topology|link to the topology container|BaseMeshTopology|
+
+Templates:
 
 - Vec3d
 

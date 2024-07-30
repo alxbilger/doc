@@ -246,6 +246,8 @@ Vector of factors adapting the application of the constraint per pair of points 
 |object1|First object associated to this component|MechanicalState<Rigid2d>|
 |object2|Second object associated to this component|MechanicalState<Rigid2d>|
 
+Templates:
+
 - Rigid3d
 
 __Target__: Sofa.Component.Constraint.Projective
@@ -437,6 +439,8 @@ Vector of factors adapting the application of the constraint per pair of points 
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState<Rigid3d>|
 |object2|Second object associated to this component|MechanicalState<Rigid3d>|
+
+Templates:
 
 - Vec1d
 
@@ -630,6 +634,8 @@ Vector of factors adapting the application of the constraint per pair of points 
 |object1|First object associated to this component|MechanicalState<Vec1d>|
 |object2|Second object associated to this component|MechanicalState<Vec1d>|
 
+Templates:
+
 - Vec2d
 
 __Target__: Sofa.Component.Constraint.Projective
@@ -821,6 +827,8 @@ Vector of factors adapting the application of the constraint per pair of points 
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState<Vec2d>|
 |object2|Second object associated to this component|MechanicalState<Vec2d>|
+
+Templates:
 
 - Vec3d
 

@@ -104,6 +104,8 @@ should it generate damping matrix df/dv? (explicit otherwise, i.e. only generati
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Rigid2d>|
 
+Templates:
+
 - Rigid3d
 
 __Target__: Sofa.Component.MechanicalLoad
@@ -202,6 +204,8 @@ should it generate damping matrix df/dv? (explicit otherwise, i.e. only generati
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Rigid3d>|
+
+Templates:
 
 - Vec1d
 
@@ -302,6 +306,8 @@ should it generate damping matrix df/dv? (explicit otherwise, i.e. only generati
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec1d>|
 
+Templates:
+
 - Vec2d
 
 __Target__: Sofa.Component.MechanicalLoad
@@ -401,6 +407,8 @@ should it generate damping matrix df/dv? (explicit otherwise, i.e. only generati
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec2d>|
 
+Templates:
+
 - Vec3d
 
 __Target__: Sofa.Component.MechanicalLoad
@@ -499,6 +507,8 @@ should it generate damping matrix df/dv? (explicit otherwise, i.e. only generati
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
+
+Templates:
 
 - Vec6d
 

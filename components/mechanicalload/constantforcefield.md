@@ -178,6 +178,8 @@ Color for object display (default: [0.2,0.9,0.3,1.0])
 |mstate|MechanicalState used by this component|MechanicalState<Rigid2d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+Templates:
+
 - Rigid3d
 
 __Target__: Sofa.Component.MechanicalLoad
@@ -311,6 +313,8 @@ Color for object display (default: [0.2,0.9,0.3,1.0])
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Rigid3d>|
 |topology|link to the topology container|BaseMeshTopology|
+
+Templates:
 
 - Vec1d
 
@@ -446,6 +450,8 @@ Color for object display (default: [0.2,0.9,0.3,1.0])
 |mstate|MechanicalState used by this component|MechanicalState<Vec1d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+Templates:
+
 - Vec2d
 
 __Target__: Sofa.Component.MechanicalLoad
@@ -580,6 +586,8 @@ Color for object display (default: [0.2,0.9,0.3,1.0])
 |mstate|MechanicalState used by this component|MechanicalState<Vec2d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+Templates:
+
 - Vec3d
 
 __Target__: Sofa.Component.MechanicalLoad
@@ -713,6 +721,8 @@ Color for object display (default: [0.2,0.9,0.3,1.0])
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
 |topology|link to the topology container|BaseMeshTopology|
+
+Templates:
 
 - Vec6d
 

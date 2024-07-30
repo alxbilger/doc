@@ -145,6 +145,8 @@ Computed target positions.
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Rigid3d>|
 
+Templates:
+
 - Vec3d
 
 __Target__: Sofa.Component.Engine.Analyze

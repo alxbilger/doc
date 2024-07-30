@@ -155,6 +155,8 @@ Number of non-zero values in the lower triangular matrix of the factorization. T
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem<CompressedRowSparseMatrixMat3x3d>|
 |orderingMethod|Ordering method used by this component|BaseOrderingMethod|
 
+Templates:
+
 - CompressedRowSparseMatrixd
 
 __Target__: Sofa.Component.LinearSolver.Direct

@@ -206,6 +206,8 @@ keep the initial difference in orientation (only for rigids)
 |topology1|link to the first topology container|BaseMeshTopology|
 |topology2|link to the second topology container|BaseMeshTopology|
 
+Templates:
+
 - Vec3d
 
 __Target__: Sofa.Component.Constraint.Lagrangian.Model

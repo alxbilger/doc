@@ -166,6 +166,8 @@ Color for object display. (default=[1.0,1.0,0.0,1.0])
 |input|Input object to map|State<Rigid3d>|
 |output|Output object to map|State<Vec1d>|
 
+Templates:
+
 - Vec1d,Vec1d
 
 __Target__: Sofa.Component.Mapping.NonLinear
@@ -326,6 +328,8 @@ Color for object display. (default=[1.0,1.0,0.0,1.0])
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State<Vec1d>|
 |output|Output object to map|State<Vec1d>|
+
+Templates:
 
 - Vec3d,Vec1d
 

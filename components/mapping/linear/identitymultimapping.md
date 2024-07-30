@@ -118,6 +118,8 @@ set to true to apply this mapping to restPosition at init
 |input|Input Object(s)|State<Rigid3d>|
 |output|Output Object(s)|State<Rigid3d>|
 
+Templates:
+
 - Vec3d,Vec3d
 
 __Target__: Sofa.Component.Mapping.Linear

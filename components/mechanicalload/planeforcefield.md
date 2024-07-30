@@ -163,6 +163,8 @@ plane display size if draw is enabled. (default=10)
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Rigid3d>|
 
+Templates:
+
 - Vec1d
 
 __Target__: Sofa.Component.MechanicalLoad
@@ -320,6 +322,8 @@ plane display size if draw is enabled. (default=10)
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec1d>|
+
+Templates:
 
 - Vec2d
 
@@ -479,6 +483,8 @@ plane display size if draw is enabled. (default=10)
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec2d>|
 
+Templates:
+
 - Vec3d
 
 __Target__: Sofa.Component.MechanicalLoad
@@ -636,6 +642,8 @@ plane display size if draw is enabled. (default=10)
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
+
+Templates:
 
 - Vec6d
 

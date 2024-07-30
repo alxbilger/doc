@@ -123,6 +123,8 @@ Size of the rendered particles (0 -> point based rendering, >0 -> radius of sphe
 |mstate|MechanicalState used by this component|MechanicalState<Vec2d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+Templates:
+
 - Vec3d
 
 __Target__: Sofa.Component.Constraint.Projective

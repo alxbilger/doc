@@ -126,6 +126,8 @@ Size of the drawn arrows (0->no arrows, sign->direction of drawing
 |mstate|MechanicalState used by this component|MechanicalState<Rigid3d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+Templates:
+
 - Vec1d
 
 __Target__: Sofa.Component.MechanicalLoad
@@ -246,6 +248,8 @@ Size of the drawn arrows (0->no arrows, sign->direction of drawing
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec1d>|
 |topology|link to the topology container|BaseMeshTopology|
+
+Templates:
 
 - Vec2d
 
@@ -368,6 +372,8 @@ Size of the drawn arrows (0->no arrows, sign->direction of drawing
 |mstate|MechanicalState used by this component|MechanicalState<Vec2d>|
 |topology|link to the topology container|BaseMeshTopology|
 
+Templates:
+
 - Vec3d
 
 __Target__: Sofa.Component.MechanicalLoad
@@ -488,6 +494,8 @@ Size of the drawn arrows (0->no arrows, sign->direction of drawing
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
 |topology|link to the topology container|BaseMeshTopology|
+
+Templates:
 
 - Vec6d
 

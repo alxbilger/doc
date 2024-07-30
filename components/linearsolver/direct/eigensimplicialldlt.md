@@ -90,6 +90,8 @@ Parallelize the computation of the product J*M^{-1}*J^T where M is the matrix of
 |linearSystem|The linear system to solve|TypedMatrixLinearSystem<CompressedRowSparseMatrixMat3x3d>|
 |orderingMethod|Ordering method used by this component|BaseOrderingMethod|
 
+Templates:
+
 - CompressedRowSparseMatrixd
 
 __Target__: Sofa.Component.LinearSolver.Direct

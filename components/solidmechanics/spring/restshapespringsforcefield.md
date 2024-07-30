@@ -158,6 +158,8 @@ draw Spring
 |external_rest_shape|rest_shape can be defined by the position of an external Mechanical State|MechanicalState<Rigid3d>|
 |topology|Link to be set to the topology container in the component graph|BaseMeshTopology|
 
+Templates:
+
 - Vec1d
 
 __Target__: Sofa.Component.SolidMechanics.Spring
@@ -310,6 +312,8 @@ draw Spring
 |mstate|MechanicalState used by this component|MechanicalState<Vec1d>|
 |external_rest_shape|rest_shape can be defined by the position of an external Mechanical State|MechanicalState<Vec1d>|
 |topology|Link to be set to the topology container in the component graph|BaseMeshTopology|
+
+Templates:
 
 - Vec3d
 
