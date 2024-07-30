@@ -15,7 +15,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -117,7 +117,7 @@ Scale rotations in draw function
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

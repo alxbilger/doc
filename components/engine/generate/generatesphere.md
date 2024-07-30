@@ -15,7 +15,7 @@ __parents__:
 
 - DataEngine
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -176,7 +176,7 @@ name of the Platonic triangulation used to create the spherical dome : either "t
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

@@ -80,7 +80,7 @@ __parents__:
 
 - PairInteractionForceField
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -234,7 +234,7 @@ Scale for indices display (default=0.02)
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -245,6 +245,10 @@ Links:
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState<Vec3d>|
 |object2|Second object associated to this component|MechanicalState<Vec3d>|
+
+## Examples 
+
+PolynomialSpringsForceField.scn
 
 === "XML"
 

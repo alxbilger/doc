@@ -11,7 +11,7 @@ __parents__:
 
 - CollisionModel
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -153,7 +153,7 @@ Number of collision models this collision model is currently attached to
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

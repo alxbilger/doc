@@ -15,7 +15,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -95,7 +95,7 @@ Define a sequence of oscillating particules:
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -116,7 +116,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -196,7 +196,7 @@ Define a sequence of oscillating particules:
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -206,6 +206,10 @@ Links:
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
+
+## Examples 
+
+OscillatorProjectiveConstraint.scn
 
 === "XML"
 
@@ -318,6 +322,8 @@ Links:
        surf.addObject('SphereCollisionModel', name="CollisionModel", listRadius="@[-2].listRadius")
        surf.addObject('BarycentricMapping', name="sphere mapping")
     ```
+
+OscillatorProjectiveConstraint_rigid.scn
 
 === "XML"
 

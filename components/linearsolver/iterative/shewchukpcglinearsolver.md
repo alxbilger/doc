@@ -15,7 +15,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -121,7 +121,7 @@ Graph of residuals at each iteration
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

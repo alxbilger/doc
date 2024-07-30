@@ -15,7 +15,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -128,7 +128,7 @@ Set the coefficient used to compute the weight of lines
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

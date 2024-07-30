@@ -11,7 +11,7 @@ __parents__:
 
 - VisualManagerPass
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -117,7 +117,7 @@ Set the fragment shader filename to load
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

@@ -11,7 +11,7 @@ __parents__:
 
 - GridTopology
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -239,7 +239,7 @@ if true, draw the topology hexahedra
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -247,6 +247,10 @@ Links:
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
+
+## Examples 
+
+RegularGridTopology_TrianglesMesh.scn
 
 === "XML"
 
@@ -359,6 +363,8 @@ Links:
        node.addObject('OglModel', name="Visual", color="red")
        node.addObject('IdentityMapping', input="@..", output="@Visual")
     ```
+
+RegularGridTopology_dimension.scn
 
 === "XML"
 
@@ -549,6 +555,8 @@ Links:
        visu.addObject('OglModel', name="Visual", color="white", edges="@../grid.edges")
        visu.addObject('IdentityMapping', input="@../Edge", output="@Visual")
     ```
+
+RegularGridTopology.scn
 
 === "XML"
 

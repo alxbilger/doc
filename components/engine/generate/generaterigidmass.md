@@ -15,7 +15,7 @@ __parents__:
 
 - DataEngine
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -155,7 +155,7 @@ output: vector going from the mass center to the space origin
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -163,6 +163,10 @@ Links:
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
+
+## Examples 
+
+GenerateRigidMass.scn
 
 === "XML"
 

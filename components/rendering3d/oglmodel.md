@@ -15,7 +15,7 @@ __parents__:
 
 - VisualModelImpl
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -407,7 +407,7 @@ Initial Scale of the object
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -416,6 +416,10 @@ Links:
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |topology|link to the topology container|BaseMeshTopology|
+
+## Examples 
+
+OglModel.scn
 
 === "XML"
 

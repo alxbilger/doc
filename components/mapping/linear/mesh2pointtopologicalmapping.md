@@ -11,7 +11,7 @@ __parents__:
 
 - TopologicalMapping
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -134,7 +134,7 @@ Coordinates for the points of the output topology created from the hexa of the i
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -144,6 +144,10 @@ Links:
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input topology to map|BaseMeshTopology|
 |output|Output topology to map|BaseMeshTopology|
+
+## Examples 
+
+Mesh2PointTopologicalMapping.scn
 
 === "XML"
 

@@ -15,7 +15,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -108,7 +108,7 @@ Prevent Rotation around Z axis
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -118,6 +118,10 @@ Links:
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Rigid3d>|
+
+## Examples 
+
+FixedRotationProjectiveConstraint.scn
 
 === "XML"
 

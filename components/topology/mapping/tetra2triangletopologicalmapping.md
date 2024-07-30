@@ -11,7 +11,7 @@ __parents__:
 
 - TopologicalMapping
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -89,7 +89,7 @@ If true the list of initial triangles is initially empty. Only additional triang
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -99,6 +99,10 @@ Links:
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input topology to map|BaseMeshTopology|
 |output|Output topology to map|BaseMeshTopology|
+
+## Examples 
+
+Tetra2TriangleTopologicalMapping_NoInitialTriangle_option.scn
 
 === "XML"
 
@@ -232,6 +236,8 @@ Links:
        visu.addObject('IdentityMapping', input="@../../Volume", output="@Visual")
     ```
 
+Tetra2TriangleTopologicalMapping_with_TetrahedronModel.scn
+
 === "XML"
 
     ```xml
@@ -356,6 +362,8 @@ Links:
        visu.addObject('OglModel', template="Vec3", name="Visual", material="Default Diffuse 1 0 0 1 1 Ambient 1 0 0 0.2 1 Specular 0 0 0 1 1 Emissive 0 0 0 1 1 Shininess 0 45")
        visu.addObject('IdentityMapping', template="Vec3,Vec3", name="default9", input="@../../Volume", output="@Visual")
     ```
+
+Tetra2TriangleTopologicalMapping.scn
 
 === "XML"
 

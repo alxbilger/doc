@@ -15,7 +15,7 @@ __parents__:
 
 - PairInteractionConstraint
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -122,7 +122,7 @@ force (impulse) used to solve the constraint
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -133,6 +133,10 @@ Links:
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState<Vec3d>|
 |object2|Second object associated to this component|MechanicalState<Vec3d>|
+
+## Examples 
+
+SlidingLagrangianConstraint.scn
 
 === "XML"
 

@@ -165,7 +165,7 @@ __parents__:
 
 - Mass
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -318,7 +318,7 @@ factor length of the axis displayed (only used for rigids)
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -341,7 +341,7 @@ __parents__:
 
 - Mass
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -494,7 +494,7 @@ factor length of the axis displayed (only used for rigids)
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -517,7 +517,7 @@ __parents__:
 
 - Mass
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -670,7 +670,7 @@ factor length of the axis displayed (only used for rigids)
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -693,7 +693,7 @@ __parents__:
 
 - Mass
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -846,7 +846,7 @@ factor length of the axis displayed (only used for rigids)
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -869,7 +869,7 @@ __parents__:
 
 - Mass
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -1022,7 +1022,7 @@ factor length of the axis displayed (only used for rigids)
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -1045,7 +1045,7 @@ __parents__:
 
 - Mass
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -1198,7 +1198,7 @@ factor length of the axis displayed (only used for rigids)
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -1210,6 +1210,10 @@ Links:
 |mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
 |topology|link to the topology container|BaseMeshTopology|
 |geometryState|link to the MechanicalObject associated with the geometry|MechanicalState<Vec3d>|
+
+## Examples 
+
+MeshMatrixMass.scn
 
 === "XML"
 

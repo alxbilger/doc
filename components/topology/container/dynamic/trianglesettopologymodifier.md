@@ -11,7 +11,7 @@ __parents__:
 
 - EdgeSetTopologyModifier
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -82,7 +82,7 @@ triangles with at least one null values.
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

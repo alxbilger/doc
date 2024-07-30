@@ -15,7 +15,7 @@ __parents__:
 
 - ForceField
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -173,7 +173,7 @@ Flag activating rendering of triangles to fracture
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -184,6 +184,10 @@ Links:
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
 |topology|link to the topology container|BaseMeshTopology|
+
+## Examples 
+
+TriangularFEMForceField.scn
 
 === "XML"
 
@@ -270,6 +274,8 @@ Links:
        visu_a.addObject('OglModel', name="Visual", color="yellow")
        visu_a.addObject('IdentityMapping', template="Vec3,Vec3", name="visualMapping", input="@../DOFs", output="@Visual")
     ```
+
+TriangularFEMForceFieldOptim.scn
 
 === "XML"
 
@@ -370,6 +376,8 @@ Links:
        visu_a.addObject('IdentityMapping', name="visualMapping", input="@../DOFs", output="@Visual")
     ```
 
+TriangularFEMForceField_RemovingMeshTest.scn
+
 === "XML"
 
     ```xml
@@ -454,6 +462,8 @@ Links:
        square_gravity.addObject('TriangularFEMForceField', template="Vec3", name="FEM", method="large", poissonRatio="0.3", youngModulus="60")
        square_gravity.addObject('TopologicalChangeProcessor', listening="1", filename="RemovingTrianglesProcess_constraint.txt")
     ```
+
+TriangularFEMForceFieldOptim_tissue100x100_cpu.scn
 
 === "XML"
 
@@ -557,6 +567,8 @@ Links:
        visu.addObject('OglModel', name="Visual", color="red")
        visu.addObject('IdentityMapping', input="@../dofs", output="@Visual")
     ```
+
+TriangularFEMForceFieldOptim_tissue100x100_gpu.scn
 
 === "XML"
 

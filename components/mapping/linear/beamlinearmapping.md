@@ -15,7 +15,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -114,7 +114,7 @@ true if initial coordinates are in the beam local coordinate system (i.e. a poin
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -124,6 +124,10 @@ Links:
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State<Rigid3d>|
 |output|Output object to map|State<Vec3d>|
+
+## Examples 
+
+BeamLinearMapping_mt.scn
 
 === "XML"
 

@@ -15,7 +15,7 @@ __parents__:
 
 - Mapping
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -166,7 +166,7 @@ are the output DOFs initially expressed in global coordinates
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -187,7 +187,7 @@ __parents__:
 
 - Mapping
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -338,7 +338,7 @@ are the output DOFs initially expressed in global coordinates
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -359,7 +359,7 @@ __parents__:
 
 - Mapping
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -510,7 +510,7 @@ are the output DOFs initially expressed in global coordinates
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -520,6 +520,10 @@ Links:
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State<Rigid3d>|
 |output|Output object to map|State<Vec3d>|
+
+## Examples 
+
+RigidMapping-basic.scn
 
 === "XML"
 
@@ -585,6 +589,8 @@ Links:
        child_node_with__do_fs_mapped_from_the_parent.addObject('RigidMapping', name="angle-coord mapping", input="@..", output="@.", index="0")
        child_node_with__do_fs_mapped_from_the_parent.addObject('ConstantForceField', forces="1 -1 0", indices="0")
     ```
+
+RigidMapping.scn
 
 === "XML"
 
@@ -817,6 +823,8 @@ Links:
        surf2.addObject('TriangleCollisionModel', )
        surf2.addObject('RigidMapping', )
     ```
+
+RigidMapping2d-basic.scn
 
 === "XML"
 

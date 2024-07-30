@@ -11,7 +11,7 @@ __parents__:
 
 - TopologicalMapping
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -68,7 +68,7 @@ if true, handle the events, otherwise ignore the events
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -78,6 +78,10 @@ Links:
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input topology to map|BaseMeshTopology|
 |output|Output topology to map|BaseMeshTopology|
+
+## Examples 
+
+Triangle2EdgeTopologicalMapping.scn
 
 === "XML"
 

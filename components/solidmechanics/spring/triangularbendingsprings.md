@@ -15,7 +15,7 @@ __parents__:
 
 - ForceField
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -110,7 +110,7 @@ option to draw springs
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -121,6 +121,10 @@ Links:
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
 |topology|link to the topology container|BaseMeshTopology|
+
+## Examples 
+
+TriangularBendingSprings.scn
 
 === "XML"
 
@@ -209,6 +213,8 @@ Links:
        node.addObject('OglModel', name="Visual", color="yellow")
        node.addObject('IdentityMapping', input="@..", output="@Visual")
     ```
+
+TriangularBendingSprings_RemovingMeshTest.scn
 
 === "XML"
 

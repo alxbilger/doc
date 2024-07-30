@@ -11,7 +11,7 @@ __parents__:
 
 - VisualManager
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -96,7 +96,7 @@ name the output texture
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

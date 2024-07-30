@@ -15,7 +15,7 @@ __parents__:
 
 - OglModel
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -414,7 +414,7 @@ Initial Scale of the object
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -424,6 +424,10 @@ Links:
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |topology|link to the topology container|BaseMeshTopology|
 |input1|input visual model(1)|VisualModelImpl<Vec3d>|
+
+## Examples 
+
+MergeVisualModels.scn
 
 === "XML"
 

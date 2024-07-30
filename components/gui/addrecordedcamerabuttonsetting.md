@@ -11,7 +11,7 @@ __parents__:
 
 - MouseButtonSetting
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -75,7 +75,7 @@ Mouse button used
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

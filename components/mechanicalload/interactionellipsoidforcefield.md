@@ -15,7 +15,7 @@ __parents__:
 
 - MixedInteractionForceField
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -152,7 +152,7 @@ enable/disable drawing of the ellipsoid
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -163,6 +163,10 @@ Links:
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState<Vec3d>|
 |object2|Second object associated to this component|MechanicalState<Rigid3d>|
+
+## Examples 
+
+InteractionEllipsoidForceField.scn
 
 === "XML"
 

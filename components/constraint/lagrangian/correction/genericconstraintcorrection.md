@@ -10,7 +10,7 @@ __parents__:
 
 - BaseConstraintCorrection
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -74,7 +74,7 @@ Factor applied to the position factor and velocity factor used to calculate comp
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

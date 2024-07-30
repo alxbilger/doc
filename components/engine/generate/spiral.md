@@ -35,7 +35,7 @@ __parents__:
 
 - DataEngine
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -119,7 +119,7 @@ Position coordinates of the degrees of freedom
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

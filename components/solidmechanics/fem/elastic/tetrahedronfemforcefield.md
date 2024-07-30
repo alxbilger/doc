@@ -59,7 +59,7 @@ __parents__:
 - BaseLinearElasticityFEMForceField
 - BaseObject
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -294,7 +294,7 @@ draw gap between elements (when showWireFrame is disabled) [0,1]: 0: no gap, 1: 
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -305,6 +305,10 @@ Links:
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
 |topology|link to the topology container|BaseMeshTopology|
+
+## Examples 
+
+TetrahedronFEMForceField_assemble.scn
 
 === "XML"
 
@@ -422,6 +426,8 @@ Links:
        beam_fem__large.addObject('BoxROI', template="Vec3", name="box_roi", box="-6 -6 -1 50 6 0.1", drawBoxes="1")
        beam_fem__large.addObject('FixedProjectiveConstraint', template="Vec3", indices="@box_roi.indices")
     ```
+
+TetrahedronFEMForceField.scn
 
 === "XML"
 
@@ -609,6 +615,8 @@ Links:
        beam_fem__svd.addObject('BoxROI', template="Vec3", name="box_roi", box="-6 -6 -1 50 6 0.1", drawBoxes="1")
        beam_fem__svd.addObject('FixedProjectiveConstraint', template="Vec3", indices="@box_roi.indices")
     ```
+
+TetrahedronFEMForceField_plasticity.scn
 
 === "XML"
 
@@ -855,6 +863,8 @@ Links:
        surf2.addObject('BarycentricMapping', )
     ```
 
+TetrahedronFEMForceField_Chain.scn
+
 === "XML"
 
     ```xml
@@ -1069,6 +1079,8 @@ Links:
        surf2.addObject('BarycentricMapping', )
     ```
 
+TetrahedronFEMForceField_beam10x10x40_cpu.scn
+
 === "XML"
 
     ```xml
@@ -1206,6 +1218,8 @@ Links:
        visu.addObject('IdentityMapping', input="@../../Volume", output="@Visual")
     ```
 
+TetrahedronFEMForceField_beam10x10x40_gpu.scn
+
 === "XML"
 
     ```xml
@@ -1333,6 +1347,8 @@ Links:
        visu.addObject('OglModel', name="Visual", color="green")
        visu.addObject('IdentityMapping', input="@../../Volume", output="@Visual")
     ```
+
+TetrahedronFEMForceField_beam16x16x76_cpu.scn
 
 === "XML"
 
@@ -1497,6 +1513,8 @@ Links:
        visu.addObject('OglModel', name="Visual", color="white")
        visu.addObject('IdentityMapping', input="@..", output="@Visual")
     ```
+
+TetrahedronFEMForceField_beam16x16x76_gpu.scn
 
 === "XML"
 

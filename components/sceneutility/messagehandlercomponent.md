@@ -11,7 +11,7 @@ __parents__:
 
 - BaseObject
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -75,7 +75,7 @@ Type of the message handler to use among [sofa, clang                           
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

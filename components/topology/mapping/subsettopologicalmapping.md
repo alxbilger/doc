@@ -11,7 +11,7 @@ __parents__:
 
 - TopologicalMapping
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -194,7 +194,7 @@ Internal destination -> source topology hexahedra map
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -204,6 +204,10 @@ Links:
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input topology to map|BaseMeshTopology|
 |output|Output topology to map|BaseMeshTopology|
+
+## Examples 
+
+SubsetTopologicalMapping2.scn
 
 === "XML"
 
@@ -351,6 +355,8 @@ Links:
        subset_topology2.addObject('TriangularFEMForceFieldOptim', name="FEM2", youngModulus="10000", poissonRatio="0.4")
        subset_topology2.addObject('FastTriangularBendingSprings', name="Bending", bendingStiffness="1000")
     ```
+
+SubsetTopologicalMapping.scn
 
 === "XML"
 

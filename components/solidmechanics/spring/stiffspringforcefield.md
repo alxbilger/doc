@@ -15,7 +15,7 @@ __parents__:
 
 - SpringForceField
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -155,7 +155,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -177,7 +177,7 @@ __parents__:
 
 - SpringForceField
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -317,7 +317,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -339,7 +339,7 @@ __parents__:
 
 - SpringForceField
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -479,7 +479,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -501,7 +501,7 @@ __parents__:
 
 - SpringForceField
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -641,7 +641,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -663,7 +663,7 @@ __parents__:
 
 - SpringForceField
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -803,7 +803,7 @@ The way springs will be drawn:
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -814,6 +814,10 @@ Links:
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState<Vec6d>|
 |object2|Second object associated to this component|MechanicalState<Vec6d>|
+
+## Examples 
+
+StiffSpringForceField_simple.scn
 
 === "XML"
 
@@ -932,6 +936,8 @@ Links:
        root.addObject('StiffSpringForceField', template="Vec3", name="spring5", object1="@sphere3-4/dofs", object2="@sphere3-4/dofs", spring="0 1 50 1 1", showArrowSize="0.05", drawMode="2")
        root.addObject('StiffSpringForceField', template="Vec3", name="spring6", object1="@sphere3-4/dofs", object2="@sphere5-6/dofs", spring="0 0 50 1 1  1 1 50 1 1", showArrowSize="0.05", drawMode="2")
     ```
+
+StiffSpringForceField.scn
 
 === "XML"
 

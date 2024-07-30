@@ -15,7 +15,7 @@ __parents__:
 
 - Constraint
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -115,7 +115,7 @@ maximum value accepted
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

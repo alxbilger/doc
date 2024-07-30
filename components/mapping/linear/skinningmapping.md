@@ -15,7 +15,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -152,7 +152,7 @@ Show influence.
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -162,6 +162,10 @@ Links:
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input object to map|State<Rigid3d>|
 |output|Output object to map|State<Vec3d>|
+
+## Examples 
+
+SkinningMapping.scn
 
 === "XML"
 

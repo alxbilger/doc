@@ -15,7 +15,7 @@ __parents__:
 
 - BaseLinearElasticityFEMForceField
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -107,7 +107,7 @@ Internal hexahedron data
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -118,6 +118,10 @@ Links:
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
 |topology|link to the topology container|BaseMeshTopology|
+
+## Examples 
+
+HexahedralFEMForceFieldAndMass.scn
 
 === "XML"
 
@@ -196,6 +200,8 @@ Links:
        m1.addObject('LineCollisionModel', )
        m1.addObject('PointCollisionModel', )
     ```
+
+HexahedralFEMForceField.scn
 
 === "XML"
 

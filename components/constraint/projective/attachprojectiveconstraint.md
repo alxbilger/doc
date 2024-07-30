@@ -64,7 +64,7 @@ __parents__:
 
 - PairInteractionProjectiveConstraintSet
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -234,7 +234,7 @@ Vector of factors adapting the application of the constraint per pair of points 
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -256,7 +256,7 @@ __parents__:
 
 - PairInteractionProjectiveConstraintSet
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -426,7 +426,7 @@ Vector of factors adapting the application of the constraint per pair of points 
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -448,7 +448,7 @@ __parents__:
 
 - PairInteractionProjectiveConstraintSet
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -618,7 +618,7 @@ Vector of factors adapting the application of the constraint per pair of points 
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -640,7 +640,7 @@ __parents__:
 
 - PairInteractionProjectiveConstraintSet
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -810,7 +810,7 @@ Vector of factors adapting the application of the constraint per pair of points 
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -832,7 +832,7 @@ __parents__:
 
 - PairInteractionProjectiveConstraintSet
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -1002,7 +1002,7 @@ Vector of factors adapting the application of the constraint per pair of points 
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -1013,6 +1013,10 @@ Links:
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |object1|First object associated to this component|MechanicalState<Vec3d>|
 |object2|Second object associated to this component|MechanicalState<Vec3d>|
+
+## Examples 
+
+AttachProjectiveConstraint.scn
 
 === "XML"
 
@@ -1206,6 +1210,8 @@ Links:
        attach_two_way.addObject('AttachProjectiveConstraint', object1="@M1", object2="@M2", twoWay="true", indices1="144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159", indices2="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15", constraintFactor="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1")
        attach_two_way.addObject('AttachProjectiveConstraint', object1="@M2", object2="@M3", twoWay="true", indices1="144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159", indices2="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15")
     ```
+
+AttachProjectiveConstraintMatrix.scn
 
 === "XML"
 

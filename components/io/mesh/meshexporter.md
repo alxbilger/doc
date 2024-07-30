@@ -19,7 +19,7 @@ __parents__:
 
 - BaseSimulationExporter
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -160,7 +160,7 @@ write hexa topology
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

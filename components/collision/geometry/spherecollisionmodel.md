@@ -16,7 +16,7 @@ __parents__:
 
 - CollisionModel
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -182,7 +182,7 @@ Draw spheres as impostors instead of "real" spheres
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

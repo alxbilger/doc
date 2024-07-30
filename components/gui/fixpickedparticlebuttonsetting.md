@@ -11,7 +11,7 @@ __parents__:
 
 - MouseButtonSetting
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -82,7 +82,7 @@ Stiffness of the spring to fix a particule
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

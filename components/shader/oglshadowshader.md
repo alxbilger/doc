@@ -11,7 +11,7 @@ __parents__:
 
 - OglShader
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -180,7 +180,7 @@ clamp the vertex color between 0 and 1
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -188,6 +188,10 @@ Links:
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
+
+## Examples 
+
+OglShadowShader_SpotLight2.scn
 
 === "XML"
 
@@ -263,6 +267,8 @@ Links:
        shader2.addObject('OglModel', template="Vec3", putOnlyTexCoords="true", name="FloorV", src="@meshLoader_1", material="Default Diffuse 1 0.5 0.5 0.5 1 Ambient 1 0.1 0.1 0.1 1 Specular 0 0.5 0.5 0.5 1 Emissive 0 0.5 0.5 0.5 1 Shininess 0 45 No texture linked to the material No bump texture linked to the material ", blendEquation="GL_FUNC_ADD", sfactor="GL_SRC_ALPHA", dfactor="GL_ONE_MINUS_SRC_ALPHA")
     ```
 
+OglShadowShader_Directional.scn
+
 === "XML"
 
     ```xml
@@ -310,6 +316,8 @@ Links:
        root.addObject('OglShadowShader', name="oglShadowShader1")
        root.addObject('DirectionalLight', name="spotLight1", shadowTextureSize="512", direction="-0.5 -0.5 -0.5", shadowFactor="1")
     ```
+
+OglShadowShader_SpotLight.scn
 
 === "XML"
 

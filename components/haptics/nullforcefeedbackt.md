@@ -16,7 +16,7 @@ __parents__:
 
 - MechanicalStateForceFeedback
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -87,7 +87,7 @@ Tool indice in the OmniDriver
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

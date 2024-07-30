@@ -16,7 +16,7 @@ __parents__:
 
 - Controller
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -108,7 +108,7 @@ Main direction and orientation of the controlled DOF
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -116,6 +116,10 @@ Links:
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
+
+## Examples 
+
+MechanicalStateControllerTranslation.scn
 
 === "XML"
 
@@ -219,6 +223,8 @@ Links:
 
        instrument_edge_set.addObject('MechanicalStateController', template="Rigid3", onlyTranslation="true", listening="true", handleEventTriggersUpdate="true")
     ```
+
+MechanicalStateController.scn
 
 === "XML"
 

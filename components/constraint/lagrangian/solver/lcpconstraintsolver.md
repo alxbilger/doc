@@ -11,7 +11,7 @@ __parents__:
 
 - ConstraintSolverImpl
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -218,7 +218,7 @@ Translation between levels
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

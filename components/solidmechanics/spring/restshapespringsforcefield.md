@@ -15,7 +15,7 @@ __parents__:
 
 - ForceField
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -145,7 +145,7 @@ draw Spring
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -168,7 +168,7 @@ __parents__:
 
 - ForceField
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -298,7 +298,7 @@ draw Spring
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -321,7 +321,7 @@ __parents__:
 
 - ForceField
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -451,7 +451,7 @@ draw Spring
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -463,6 +463,10 @@ Links:
 |mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
 |external_rest_shape|rest_shape can be defined by the position of an external Mechanical State|MechanicalState<Vec3d>|
 |topology|Link to be set to the topology container in the component graph|BaseMeshTopology|
+
+## Examples 
+
+RestShapeSpringsForceField3.scn
 
 === "XML"
 
@@ -527,6 +531,8 @@ Links:
        object2.addObject('RestShapeSpringsForceField', stiffness="11", angularStiffness="12", external_rest_shape="@../Object1/object1MO", points="0", external_points="0", drawSpring="true", springColor="1 1 1 1", activeDirections="1 0 1 1 0 1")
        object2.addObject('UniformMass', totalMass="0.01")
     ```
+
+RestShapeSpringsForceField2.scn
 
 === "XML"
 
@@ -606,6 +612,8 @@ Links:
        object2.addObject('SphereCollisionModel', radius="0.0005", color="1 0 0  1")
        object2.addObject('LinearSolverConstraintCorrection', linearSolver="@LULinearSolver")
     ```
+
+RestShapeSpringsForceField.scn
 
 === "XML"
 

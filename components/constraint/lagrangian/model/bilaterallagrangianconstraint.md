@@ -71,7 +71,7 @@ __parents__:
 
 - PairInteractionConstraint
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -192,7 +192,7 @@ keep the initial difference in orientation (only for rigids)
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -216,7 +216,7 @@ __parents__:
 
 - PairInteractionConstraint
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -337,7 +337,7 @@ keep the initial difference in orientation (only for rigids)
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -350,6 +350,10 @@ Links:
 |object2|Second object associated to this component|MechanicalState<Vec3d>|
 |topology1|link to the first topology container|BaseMeshTopology|
 |topology2|link to the second topology container|BaseMeshTopology|
+
+## Examples 
+
+BilateralLagrangianConstraint_Rigid.scn
 
 === "XML"
 
@@ -460,6 +464,8 @@ Links:
 
        root.addObject('BilateralLagrangianConstraint', template="Rigid3", object1="@Beam1/ConstraintPoint/dof1", object2="@Beam2/DOFs2", first_point="0", second_point="0")
     ```
+
+BilateralLagrangianConstraint_NNCG.scn
 
 === "XML"
 
@@ -802,6 +808,8 @@ Links:
        root.addObject('BilateralLagrangianConstraint', template="Vec3", object1="@CUBE_2/Constraints/points", object2="@CUBE_4/Constraints/points", first_point="1", second_point="0")
     ```
 
+BilateralLagrangianConstraint_UGS.scn
+
 === "XML"
 
     ```xml
@@ -1142,6 +1150,8 @@ Links:
 
        root.addObject('BilateralLagrangianConstraint', template="Vec3", object1="@CUBE_2/Constraints/points", object2="@CUBE_4/Constraints/points", first_point="1", second_point="0")
     ```
+
+BilateralLagrangianConstraint_PGS.scn
 
 === "XML"
 

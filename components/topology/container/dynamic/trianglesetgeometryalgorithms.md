@@ -16,7 +16,7 @@ __parents__:
 
 - EdgeSetGeometryAlgorithms
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -167,7 +167,7 @@ Fiber length visualisation.
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

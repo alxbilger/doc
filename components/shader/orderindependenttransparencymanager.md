@@ -11,7 +11,7 @@ __parents__:
 
 - VisualManager
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -82,7 +82,7 @@ Depth scale
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

@@ -15,7 +15,7 @@ __parents__:
 
 - MatrixLinearSolver
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -93,7 +93,7 @@ Number of steps before the next refresh of the system matrix in the main solver
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

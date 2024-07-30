@@ -11,7 +11,7 @@ __parents__:
 
 - BaseAnimationLoop
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -75,7 +75,7 @@ If true, compute the global bounding box of the scene at each time step. Used mo
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

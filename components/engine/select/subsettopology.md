@@ -16,7 +16,7 @@ __parents__:
 
 - DataEngine
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -356,7 +356,7 @@ rendering size for box and topological elements
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -364,6 +364,10 @@ Links:
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
+
+## Examples 
+
+SubsetTopology_localIndicesOption.scn
 
 === "XML"
 
@@ -507,6 +511,8 @@ Links:
        node.addObject('IdentityMapping', input="@..", output="@Visual")
     ```
 
+SubsetTopology_withtetrahedra.scn
+
 === "XML"
 
     ```xml
@@ -625,6 +631,8 @@ Links:
        visu.addObject('OglModel', template="Vec3", name="Visual", material="Default Diffuse 1 0 0 1 0.5 Ambient 1 0.2 0 0 1 Specular 0 1 0 0 1 Emissive 0 1 0 0 1 Shininess 0 45")
        visu.addObject('IdentityMapping', input="@../../Volume", output="@Visual")
     ```
+
+SubsetTopology_refiningMesh.scn
 
 === "XML"
 
@@ -819,6 +827,8 @@ Links:
 					       22 22 10000 0 0")
     ```
 
+SubsetTopology.scn
+
 === "XML"
 
     ```xml
@@ -955,6 +965,8 @@ Links:
        node.addObject('OglModel', name="Visual", color="red")
        node.addObject('IdentityMapping', input="@..", output="@Visual")
     ```
+
+SubsetTopology_subsetbehaviormodel.scn
 
 === "XML"
 

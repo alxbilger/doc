@@ -132,7 +132,7 @@ __parents__:
 - OdeSolver
 - LinearSolverAccessor
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -238,7 +238,7 @@ If true, do not use realloc and free visitors in fwdInteractionForceField.
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -247,6 +247,10 @@ Links:
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |linearSolver|Linear solver used by this component|LinearSolver|
+
+## Examples 
+
+EulerImplicitSolver.scn
 
 === "XML"
 
@@ -327,6 +331,8 @@ Links:
        node.addObject('OglModel', name="Visual", src="@meshLoader_0", color="red", dx="60")
        node.addObject('BarycentricMapping', input="@..", output="@Visual")
     ```
+
+EulerImplicitSolver-comparison.scn
 
 === "XML"
 

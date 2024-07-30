@@ -11,7 +11,7 @@ __parents__:
 
 - TopologicalMapping
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -103,7 +103,7 @@ Which input topology element map to a given point in the output topology : 0 -> 
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -113,6 +113,10 @@ Links:
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input topology to map|BaseMeshTopology|
 |output|Output topology to map|BaseMeshTopology|
+
+## Examples 
+
+SimpleTesselatedTetraTopologicalMapping.scn
 
 === "XML"
 
@@ -218,6 +222,8 @@ Links:
        tetra_topology2.addObject('SimpleTesselatedTetraMechanicalMapping', )
        tetra_topology2.addObject('TriangleCollisionModel', )
     ```
+
+SimpleTesselatedTetraTopologicalMapping.scn
 
 === "XML"
 

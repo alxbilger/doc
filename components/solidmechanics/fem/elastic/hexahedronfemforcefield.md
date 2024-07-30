@@ -15,7 +15,7 @@ __parents__:
 
 - BaseLinearElasticityFEMForceField
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -152,7 +152,7 @@ size of the hexa
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -163,6 +163,10 @@ Links:
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
 |topology|link to the topology container|BaseMeshTopology|
+
+## Examples 
+
+HexahedronFEMForceField.scn
 
 === "XML"
 
@@ -246,6 +250,8 @@ Links:
        m1.addObject('PointCollisionModel', )
     ```
 
+HexahedronFEMForceFieldAndMass.scn
+
 === "XML"
 
     ```xml
@@ -323,6 +329,8 @@ Links:
        m1.addObject('LineCollisionModel', )
        m1.addObject('PointCollisionModel', )
     ```
+
+HexahedronFEMForceField_beam16x16x76_cpu.scn
 
 === "XML"
 
@@ -472,6 +480,8 @@ Links:
        visu.addObject('IdentityMapping', input="@..", output="@Visual")
     ```
 
+HexahedronFEMForceField_beam10x10x40_cpu.scn
+
 === "XML"
 
     ```xml
@@ -592,6 +602,8 @@ Links:
        visu.addObject('IdentityMapping', input="@../../Volume", output="@Visual")
     ```
 
+HexahedronFEMForceField_beam10x10x40_gpu.scn
+
 === "XML"
 
     ```xml
@@ -701,6 +713,8 @@ Links:
        visu.addObject('OglModel', name="Visual", color="green")
        visu.addObject('IdentityMapping', input="@../../Volume", output="@Visual")
     ```
+
+HexahedronFEMForceField_beam16x16x76_gpu.scn
 
 === "XML"
 

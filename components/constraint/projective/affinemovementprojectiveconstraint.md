@@ -15,7 +15,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -146,7 +146,7 @@ draw constrained points
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -168,7 +168,7 @@ __parents__:
 
 - ProjectiveConstraintSet
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -299,7 +299,7 @@ draw constrained points
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -310,6 +310,10 @@ Links:
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
 |topology|link to the topology container|BaseMeshTopology|
+
+## Examples 
+
+AffineMovementProjectiveConstraint.scn
 
 === "XML"
 
@@ -374,6 +378,8 @@ Links:
        square.addObject('PairBoxROI', name="PairBox", inclusiveBox="-0.1 -0.1 0  1.1 1.1 0", includedBox="0.1 0.1 0 0.9 0.9 0")
        square.addObject('AffineMovementProjectiveConstraint', name="bilinearConstraint", template="Vec3", indices="@PairBox.indices", meshIndices="@Box.indices", translation="0.1 0 0", rotation="[0.7 -0.7 0,0.7 0.7 0,0 0 1]", drawConstrainedPoints="1")
     ```
+
+AffineMovementProjectiveConstraint3D.scn
 
 === "XML"
 

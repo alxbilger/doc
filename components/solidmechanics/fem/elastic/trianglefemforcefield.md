@@ -15,7 +15,7 @@ __parents__:
 
 - ForceField
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -121,7 +121,7 @@ Plane strain or plane stress assumption
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -132,6 +132,10 @@ Links:
 |mechanicalStates|List of mechanical states to which this component is associated|BaseMechanicalState|
 |mstate|MechanicalState used by this component|MechanicalState<Vec3d>|
 |topology|link to the topology container|BaseMeshTopology|
+
+## Examples 
+
+TriangleFEMForceField.scn
 
 === "XML"
 
@@ -284,6 +288,8 @@ Links:
        visu.addObject('OglModel', name="Visual", color="yellow")
        visu.addObject('IdentityMapping', input="@..", output="@Visual")
     ```
+
+TriangleFEMForceField_compare.scn
 
 === "XML"
 

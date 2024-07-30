@@ -15,7 +15,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -149,7 +149,7 @@ Scale factor applied on the linear force accumulated on the rigid model
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -160,6 +160,10 @@ Links:
 |input1|Input Object(s) (1st Data type)|State<Vec3d>|
 |input2|Input Object(s) (2st Data type)|State<Rigid3d>|
 |output|Output Object(s)|State<Vec3d>|
+
+## Examples 
+
+DeformableOnRigidFrameMapping.scn
 
 === "XML"
 
@@ -320,6 +324,8 @@ Links:
        visu.addObject('OglModel', name="Visual", src="@meshLoader_1", color="gray")
        visu.addObject('BarycentricMapping', input="@..", output="@Visual")
     ```
+
+DeformableOnRigidFrameMappingConstraints.scn
 
 === "XML"
 

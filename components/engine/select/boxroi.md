@@ -19,7 +19,7 @@ __parents__:
 
 - DataEngine
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -342,7 +342,7 @@ rendering size for box and topological elements
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -350,6 +350,10 @@ Links:
 |context|Graph Node containing this object (or BaseContext::getDefault() if no graph is used)|BaseContext|
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
+
+## Examples 
+
+BoxROI.scn
 
 === "XML"
 
@@ -460,6 +464,8 @@ Links:
        visu.addObject('IdentityMapping', template="Vec3,Vec3", name="default8", input="@..", output="@Visual")
     ```
 
+BoxROI_1d.scn
+
 === "XML"
 
     ```xml
@@ -525,6 +531,8 @@ Links:
        m1.addObject('FixedProjectiveConstraint', indices="@box.indices")
        m1.addObject('MeshSpringForceField', stiffness="500")
     ```
+
+BoxROI_2d.scn
 
 === "XML"
 

@@ -18,7 +18,7 @@ __parents__:
 
 - ConstraintCorrection
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -117,7 +117,7 @@ Use odeSolver integration factors instead of correctionVelocityFactor and correc
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

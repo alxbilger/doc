@@ -15,7 +15,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -128,7 +128,7 @@ Radius of created circles
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

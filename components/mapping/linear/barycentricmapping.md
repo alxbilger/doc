@@ -15,7 +15,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -114,7 +114,7 @@ Use the rest position of the input and output models to initialize the mapping
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -138,7 +138,7 @@ __parents__:
 
 - CRTPLinearMapping
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -237,7 +237,7 @@ Use the rest position of the input and output models to initialize the mapping
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -250,6 +250,10 @@ Links:
 |mapper|Internal mapper created depending on the type of topology|TopologyBarycentricMapper<Vec3d,Vec3d>|
 |input_topology|Input topology container (usually the surrounding domain).|BaseMeshTopology|
 |output_topology|Output topology container (usually the immersed domain).|BaseMeshTopology|
+
+## Examples 
+
+BarycentricMappingTrussBeam.scn
 
 === "XML"
 
@@ -413,6 +417,8 @@ Links:
        visu_ogl.addObject('OglModel', name="Visual", color="0.5 0.5 1.0")
        visu_ogl.addObject('IdentityMapping', input="@Quads", output="@Visual")
     ```
+
+BarycentricMapping.scn
 
 === "XML"
 

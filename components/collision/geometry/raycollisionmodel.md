@@ -11,7 +11,7 @@ __parents__:
 
 - CollisionModel
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -160,7 +160,7 @@ The default length for all rays in this collision model
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

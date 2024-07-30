@@ -11,7 +11,7 @@ __parents__:
 
 - TopologicalMapping
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -76,7 +76,7 @@ Boolean enabling to swapp hexa-edges
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
@@ -86,6 +86,10 @@ Links:
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 |input|Input topology to map|BaseMeshTopology|
 |output|Output topology to map|BaseMeshTopology|
+
+## Examples 
+
+Hexa2TetraTopologicalMapping_export.scn
 
 === "XML"
 
@@ -220,6 +224,8 @@ Links:
        visu.addObject('IdentityMapping', template="Vec3,Vec3", name="default33", input="@..", output="@Visual")
        visu.addObject('VisualModelOBJExporter', filename="cube5x5x5-surface", exportAtBegin="true")
     ```
+
+Hexa2TetraTopologicalMapping.scn
 
 === "XML"
 

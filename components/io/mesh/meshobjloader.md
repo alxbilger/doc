@@ -39,7 +39,7 @@ __parents__:
 
 - MeshLoader
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -440,7 +440,7 @@ Texture coordinates of all faces, to be used as the parent data of a VisualModel
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |

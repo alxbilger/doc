@@ -16,7 +16,7 @@ __parents__:
 
 - MechanicalStateForceFeedback
 
-Data: 
+## Data: 
 
 <table>
     <thead>
@@ -122,7 +122,7 @@ Flag to enable/disable constraint haptic influence from all frames
 </tbody>
 </table>
 
-Links: 
+## Links: 
 
 
 | Name | Description | Destination type name |
