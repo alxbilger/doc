@@ -4,8 +4,6 @@
 Provides a Mouse & Keyboard user control on a Mechanical State.
 
 
-## Rigid3d...
-
 Templates:
 
 - Rigid3d

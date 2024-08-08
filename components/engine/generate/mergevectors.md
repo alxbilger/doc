@@ -4,8 +4,6 @@
 Apply a merge operation to combine several inputs
 
 
-## vector<RigidCoord2d>...
-
 Templates:
 
 - vector<RigidCoord2d>

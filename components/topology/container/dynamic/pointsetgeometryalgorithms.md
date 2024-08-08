@@ -4,8 +4,6 @@
 Point set geometry algorithms
 
 
-## Vec1d...
-
 Templates:
 
 - Vec1d

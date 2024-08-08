@@ -3,8 +3,6 @@
 
 
 
-## Rigid3d...
-
 Templates:
 
 - Rigid3d

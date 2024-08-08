@@ -4,8 +4,6 @@
 Export the simulation result as blender point cache files
 
 
-## Rigid3d...
-
 Templates:
 
 - Rigid3d

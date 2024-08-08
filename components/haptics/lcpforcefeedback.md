@@ -4,8 +4,6 @@
 LCP force feedback for the device
 
 
-## Rigid3d...
-
 Templates:
 
 - Rigid3d

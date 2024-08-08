@@ -4,8 +4,6 @@
 Assign values to primitives (vertex/edge/triangle/tetrahedron) based on a linear interpolation of values along a direction
 
 
-## Rigid3d...
-
 Templates:
 
 - Rigid3d

@@ -4,8 +4,6 @@
 Collision model which represents a set of Spheres
 
 
-## Rigid3d...
-
 Templates:
 
 - Rigid3d

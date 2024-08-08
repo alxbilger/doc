@@ -31,8 +31,6 @@ An example scene involving the MergePoints engine is available in [*examples/Com
 Merge 2 cordinate vectors
 
 
-## Rigid2d...
-
 Templates:
 
 - Rigid2d

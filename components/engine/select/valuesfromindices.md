@@ -4,8 +4,6 @@
 Find the values given a list of indices
 
 
-## I...
-
 Templates:
 
 - I

@@ -48,8 +48,6 @@ An example scene involving the TransformEngine engine is available in [*examples
 Transform position of 3d points
 
 
-## Rigid2d...
-
 Templates:
 
 - Rigid2d

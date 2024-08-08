@@ -4,8 +4,6 @@
 Merge two sets of indices using specified boolean operation
 
 
-## I...
-
 Templates:
 
 - I

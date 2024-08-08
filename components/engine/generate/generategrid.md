@@ -4,8 +4,6 @@
 Generate a Grid Tetrahedral or Hexahedral Mesh
 
 
-## Vec2d...
-
 Templates:
 
 - Vec2d

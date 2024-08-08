@@ -4,8 +4,6 @@
 Find the indices of a list of values within a larger set of values
 
 
-## I...
-
 Templates:
 
 - I

@@ -4,8 +4,6 @@
 Apply a permutation to a set of indices
 
 
-## I...
-
 Templates:
 
 - I

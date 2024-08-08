@@ -4,8 +4,6 @@
 Computing the Sum between two vector of dofs
 
 
-## Vec1d...
-
 Templates:
 
 - Vec1d

@@ -4,8 +4,6 @@
 Select a subset of points or cells labeled from different sources, that are connected given a list of connection pairs
 
 
-## B...
-
 Templates:
 
 - B

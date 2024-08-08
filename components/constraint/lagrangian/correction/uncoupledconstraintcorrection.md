@@ -4,8 +4,6 @@
 Component computing constraint forces within a simulated body using the compliance method.
 
 
-## Rigid3d...
-
 Templates:
 
 - Rigid3d

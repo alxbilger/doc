@@ -4,8 +4,6 @@
 Compute the Hausdorff distance of two point clouds
 
 
-## Rigid2d...
-
 Templates:
 
 - Rigid2d

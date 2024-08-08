@@ -4,8 +4,6 @@
 Find the primitives inside a given plane
 
 
-## Rigid3d...
-
 Templates:
 
 - Rigid3d

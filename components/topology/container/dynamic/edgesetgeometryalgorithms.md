@@ -4,8 +4,6 @@
 Edge set geometry algorithms
 
 
-## Rigid2d...
-
 Templates:
 
 - Rigid2d

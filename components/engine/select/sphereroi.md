@@ -4,8 +4,6 @@
 Find the primitives (vertex/edge/triangle/tetrahedron) inside a given sphere
 
 
-## Rigid3d...
-
 Templates:
 
 - Rigid3d
@@ -17,7 +15,7 @@ __namespace__: sofa::component::engine::select
 
 __parents__:
 
-- DataEngine
+- BaseROI
 
 ### Data
 
@@ -101,14 +99,25 @@ If true, will compute tetrahedra list and index list inside the ROI.
 		<td>1</td>
 	</tr>
 	<tr>
-		<td>tetrahedronIndices</td>
+		<td>computeHexahedra</td>
 		<td>
-Indices of the tetrahedra contained in the ROI
+If true, will compute hexahedra list and index list inside the ROI.
 		</td>
-		<td></td>
+		<td>1</td>
 	</tr>
 	<tr>
-		<td colspan="3">Inputs</td>
+		<td>strict</td>
+		<td>
+If true, an element is inside the box if all of its nodes are inside. If False, only the center point of the element is checked.
+		</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>doUpdate</td>
+		<td>
+If true, updates the selection at the beginning of simulation steps.
+		</td>
+		<td>1</td>
 	</tr>
 	<tr>
 		<td>centers</td>
@@ -153,9 +162,14 @@ Max angle between the normal of the selected triangle and the specified normal d
 		<td>0</td>
 	</tr>
 	<tr>
+		<td colspan="3">Inputs</td>
+	</tr>
+	<tr>
 		<td>position</td>
 		<td>
-Rest position coordinates of the degrees of freedom
+Rest position coordinates of the degrees of freedom. 
+If empty the positions from a MechanicalObject then a MeshLoader are searched in the current context. 
+If none are found the parent's context is searched for MechanicalObject.
 		</td>
 		<td></td>
 	</tr>
@@ -176,7 +190,7 @@ Triangle Topology
 	<tr>
 		<td>quads</td>
 		<td>
-Quads Topology
+Quad Topology
 		</td>
 		<td></td>
 	</tr>
@@ -184,6 +198,13 @@ Quads Topology
 		<td>tetrahedra</td>
 		<td>
 Tetrahedron Topology
+		</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>hexahedra</td>
+		<td>
+Hexahedron Topology
 		</td>
 		<td></td>
 	</tr>
@@ -214,7 +235,21 @@ Indices of the triangles contained in the ROI
 	<tr>
 		<td>quadIndices</td>
 		<td>
-Indices of the quads contained in the ROI
+Indices of the quad contained in the ROI
+		</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>tetrahedronIndices</td>
+		<td>
+Indices of the tetrahedra contained in the ROI
+		</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>hexahedronIndices</td>
+		<td>
+Indices of the hexahedra contained in the ROI
 		</td>
 		<td></td>
 	</tr>
@@ -242,7 +277,7 @@ Triangles contained in the ROI
 	<tr>
 		<td>quadsInROI</td>
 		<td>
-Quads contained in the ROI
+Quad contained in the ROI
 		</td>
 		<td></td>
 	</tr>
@@ -254,6 +289,48 @@ Tetrahedra contained in the ROI
 		<td></td>
 	</tr>
 	<tr>
+		<td>hexahedraInROI</td>
+		<td>
+Hexahedra contained in the ROI
+		</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>nbIndices</td>
+		<td>
+Number of selected indices
+		</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>pointsOutROI</td>
+		<td>
+Points not contained in the ROI
+		</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>edgesOutROI</td>
+		<td>
+Edges not contained in the ROI
+		</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>trianglesOutROI</td>
+		<td>
+Triangles not contained in the ROI
+		</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>tetrahedraOutROI</td>
+		<td>
+Tetrahedra not contained in the ROI
+		</td>
+		<td></td>
+	</tr>
+	<tr>
 		<td>indicesOut</td>
 		<td>
 Indices of the points not contained in the ROI
@@ -261,54 +338,82 @@ Indices of the points not contained in the ROI
 		<td></td>
 	</tr>
 	<tr>
+		<td>edgeOutIndices</td>
+		<td>
+Indices of the edges not contained in the ROI
+		</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>triangleOutIndices</td>
+		<td>
+Indices of the triangles not contained in the ROI
+		</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>tetrahedronOutIndices</td>
+		<td>
+Indices of the tetrahedra not contained in the ROI
+		</td>
+		<td></td>
+	</tr>
+	<tr>
 		<td colspan="3">Visualization</td>
 	</tr>
 	<tr>
-		<td>drawSphere</td>
+		<td>drawROI</td>
 		<td>
-Draw shpere(s)
+Draw the ROI.
 		</td>
 		<td>0</td>
 	</tr>
 	<tr>
 		<td>drawPoints</td>
 		<td>
-Draw Points
+Draw Points.
 		</td>
 		<td>0</td>
 	</tr>
 	<tr>
 		<td>drawEdges</td>
 		<td>
-Draw Edges
+Draw Edges.
 		</td>
 		<td>0</td>
 	</tr>
 	<tr>
 		<td>drawTriangles</td>
 		<td>
-Draw Triangles
+Draw Triangles.
 		</td>
 		<td>0</td>
 	</tr>
 	<tr>
 		<td>drawQuads</td>
 		<td>
-Draw Quads
+Draw Quads.
 		</td>
 		<td>0</td>
 	</tr>
 	<tr>
 		<td>drawTetrahedra</td>
 		<td>
-Draw Tetrahedra
+Draw Tetrahedra.
+		</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>drawHexahedra</td>
+		<td>
+Draw Tetrahedra.
 		</td>
 		<td>0</td>
 	</tr>
 	<tr>
 		<td>drawSize</td>
 		<td>
-rendering size for box and topological elements
+rendering size for ROI and topological elements
 		</td>
 		<td>1</td>
 	</tr>

@@ -4,8 +4,6 @@
 Render a trail behind particles
 
 
-## Rigid3d...
-
 Templates:
 
 - Rigid3d

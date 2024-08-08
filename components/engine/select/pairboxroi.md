@@ -4,8 +4,6 @@
 Find the primitives (vertex/edge/triangle/tetrahedron) inside a given box
 
 
-## Rigid3d...
-
 Templates:
 
 - Rigid3d

@@ -4,8 +4,6 @@
 Select a subset of labeled points or cells stored in (vector<svector<label>>) given certain labels
 
 
-## B...
-
 Templates:
 
 - B

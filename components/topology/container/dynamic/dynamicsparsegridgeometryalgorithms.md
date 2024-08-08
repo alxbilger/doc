@@ -4,8 +4,6 @@
 Hexahedron set geometry algorithms
 
 
-## Vec2d...
-
 Templates:
 
 - Vec2d

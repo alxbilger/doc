@@ -4,8 +4,6 @@
 Converts a vector of Rigid to a vector of displacement transforms.
 
 
-## Rigid3d,Mat4x4d...
-
 Templates:
 
 - Rigid3d,Mat4x4d

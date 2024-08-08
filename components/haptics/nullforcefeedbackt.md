@@ -4,8 +4,6 @@
 Null force feedback for haptic feedback device
 
 
-## Rigid3d...
-
 Templates:
 
 - Rigid3d

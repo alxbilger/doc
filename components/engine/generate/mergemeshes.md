@@ -4,8 +4,6 @@
 Merge several meshes
 
 
-## Rigid2d...
-
 Templates:
 
 - Rigid2d

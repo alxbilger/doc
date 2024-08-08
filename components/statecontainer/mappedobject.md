@@ -4,8 +4,6 @@
 Mapped state vectors
 
 
-## Rigid2d...
-
 Templates:
 
 - Rigid2d

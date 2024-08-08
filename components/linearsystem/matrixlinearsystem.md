@@ -5,8 +5,6 @@ Linear system
 Linear system
 
 
-## CompressedRowSparseMatrixMat2x2d...
-
 Templates:
 
 - CompressedRowSparseMatrixMat2x2d

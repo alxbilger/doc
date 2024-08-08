@@ -141,3 +141,43 @@ quads indices
 |slaves|Sub-objects used internally by this object|BaseObject|
 |master|nullptr for regular objects, or master object for which this object is one sub-objects|BaseObject|
 
+## Examples 
+
+STLExporter.scn
+
+=== "XML"
+
+    ```xml
+    <?xml version='1.0'?>
+    <Node 	name='Root' gravity='0 0 0' time='0' animate='0'   >
+       <RequiredPlugin name="Sofa.Component.IO.Mesh"/> <!-- Needed to use components [MeshOBJLoader,STLExporter] -->
+       <RequiredPlugin name="Sofa.Component.StateContainer"/> <!-- Needed to use components [MechanicalObject] -->
+       <RequiredPlugin name="Sofa.GL.Component.Rendering3D"/> <!-- Needed to use components [OglModel] -->
+    
+       <DefaultAnimationLoop/>
+       <MechanicalObject position='0 1 2 3 4 5 6 7 8 9'/>
+       <MeshOBJLoader name="loader" filename='mesh/liver-smooth.obj'/>
+       <OglModel src="@loader"/>
+    
+       <STLExporter name='exporter1' printLog='true' filename='outFile' exportAtBegin='true' position="@loader.position" triangle="@loader.triangles"/>
+    </Node>
+
+    ```
+
+=== "Python"
+
+    ```python
+    def createScene(root_node):
+
+       root = root_node.addChild('Root', gravity="0 0 0", time="0", animate="0")
+
+       root.addObject('RequiredPlugin', name="Sofa.Component.IO.Mesh")
+       root.addObject('RequiredPlugin', name="Sofa.Component.StateContainer")
+       root.addObject('RequiredPlugin', name="Sofa.GL.Component.Rendering3D")
+       root.addObject('DefaultAnimationLoop', )
+       root.addObject('MechanicalObject', position="0 1 2 3 4 5 6 7 8 9")
+       root.addObject('MeshOBJLoader', name="loader", filename="mesh/liver-smooth.obj")
+       root.addObject('OglModel', src="@loader")
+       root.addObject('STLExporter', name="exporter1", printLog="true", filename="outFile", exportAtBegin="true", position="@loader.position", triangle="@loader.triangles")
+    ```
+
